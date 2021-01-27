@@ -1,0 +1,198 @@
+/**
+ * Description of script style1.css
+ *
+ * @author Martine Bornerie
+ */
+
+/*  https://a-pellegrini.developpez.com/tutoriels/css/formulaire/    */
+/*  Effet input blanc sur le focus des champs   */
+        *:focus {
+          background-color:white;
+         }
+        body {
+          font: 1em sans-serif;
+          padding: 0;
+          margin : 0;
+        }
+        form {
+          font: 16px sans-serif;
+          max-width: 900px;
+          margin: 60;
+          padding: 0 5px;
+        }
+
+fieldset {
+    background-color: #FDF5E6;  /* color: oldlace */
+    max-width: 800px;           /* largeur maximale cadre */
+    padding: 16px;              /* marge interne / sépare le contenu de la bordure  */  
+    /* Coins arrondis et couleur du cadre */
+    border: 2px solid grey;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+        p > label {
+          display: block;
+        }
+input {
+    border:2px solid black;
+    background-color:#A6BEDE;
+
+    /* Coins arrondis et couleur du cadre */
+    border: 2px solid grey;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+ }
+        input[type=text],
+        input[type=email],
+        /*textarea,*/
+        fieldset {
+        /* requis pour composer de manière appropriée les éléments
+           de formulaire sur les navigateurs fondés sur WebKit */
+          -webkit-appearance: none;
+          
+          width : 100%;
+          border: 1px solid #333;
+          margin: 0;
+          
+          font-family: inherit;
+          font-size: 100%;
+          
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+ 
+input[type=radio] {
+    margin-right:3px;
+    background-color:transparent;
+    border:none;
+
+    /* Coins arrondis et couleur du cadre */
+    border: 2px solid grey;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+ }
+        input[type=number],
+        input[type=date] {
+        /* requis pour composer de manière appropriée les éléments
+           de formulaire sur les navigateurs fondés sur WebKit */
+          -webkit-appearance: none;
+          
+          width : 30%;
+          border: 1px solid #333;
+          margin: 0;
+          
+          font-family: inherit;
+          font-size: 100%;
+          
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+input[type=submit] {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/*  Bordure rouge sur les input : champs obligatoires    
+    Apparemment ne fonctionne pas : à vérifier ?
+*/
+/*
+        input:invalid {
+          box-shadow: 0 0 5px 1px red;
+        }
+        input:focus:invalid {
+          outline: none;
+        }
+*/
+
+textarea {
+    border:2px solid black;
+    background-color:#A6BEDE;
+
+    /* Coins arrondis et couleur du cadre */
+    border: 2px solid grey;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+ }
+
+/*        select, option {
+*/
+        /* requis pour composer de manière appropriée les éléments
+           de formulaire sur les navigateurs fondés sur WebKit */
+/*          -webkit-appearance: none;
+          
+          width : 50%;
+          border: 1px solid #333;
+          margin: 0;
+          
+          font-family: inherit;
+          font-size: 100%;
+          
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+*/
+
+select, option {
+    background-color:#A6BEDE;
+          font-family: inherit;
+          font-size: 100%;
+
+    /* Coins arrondis et couleur du cadre */
+    border: 2px solid grey;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+ }
+
+        .error {
+            padding: 2px; 
+            border: solid 0px black; 
+            color: red; 
+            font-style: italic; 
+            border-radius: 5px;
+        }
+        .style_input {
+          height: 80px;
+          width: 300px;
+          font-size: 14px;
+        }
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+/*
+	Test de la partie responsive
+*/
+
+/*Si la taille de l'écran d'un visiteur est inférieure à 480px, la couleur
+ *de fond de notre élément body (donc de notre page) sera orange */
+@media screen and (max-width: 680px){
+    body{
+        background-color: orange;
+    }
+}
+
+/*Pour les écrans ayant une taille entre 481px et 1179px, la couleur de
+ *fond de notre page sera bleue */
+@media screen and (min-width: 681px) and (max-width: 1279px){ 
+    body{
+        background-color: blue;
+    }
+}
+
+/*Pour les écrans d'une taille supérieure à 1280px, le fond de la page sera
+ *de couleur blanche */
+@media screen and (min-width: 1280px){
+    body{
+        background-color: white;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+

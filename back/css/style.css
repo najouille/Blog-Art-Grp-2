@@ -1,0 +1,136 @@
+/**
+ * Description of script style.css
+ *
+ * @author Martine Bornerie
+ */
+
+body {
+	/* Essai :
+	background-color: grey; ou transparent; ou mintcream; ou floralwhite; ou ghostwhite; 
+	ou snow; ou whitesmoke; ou silver; ou aliceblue; ou gainsboro; ou lightgrey; ou oldlace; */
+	background-color: lightgrey;
+	color: steelblue;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+fieldset {
+	background-color: #FDF5E6;	/* color: oldlace */
+	max-width: 600px;			/* largeur maximale cadre */
+	padding: 16px;				/* marge interne / sépare le contenu de la bordure	*/	
+	/* Coins arrondis et couleur du cadre */
+	border: 2px solid grey;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.legend1 {
+	color: #CC9900;			/* color: yellow; */
+	margin-bottom: 0px;
+	margin-left: 16px;
+}
+
+.hr1 {
+	margin: 10px 0 10px;
+	padding: 0;
+	width: 120pt;
+	height: 3px;
+	color: #CCCCCC;			/* color: grey; */
+	background: #FF8C00;	/* color: orange; */
+	border-top: 2px dashed;
+}
+
+.span1 {
+	color: #CC9900;			/* color: yellow; */
+}
+
+label {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.error {
+	padding: 2px; 
+	border: solid 0px black; 
+	color: red; 
+	font-style: italic; 
+	border-radius: 5px;
+}
+
+.span2 {
+    max-width: 500px;
+    width: 500px;
+    max-height: 200px;
+    height: 200px;
+}
+.conteneur{
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    width: 90%
+}
+
+span { 
+	background-color: white; 
+}
+
+input {
+ border:1px solid black;
+ background-color:#A6BEDE;
+ }
+ 
+input[type=radio] {
+ margin-right:50px;
+ background-color:transparent;
+ border:none;
+ }
+
+select, option {
+ background-color:#A6BEDE;
+ }
+
+textarea {
+ border:1px solid black;
+ background-color:#A6BEDE;
+ }
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+/*
+	Test de la partie responsive
+*/
+
+/*Si la taille de l'écran d'un visiteur est inférieure à 480px, la couleur
+ *de fond de notre élément body (donc de notre page) sera orange */
+@media screen and (max-width: 680px){
+    body{
+        background-color: orange;
+    }
+}
+
+/*Pour les écrans ayant une taille entre 481px et 1179px, la couleur de
+ *fond de notre page sera bleue */
+@media screen and (min-width: 681px) and (max-width: 1279px){ 
+    body{
+        background-color: blue;
+    }
+}
+
+/*Pour les écrans d'une taille supérieure à 1280px, le fond de la page sera
+ *de couleur blanche */
+@media screen and (min-width: 1280px){
+    body{
+        background-color: white;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
