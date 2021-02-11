@@ -50,7 +50,7 @@ require_once __DIR__ . '/util/utilErrOn.php';
 	<a href="./BACK/commentplus/commentplus.php">Réponse sur Commentaire </a>
 	<br /><br />
 	Gestion du CRUD :
-	<a href="./BACK/langue/langue.php">Langue </a>
+	<a href="./BACK/langue/langue.php"><span>Langue</span></a>
 	<br /><br />
 	Gestion du CRUD :
 	<a href="./BACK/likeart/likeart.php">Like Article </a>
