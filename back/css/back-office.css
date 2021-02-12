@@ -6,4 +6,34 @@
 
 h1 {
     text-align: center;
+    margin-left: 1rem;
 }
+
+h3{
+    margin-left: 100px;
+    color: white;
+}
+
+.logo{
+    max-width: 200px;
+    padding: 10px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.twa-table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+.twa-table, table {
+    width: 80%;
+}
+.twa-table,tr, td {
+    padding: 10px;
+      }
