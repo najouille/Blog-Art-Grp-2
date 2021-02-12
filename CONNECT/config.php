@@ -11,4 +11,4 @@
   // nom utilisateur de connexion à la BDD
   $userBD = 'root';         // Votre login
   // mot de passe de connexion à la BDD
-  $passBD = 'root';         // Votre Pass
+  $passBD = '';         // Votre Pass
