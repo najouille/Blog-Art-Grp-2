@@ -32,7 +32,7 @@ $statut = new LANGUE;
 
     <h2>Tous les Langues</h2>
     <hr /><br />
-    <h2>Nouvelle Langue :&nbsp;<a href="./createLangue.php"><i>Créer une langue</i></a></h2>
+    <h2>Nouvelle Langue :<a href="./createLangue.php"><i>Créer une langue</i></a></h2>
     <br />
     <hr />
     <h2>Tous les statuts</h2>
@@ -42,11 +42,11 @@ $statut = new LANGUE;
     <table border="3" bgcolor="aliceblue">
         <thead>
             <tr>
-                <th>&nbsp;NumLang&nbsp;</th>
-                <th>&nbsp;Lib1&nbsp;</th>
-                <th>&nbsp;Lib2&nbsp;</th>
-                <th>&nbsp;NumPays&nbsp;</th>
-                <th colspan="2">&nbsp;Action&nbsp;</th>
+                <th>NumLang</th>
+                <th>Lib1</th>
+                <th>Lib2</th>
+                <th>NumPays</th>
+                <th colspan="2">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -56,16 +56,16 @@ $statut = new LANGUE;
             ?>
                 <tr>
                     <td>
-                        <h4>&nbsp; <?php echo $row["numLang"]; ?> &nbsp;</h4>
+                        <h4> <?php echo $row["numLang"]; ?> </h4>
                     </td>
-                    <td>&nbsp; <?php echo $row["lib1Lang"]; ?> &nbsp;</td>
-                    <td>&nbsp; <?php echo $row["lib2Lang"]; ?> &nbsp;</td>
-                    <td>&nbsp; <?php echo $row["numPays"]; ?> &nbsp;</td>
+                    <td> <?php echo $row["lib1Lang"]; ?> </td>
+                    <td> <?php echo $row["lib2Lang"]; ?> </td>
+                    <td> <?php echo $row["numPays"]; ?> </td>
 
-                    <td>&nbsp;<a href="./updateLangue.php?id=<?= $row["numLang"]; ?>"><i>Modifier</i></a>&nbsp;
+                    <td><a href="./updateLangue.php?id=<?= $row["numLang"]; ?>"><i>Modifier</i></a>
                         <br />
                     </td>
-                    <td>&nbsp;<a href="./deleteLangue.php?id=<?= $row["numLang"]; ?>"><i>Supprimer</i></a>&nbsp;
+                    <td><a href="./deleteLangue.php?id=<?= $row["numLang"]; ?>"><i>Supprimer</i></a>
                         <br />
                     </td>
                 </tr>

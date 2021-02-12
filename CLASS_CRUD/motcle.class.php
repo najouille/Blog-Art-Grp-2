@@ -33,7 +33,7 @@ class MOTCLE
     $query->closeCursor();
     return ($result);
   }
-  function create($numMotCle, $libMotCle, $numLang)
+  function create($libMotCle, $numLang)
   {
     global $db;
     try {

@@ -192,6 +192,7 @@ create table MEMBRE
    dtCreaMemb    datetime,
    souvenirMemb  bool,
    accordMemb    bool,
+   idStat        int(5)   not null,  -- FK (Ajout le 11 février 21)
    primary key (numMemb)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -373,6 +374,8 @@ create table COMMENT
    attModOK       bool default false,     -- Attente visa modération
    affComOK       bool default false,     -- Visible ou Non après modération
    notifComKOAff  text(300) default null, -- commentaire admin si Non Visible après modération
+   delLogiq       bool  default false,    -- del logique du comment => TRUE : Pas Affich
+   numMemb        int(10)   not null,     -- FK
    primary key (numSeqCom, numArt)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -508,6 +511,16 @@ alter table LANGUE add constraint FK_ASSOCIATION_7 foreign key (numPays)
 
 alter table COMMENT add constraint FK_ASSOCIATION_8 foreign key (numArt)
       references ARTICLE (numArt) on delete restrict on update restrict;
+
+-- --------------------------------------------------------------------
+
+alter table COMMENT add constraint FK_ASSOCIATION_9 foreign key (numMemb)
+      references MEMBRE (numMemb) on delete restrict on update restrict;
+
+-- --------------------------------------------------------------------
+
+alter table MEMBRE add constraint FK_ASSOCIATION_10 foreign key (idStat)
+      references STATUT (idStat) on delete restrict on update restrict;
 
 -- --------------------------------------------------------------------
 

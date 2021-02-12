@@ -101,25 +101,25 @@ VALUES
 -- )
 */
 
-INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb)
+INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb, idStat)
 VALUES
-  (01, "Jean", "Dupont", 'Phil09', "Ut!D5?h0", "Phil09@me.com", '2020-01-09 10:13:43', true, true);
+  (01, "Jean", "Dupont", 'Phil09', "Ut!D5?h0", "Phil09@me.com", '2020-01-09 10:13:43', true, true, 1);
 
-INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb)
+INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb, idStat)
 VALUES
-  (02, "Julie", "La Rousse", 'juju1989', "G54;Q22mi5", "julie@gmail.com", '2020-03-15 14:33:23', false, true);
+  (02, "Julie", "La Rousse", 'juju1989', "G54;Q22mi5", "julie@gmail.com", '2020-03-15 14:33:23', false, true, 3);
 
-INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb)
+INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb, idStat)
 VALUES
-  (03, "David", "Bowie", 'dav33B', "kp09,1K4!", "david.bowie@gmail.com", '2020-07-19 13:13:13', true, true);
+  (03, "David", "Bowie", 'dav33B', "kp09,1K4!", "david.bowie@gmail.com", '2020-07-19 13:13:13', true, true, 4);
 
-INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb)
+INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb, idStat)
 VALUES
-  (04, "Phil", "Collins", 'cols2P', "mq3j4;6GH", "phil.collins@me.com", '2020-11-04 17:39:09', true, true);
+  (04, "Phil", "Collins", 'cols2P', "mq3j4;6GH", "phil.collins@me.com", '2020-11-04 17:39:09', true, true, 2);
 
-INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb)
+INSERT INTO MEMBRE (numMemb, prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, souvenirMemb, accordMemb, idStat)
 VALUES
-  (05, "Prince", "Rogers Nelson dit PRINCE", 'Rogers222', "frI3!Px;21", "prince@gmail.com", '2020-12-14 13:24:23', false, true);
+  (05, "Prince", "Rogers Nelson dit PRINCE", 'Rogers222', "frI3!Px;21", "prince@gmail.com", '2020-12-14 13:24:23', false, true, 9);
 --
 -- --------------------------------------------------------------------
 
@@ -694,80 +694,80 @@ VALUES
 Création PK : dernière PK (numSeqCom) + 1 / à numArt
 */
 
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(001, 01, '2020-11-09 10:13:43', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(001, 01, '2020-11-09 10:13:43', "Trop cool comme article", true, true, null, false, 01);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(002, 01, '2020-11-02 13:18:42', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(002, 01, '2020-11-02 13:18:42', "Trop cool comme article", true, true, null, false, 02);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(003, 01, '2020-11-04 16:21:12', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(003, 01, '2020-11-04 16:21:12', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(004, 01, '2020-11-05 03:15:38', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(004, 01, '2020-11-05 03:15:38', "Trop cool comme article", true, true, null, false, 01);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(005, 01, '2020-11-06 21:16:36', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(005, 01, '2020-11-06 21:16:36', "Trop cool comme article", true, true, null, false, 04);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(006, 01, '2020-11-06 11:20:31', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(006, 01, '2020-11-06 11:20:31', "Trop cool comme article", true, true, null, false, 05);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(007, 01, '2020-11-08 08:41:12', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(007, 01, '2020-11-08 08:41:12', "Trop cool comme article", true, true, null, false, 05);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-  (008, 01, '2020-11-18 08:41:12', "De la daube cet article", false, false, "Trop insultant");
+  (008, 01, '2020-11-18 08:41:12', "De la daube cet article", false, false, "Trop insultant", false, 01);
 --
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(001, 02, '2020-11-09 18:24:21', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(001, 02, '2020-11-09 18:24:21', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(002, 02, '2020-11-02 16:29:16', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(002, 02, '2020-11-02 16:29:16', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(003, 02, '2020-11-04 08:16:44', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(003, 02, '2020-11-04 08:16:44', "Trop cool comme article", true, true, null, false, 02);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(004, 02, '2020-11-05 14:27:39', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(004, 02, '2020-11-05 14:27:39', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(005, 02, '2020-11-06 06:31:42', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(005, 02, '2020-11-06 06:31:42', "Trop cool comme article", true, true, null, false, 01);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(006, 02, '2020-11-06 23:50:27', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(006, 02, '2020-11-06 23:50:27', "Trop cool comme article", true, true, null, false, 05);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(007, 02, '2020-11-08 10:37:23', "Trop pourri comme article", false, false, "Manque de bienveillance");
+	(007, 02, '2020-11-08 10:37:23', "Trop pourri comme article", false, false, "Manque de bienveillance", false, 02);
 --
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(001, 03, '2020-11-09 15:31:17', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(001, 03, '2020-11-09 15:31:17', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(002, 03, '2020-12-15 08:31:23', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(002, 03, '2020-12-15 08:31:23', "Trop cool comme article", true, true, null, false, 02);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(003, 03, '2020-12-19 06:28:00', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(003, 03, '2020-12-19 06:28:00', "Trop cool comme article", true, true, null, false, 05);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(004, 03, '2020-12-28 07:30:21', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(004, 03, '2020-12-28 07:30:21', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(005, 03, '2020-12-29 17:31:38', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(005, 03, '2020-12-29 17:31:38', "Trop cool comme article", true, true, null, false, 01);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(006, 03, '2020-12-29 09:31:27', "Pourri trop, trop comme article", false, false, "Trop insultant");
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(006, 03, '2020-12-29 09:31:27', "Pourri trop, trop comme article", false, false, "Trop insultant", false, 04);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(007, 03, '2020-12-02 16:33:41', "Trop cool comme article", true, true, null);
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(007, 03, '2020-12-02 16:33:41', "Trop cool comme article", true, true, null, false, 03);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(008, 03, '2020-12-03 12:41:47', "De la daube cet article", false, false, "Trop insultant");
-INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff)
+	(008, 03, '2020-12-03 12:41:47', "De la daube cet article", false, false, "Trop insultant", false, 02);
+INSERT INTO COMMENT (numSeqCom, numArt, dtCreCom, libCom, attModOK, affComOK, notifComKOAff, delLogiq, numMemb)
 VALUES
-	(009, 03, '2020-12-04 10:33:42', "Trop cool comme article", true, true, null);
+	(009, 03, '2020-12-04 10:33:42', "Trop cool comme article", true, true, null, false, 05);
 --
 -- --------------------------------------------------------------------
 

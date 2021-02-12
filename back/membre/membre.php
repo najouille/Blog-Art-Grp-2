@@ -30,7 +30,9 @@ $member = new MEMBRE;
 <body>
     <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
 
-    <table border='3' bgcolor='aliceblue'>
+    <h3>Créer un membre : <a href="./createMembre.php">CREER Membre</a></h3>
+
+    <table border='3'>
         <thead>
             <tr>
                 <th>numMemb</th>
