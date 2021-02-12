@@ -2,7 +2,7 @@
 
 ## Stylize back
 
-Lors de la creation d'un style pour le back-office, les modification doivent ce faire dans le fichier `back-office.css`, il faut ajouter la balise `link` avec le css `back-office.css` dans chacune des pages du back-office que vous voulez stylisé.
+Lors de la creation d'un style pour le back-office, les modifications doivent ce faire dans le fichier `back-office.css`, il faut ajouter la balise `link` avec le css `back-office.css` dans chacune des pages du back-office que vous voulez stylisé.
 
 ```html
 <link rel="stylesheet" href="./front/assets/back-office.css" />

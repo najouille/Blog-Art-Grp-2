@@ -25,9 +25,10 @@ $motcle = new MOTCLE;
     <meta name="author" content="" />
 
     <link href="../css/style.css"  rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/back-office.css" />
 </head>
 
-<body>
+<body class="twa-back">
     <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
 
     <h3>Créer un membre : <a href="./createMotCle.php">CREER Membre</a></h3>
