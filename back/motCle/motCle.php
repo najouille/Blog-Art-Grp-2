@@ -24,51 +24,53 @@ $motcle = new MOTCLE;
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link href="../css/style.css"  rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/back-office.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 </head>
 
 <body class="twa-back">
     <div class="title">
-    <img class="logo" src="../../front/assets/image/Townyart.png" alt="logotwy">
-    <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
+        <img class="logo" src="../../front/assets/image/Townyart.png" alt="logotwy">
+        <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
     </div>
 
     <h3>Créer un membre : <a href="./createMotCle.php">Créer Membre</a></h3>
-<div class="twa-table">
-    <table border='3'>
-        <thead>
-            <tr>
-                <th>numMotCle</th>
-                <th>libMotCle</th>
-                <th>numLang</th>
- 
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $allMotCles = $motcle->get_AllMotCles();
-            foreach ($allMotCles as $row) {
-            ?>
+    <div class="container-center">
+        <table class="twa-table" border='3'>
+            <thead>
                 <tr>
-                    <td>
-                        <h4> <?php echo $row['numMotCle']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['libMotCle']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo  $row['numLang']; ?> </h4>
-                    </td>
-                    
-                </tr>
+                    <th>numMotCle</th>
+                    <th>libMotCle</th>
+                    <th>numLang</th>
 
-            <?php
-            }
-            ?>
-        </tbody>
-    </table>
-</div>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $allMotCles = $motcle->get_AllMotCles();
+                foreach ($allMotCles as $row) {
+                ?>
+                    <tr>
+                        <td>
+                            <h4> <?php echo $row['numMotCle']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['libMotCle']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo  $row['numLang']; ?> </h4>
+                        </td>
+
+                    </tr>
+
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
     <?php
     require_once __DIR__ . '/footer.php';
     ?>
