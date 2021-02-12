@@ -17,7 +17,7 @@
 <body>
     <h1>Bonjour</h1>
     <?php
-    include('./front/includes/commons/header.php')
+    include('./front/includes/commons/header.php');
     ?>
 </body>
 
