@@ -11,14 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./front/assets/master.css">
-    <link rel="stylesheet" href="./front/assets/global.css">
+    <link rel="stylesheet" href="./front/assets/blog.css">
 </head>
 
 <body>
-    <h1>Bonjour</h1>
-    <?php
-    include('./front/includes/commons/header.php')
-    ?>
+<img src="/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png" alt="street art jazz">
+
 </body>
 
 </html>
