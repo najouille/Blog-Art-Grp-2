@@ -25,13 +25,17 @@ $motcle = new MOTCLE;
     <meta name="author" content="" />
 
     <link href="../css/style.css"  rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/back-office.css" />
 </head>
 
-<body>
+<body class="twa-back">
+    <div class="title">
+    <img class="logo" src="../../front/assets/image/Townyart.png" alt="logotwy">
     <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
+    </div>
 
-    <h3>Créer un membre : <a href="./createMotCle.php">CREER Membre</a></h3>
-
+    <h3>Créer un membre : <a href="./createMotCle.php">Créer Membre</a></h3>
+<div class="twa-table">
     <table border='3'>
         <thead>
             <tr>
@@ -64,7 +68,7 @@ $motcle = new MOTCLE;
             ?>
         </tbody>
     </table>
-
+</div>
     <?php
     require_once __DIR__ . '/footer.php';
     ?>
