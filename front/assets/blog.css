@@ -22,10 +22,11 @@ h4{
     border-radius: 0.125rem;
     max-width:355px;
     margin: 0 auto;
+    margin-top: 30px;
     background-color: #0E0E0E;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     padding: 20px;
     border: solid;
     border-color: #9CEDFF;
@@ -47,7 +48,7 @@ h4{
     border-radius: 4px;
     padding: 5px;
 }
-.conteneur{
+.conteneurblog{
     margin-top: 19px;
     width: 100%;
     display: flex;
@@ -55,11 +56,30 @@ h4{
     justify-content:space-between;
     justify-content: flex-start;
 }
-.maxiconteneur{
+.maxiconteneurblog{
     margin: 0 auto;
     max-width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+}
+.opacity-10{
+    opacity: 10%;
+}
+.soon-banner-container{
+position: relative;
+}
+.soon-banner{
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
