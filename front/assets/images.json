@@ -1,0 +1,217 @@
+{
+    "name": "Galerie",
+    "count": 3,
+    "collections": [
+        {
+            "id": 1,
+            "name": "Toutes les photos",
+            "name_part": ["Toutes", "les photos"],
+            "image_banner": {
+                "url": "/banner_image_all.jpg"
+            },
+            "images": [
+                {
+                    "id": 1,
+                    "name": "Place de la comedie",
+                    "url": "/Place-grand-théâtre.jpg",
+                    "tags": ["#bordeaux", "#comedie"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 2,
+                    "name": "Opéra",
+                    "url": "/Grand-théâtre-tram.jpg",
+                    "tags": ["#bordeaux", "#comedie", "opera","tramway"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 3,
+                    "name": "La Garonne",
+                    "url": "/Vue-garonne.jpg",
+                    "tags": ["#bordeaux", "#quaie", "garonne"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 4,
+                    "name": "Cité du vin ",
+                    "url": "/Cité-du-vin.jpg",
+                    "tags": ["#bordeaux", "#citeduvin"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 5,
+                    "name": "Le port",
+                    "url": "/Poing-tour.jpg",
+                    "tags": ["#bordeaux", "#port", "grue"],
+                    "orientation": "portrait"
+                }, 
+                {
+                    "id": 6,
+                    "name": "Achitecture",
+                    "url": "/Batiment-escalier.jpg",
+                    "tags": ["#bordeaux", "#architecture", "color"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 7,
+                    "name": "Mer marine",
+                    "url": "/Mer-marine.jpg",
+                    "tags": ["#bordeaux", "#mermarine", "requin"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 8,
+                    "name": "Fresque",
+                    "url": "/Fresque.jpg",
+                    "tags": ["#bordeaux", "#fresque", "streetart"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 9,
+                    "name": "Reflection",
+                    "url": "/Reflection.jpg",
+                    "tags": ["#bordeaux", "#reflection"],
+                    "orientation": "portrait"
+                },
+                {
+                    "id": 10,
+                    "name": "St.André",
+                    "url": "/St.andré.jpg",
+                    "tags": ["#bordeaux", "#cathédrale"],
+                    "orientation": "portrait"
+                },
+                {
+                    "id": 11,
+                    "name": "Statue",
+                    "url": "/Statue.jpg",
+                    "tags": ["#bordeaux", "#statue"],
+                    "orientation": "portrait"
+                },
+                {
+                    "id": 12,
+                    "name": "Monky",
+                    "url": "/Monky.jpg",
+                    "tags": ["#bordeaux", "#monky","#architecture"],
+                    "orientation": "landscape"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Vos photos favorites",
+            "name_part": ["Vos photos", "favorites"],
+            "image_banner": {
+                "url": "/banner_image_all.jpg"
+            },
+            "images": [
+                {
+                    "id": 1,
+                    "name": "Place de la comedie",
+                    "url": "/Place-grand-théâtre.jpg",
+                    "tags": ["#bordeaux", "#comedie"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 2,
+                    "name": "Cité du vin ",
+                    "url": "/Cité-du-vin.jpg",
+                    "tags": ["#bordeaux", "#citeduvin"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 3,
+                    "name": "Achitecture",
+                    "url": "/Batiment-escalier.jpg",
+                    "tags": ["#bordeaux", "#architecture", "color"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 4,
+                    "name": "Mer marine",
+                    "url": "/Mer-marine.jpg",
+                    "tags": ["#bordeaux", "#mermarine", "requin"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 5,
+                    "name": "St.André",
+                    "url": "/St.andré.jpg",
+                    "tags": ["#bordeaux", "#cathédrale"],
+                    "orientation": "portrait"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Tendance du moment",
+            "name_part": ["Tendances", "du moment"],
+            "image_banner": {
+                "url": "/banner_image_all.jpg"
+            },
+            "images": [
+                {
+                    "id": 1,
+                    "name": "Place de la comedie",
+                    "url": "/Place-grand-théâtre.jpg",
+                    "tags": ["#bordeaux", "#comedie"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 2,
+                    "name": "Opéra",
+                    "url": "/Grand-théâtre-tram.jpg",
+                    "tags": ["#bordeaux", "#comedie", "opera","tramway"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 3,
+                    "name": "Cité du vin ",
+                    "url": "/Cité-du-vin.jpg",
+                    "tags": ["#bordeaux", "#citeduvin"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 4,
+                    "name": "Le port",
+                    "url": "/Poing-tour.jpg",
+                    "tags": ["#bordeaux", "#port", "grue"],
+                    "orientation": "portrait"
+                }, 
+                {
+                    "id": 5,
+                    "name": "Achitecture",
+                    "url": "/Batiment-escalier.jpg",
+                    "tags": ["#bordeaux", "#architecture", "color"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 6,
+                    "name": "Fresque",
+                    "url": "/Fresque.jpg",
+                    "tags": ["#bordeaux", "#fresque", "streetart"],
+                    "orientation": "landscape"
+                },
+                {
+                    "id": 7,
+                    "name": "Statue",
+                    "url": "/Statue.jpg",
+                    "tags": ["#bordeaux", "#statue"],
+                    "orientation": "portrait"
+                },
+                {
+                    "id": 8,
+                    "name": "Monky",
+                    "url": "/Monky.jpg",
+                    "tags": ["#bordeaux", "#monky","#architecture"],
+                    "orientation": "landscape"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
