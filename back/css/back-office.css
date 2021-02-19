@@ -7,3 +7,7 @@
 h1 {
     text-align: center;
 }
+
+a {
+    color: hsl(184, 100%, 82%);
+}

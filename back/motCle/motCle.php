@@ -24,11 +24,13 @@ $motcle = new MOTCLE;
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link href="../css/style.css"  rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/back-office.css" />
 </head>
 
+
 <body class="twa-back">
+
     <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
 
     <h3>Créer un membre : <a href="./createMotCle.php">CREER Membre</a></h3>
@@ -39,7 +41,7 @@ $motcle = new MOTCLE;
                 <th>numMotCle</th>
                 <th>libMotCle</th>
                 <th>numLang</th>
- 
+
             </tr>
         </thead>
         <tbody>
@@ -49,15 +51,18 @@ $motcle = new MOTCLE;
             ?>
                 <tr>
                     <td>
-                        <h4> <?php echo $row['numMotCle']; ?> </h4>
+                        <h4> <?= $row['numMotCle']; ?> </h4>
                     </td>
                     <td>
-                        <h4> <?php echo $row['libMotCle']; ?> </h4>
+                        <h4> <?= $row['libMotCle']; ?> </h4>
                     </td>
                     <td>
-                        <h4> <?php echo  $row['numLang']; ?> </h4>
+                        <h4> <?=  $row['numLang']; ?> </h4>
                     </td>
-                    
+                    <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>&nbsp;
+                    </td>
+                    <td><a href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>&nbsp;
+                    </td>
                 </tr>
 
             <?php
