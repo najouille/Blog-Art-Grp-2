@@ -9,9 +9,9 @@
 
 require_once __DIR__ . '/../../util/utilErrOn.php';
 require_once __DIR__ . '/../../CLASS_CRUD/langue.class.php';
-require_once __DIR__ . '/../../CLASS_CRUD/pays.class.php';
 require_once __DIR__ . '/../../CLASS_CRUD/angle.class.php';
 include __DIR__ . './initAngle.php';
+
 $angle = new ANGLE;
 if (!isset($_GET['id'])) $_GET['id'] = '';
 $lang = new LANGUE;
@@ -22,6 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $resultAngle = $angle->get_1Angle($numAngl);
     if (!empty($numAngl) && !empty($_POST["libAngl"]) && !empty($_POST["numLang"])) {
         $angle->update($numAngl, $_POST["libAngl"], $_POST["numLang"]);
+        $resultAngle = $angle->get_1Angle($numAngl);
+        $numLang = $resultAngle["numLang"];
+        $libAngl = $resultAngle["libAngl"];
         $updated = true;
     }
 } else {
@@ -36,6 +39,7 @@ if ($resultAngle) {
     $libAngl = $resultAngle["libAngl"];
     $numLang = $resultAngle["numLang"];
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -59,9 +63,7 @@ if ($resultAngle) {
     ?>
 
     <pre>
-    <?php
-    echo $updated;
-    ?>
+
     </pre>
 
     <form method="post" action="<?= "./updateAngle.php?id=" . $numLang; ?>" enctype="multipart/form-data">
