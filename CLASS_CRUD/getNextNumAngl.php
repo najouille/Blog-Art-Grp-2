@@ -11,7 +11,6 @@
 // Mode DEV
 
 
-// FIX it don't works
 
 require_once __DIR__ . '/../util/utilErrOn.php';
 
