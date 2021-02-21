@@ -17,7 +17,6 @@ $numAngl = '';
 $langue = new LANGUE;
 $angl = new ANGLE;
 $article = new ARTICLE;
-$resultAngle = $angl->get_1Angle($numAngl);
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     if ($_POST["Submit"] === "Initialiser") {
@@ -26,15 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     }
 
     $numAngl = $_POST["id"];
-    $articles = $article->get_AllArticlesByAngle($numAngl);
 
-    if (!$angles) {
+    $articles = $article->get_AllArticlesByAngle($numAngl);
+    $resultAngle = $angl->get_1Angle($numAngl);
+
+    if (!$articles) {
         $angl->delete($numAngl);
         $deleted = true;
     } else {
         $supprImpossible = true;
     }
 } else {
+    $resultAngle = $angl->get_1Angle($numAngl);
     $numAngl = $_GET["id"];
 }
 
@@ -102,11 +104,10 @@ if ($resultAngle) {
             echo '<p>Table article :</p>';
             echo '<ul>';
             foreach ($articles as $row) {
-                echo '<li>' . $row["libThem"] . '</li>';
+                echo '<li>' . $row["numArt"] . ' - ' . $row["libTitrArt"] . '</li>';
             }
             echo '</ul>';
         }
-
     } elseif ($deleted) {
         echo '<p style="color:green;">L\'angle "' . $libAngl . '" a été supprimée.</p>';
     }
