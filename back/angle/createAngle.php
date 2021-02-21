@@ -7,7 +7,6 @@ $lang = new LANGUE;
 require_once __DIR__ . '/../../CLASS_CRUD/angle.class.php';
 require_once __DIR__ . '/../../CLASS_CRUD/getNextNumAngl.php';
 $angle = new ANGLE;
-$wow = [];
 $created = false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['libAngl']) && !empty($_POST['numLang'])){
@@ -43,9 +42,7 @@ include __DIR__ . '/initAngle.php';
         echo '<p style="color:green;">Le mot-clé "' . $_POST['libAngl'] . '" a été créé.</p>';
     } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<p style="color:red;">Le mot-clé n\'a pas été créé car : </p>';
-        // print_r($wowA);
-        // var_dump($wowB);
-        // var_dump($wowC);
+
     }
     ?>
     <form method="post" action="./createAngle.php" enctype="multipart/form-data">
