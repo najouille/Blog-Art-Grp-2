@@ -1,106 +1,103 @@
 <?php
-///////////////////////////////////////////////////////////////
-//
-//  CRUD STATUT (PDO) - Code Modifié - 23 Janvier 2021
-//
-//  Script  : deleteStatut.php  (ETUD)   -   BLOGART21
-//
-///////////////////////////////////////////////////////////////
 
-require_once __DIR__ . "/../../util/utilErrOn.php";
-require_once __DIR__ . "/../../util/ctrlSaisies.php";
-require_once __DIR__ . "/../../CLASS_CRUD/statut.class.php";
-require_once __DIR__ . "/../../CLASS_CRUD/user.class.php";
+// Mode DEV
+require_once __DIR__ . '/../../util/utilErrOn.php';
+include __DIR__ . '/initMotCle.php';
 
-global $db;
-$statut = new STATUT();
-$monUser = new USER();
+$supprImpossible = false;
+$deleted = false;
+if (!isset($_GET['id'])) $_GET['id'] = '';
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Opérateur ternaire
-    $Submit = isset($_POST["Submit"]) ? $_POST["Submit"] : "";
+require_once __DIR__ . '/../../CLASS_CRUD/motcle.class.php';
+require_once __DIR__ . '/../../CLASS_CRUD/motclearticle.class.php';
+require_once __DIR__ . '/../../CLASS_CRUD/langue.class.php';
 
-    if (isset($_POST["Submit"]) and $_POST["Submit"] === "Annuler") {
-        header("Location: ./statut.php");
+$motcle = new MOTCLE;
+$motcleArticle = new MOTCLEARTICLE;
+$lang = new LANGUE;
+
+// Gestion du $_SERVER["REQUEST_METHOD"] => En POST
+// suppression effective du statut
+if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+    if ($_POST["Submit"] === "Annuler") {
+        header("Location: ./motcle.php");
+        die();
     }
 
-    if (
-        isset($_POST["id"]) &&
-        $_POST["id"] > 0 &&
-        (!empty($_POST["Submit"]) && $Submit === "Valider")
-    ) {
-        $idStat = ctrlSaisies($_POST["id"]);
+    $numMotCle = $_POST["id"];
+    $resultMotCle = $motcle->get_1MotCleWithLang($numMotCle);
+    $motcleArticles = $motcleArticle->get_AllArticlesByMotCle($numMotCle);
 
-        $allUser = $monUser->get_NbAllUsersByidStat($idStat);
+    if (!$motcleArticles) {
+        $motcle->delete($numMotCle);
+        $deleted = true;
+    } else {
+        $supprImpossible = true;
+    }
+} else {
+    $numMotCle = $_GET["id"];
+    $resultMotCle = $motcle->get_1MotCleWithLang($numMotCle);
+}
 
-        if (!($allUser > 0)) {
-            $statut->delete($idStat);
-            header("Location: ./statut.php?user_count=" . $allUser);
-        } else {
-            header("Location: ./statut.php?result=error&user_count" . $allUser);
-        }
-    } // End of if ((isset($_POST['id'])
-} // End of if ($_SERVER["REQUEST_METHOD"] === "POST")
-include __DIR__ . "/initStatut.php";
+if ($resultMotCle) {
+    $libMotCle = $resultMotCle['libMotCle'];
+    $numLang = $resultMotCle['numLang'];
+    $lib1Lang = $resultMotCle['lib1Lang'];
+}
+
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="utf-8" />
-    <title>Admin - Gestion du CRUD Statut</title>
+    <title>Admin - Gestion du CRUD Mot-Clé</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1>BLOGART21 Admin - Gestion du CRUD MotCLé</h1>
-    <h2>Suppression d'un motcle</h2>
+    <h1>BLOGART21 Admin - Gestion du CRUD Mot-Clé</h1>
+    <h2>Suppression d'un Mot-Clé</h2>
+    <br>
+
     <?php
+    if ($supprImpossible) {
+        echo '<div style="color:red;">';
+        echo '<p>Impossible de supprimer le mot-clé "' . $libMotCle . '" car il est référencé par les éléments suivants :</p>';
 
-    if (isset($_GET["id"]) and $_GET["id"] > 0) {
-        $id = ctrlSaisies($_GET["id"]);
-        $query = $statut->get_1Statut($id);
+        if ($motcleArticles) {
+            echo '<p>Table motcleArticleICLE :</p>';
+            echo '<ul>';
+            foreach ($motcleArticles as $row) {
+                echo '<li>Article n°' . $row["numArt"] . ' (' . $row["libTitrArt"] . ')</li>';
+            }
+            echo '</ul>';
+        }
 
-        if ($query) {
-            $libStat = $query[0]["libStat"];
-            $idStat = $query[0]["idStat"];
-        } // Fin if ($query)
+        echo '</div>';
+    } elseif ($deleted) {
+        echo '<p style="color:green;">Le mot-clé "' . $libMotCle . '" a été supprimé.</p>';
     }
-    // Fin if (isset($_GET['id'])...)
-    ?> <form method="post" action="./deleteStatut.php" enctype="multipart/form-data">
+    ?>
 
-        <fieldset>
-            <legend class="legend1">Formulaire Statut...</legend>
+    <form method="post" action=".\deleteMotCle.php?id=<?= $numMotCle ?>">
+        <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
+        <label>Libellé</label>
+        <input type="text" name="libMotCle" id="libMotCle" placeholder="Désignation" value="<?= $libMotCle ?>" disabled>
 
-            <input type="hidden" id="id" name="id" value="<?= $_GET["id"] ?>" />
-
-            <div class="control-group">
-                <label class="control-label" for="libStat"><b>Nom du statut :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
-                <input type="text" name="libStat" id="libStat" size="80" maxlength="80" value="<?= $libStat ?>" disabled="disabled" />
-            </div>
-
-            <div class="control-group">
-                <div class="controls">
-                    <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="submit" value="Annuler" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    <br>
-                </div>
-            </div>
-        </fieldset>
+        <label>Langue</label>
+        <input name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);
+                                                    echo $langue['lib1Lang'];  ?>" disabled>
+        <br>
+        <button type="submit" value="Annuler" name="Submit">Annuler</button>
+        <button type="submit" value="Valider" name="Submit">Valider</button>
     </form>
     <br>
     <?php
-    require_once __DIR__ . "/footerStatut.php";
 
-    require_once __DIR__ . "/footer.php";
+    require_once __DIR__ . '/footerMotCle.php';
+    require_once __DIR__ . '/footer.php';
     ?>
 </body>
 

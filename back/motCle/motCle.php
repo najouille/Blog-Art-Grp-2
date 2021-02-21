@@ -31,9 +31,9 @@ $motcle = new MOTCLE;
 
 <body class="twa-back">
 
-    <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
+    <h1>BLOGART21 Admin - Gestion du CRUD MotCle</h1>
 
-    <h3>Créer un membre : <a href="./createMotCle.php">CREER Membre</a></h3>
+    <h3>Créer un MotCle : <a href="./createMotCle.php">CREER MotCle</a></h3>
 
     <table border='3'>
         <thead>
@@ -57,11 +57,11 @@ $motcle = new MOTCLE;
                         <h4> <?= $row['libMotCle']; ?> </h4>
                     </td>
                     <td>
-                        <h4> <?=  $row['numLang']; ?> </h4>
+                        <h4> <?= $row['numLang']; ?> </h4>
                     </td>
-                    <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>&nbsp;
+                    <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>
                     </td>
-                    <td><a href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>&nbsp;
+                    <td><a href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>
                     </td>
                 </tr>
 

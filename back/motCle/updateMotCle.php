@@ -97,9 +97,9 @@ if ($resultMotCle) {
             <div class="control-group">
                 <div class="controls">
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Initialiser" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
                     <br>
                 </div>

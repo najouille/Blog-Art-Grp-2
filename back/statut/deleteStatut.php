@@ -103,16 +103,16 @@ include __DIR__ . "/initStatut.php";
             <input type="hidden" id="id" name="id" value="<?= $_GET["id"] ?>" />
 
             <div class="control-group">
-                <label class="control-label" for="libStat"><b>Nom du statut :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="libStat"><b>Nom du statut :</b></label>
                 <input type="text" name="libStat" id="libStat" size="80" maxlength="80" value="<?= $libStat ?>" disabled="disabled" />
             </div>
 
             <div class="control-group">
                 <div class="controls">
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Annuler" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
                     <br>
                 </div>

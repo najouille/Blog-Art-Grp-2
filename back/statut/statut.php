@@ -45,7 +45,7 @@ $statut = new STATUT;
     <h1>BLOGART21 Admin - Gestion du CRUD Statut</h1>
 
     <hr /><br />
-    <h2>Nouveau statut :&nbsp;<a href="./createStatut.php"><i>Créer un statut</i></a></h2>
+    <h2>Nouveau statut :<a href="./createStatut.php"><i>Créer un statut</i></a></h2>
     <br />
     <hr />
     <h2>Tous les statuts</h2>
@@ -53,9 +53,9 @@ $statut = new STATUT;
     <table border="3" bgcolor="aliceblue">
         <thead>
             <tr>
-                <th>&nbsp;Numéro&nbsp;</th>
-                <th>&nbsp;Nom&nbsp;</th>
-                <th colspan="2">&nbsp;Action&nbsp;</th>
+                <th>Numéro</th>
+                <th>Nom</th>
+                <th colspan="2">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -68,15 +68,15 @@ $statut = new STATUT;
             ?>
                 <tr>
                     <td>
-                        <h4>&nbsp; <?php echo $row["idStat"]; ?> &nbsp;</h4>
+                        <h4> <?php echo $row["idStat"]; ?> </h4>
                     </td>
 
-                    <td>&nbsp; <?php echo $row["libStat"]; ?> &nbsp;</td>
+                    <td> <?php echo $row["libStat"]; ?> </td>
 
-                    <td>&nbsp;<a href="./updateStatut.php?id=<?= $row["idStat"]; ?>"><i>Modifier</i></a>&nbsp;
+                    <td><a href="./updateStatut.php?id=<?= $row["idStat"]; ?>"><i>Modifier</i></a>
                         <br />
                     </td>
-                    <td>&nbsp;<a href="./deleteStatut.php?id=<?= $row["idStat"]; ?>"><i>Supprimer</i></a>&nbsp;
+                    <td><a href="./deleteStatut.php?id=<?= $row["idStat"]; ?>"><i>Supprimer</i></a>
                         <br />
                     </td>
                 </tr>
