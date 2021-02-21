@@ -26,11 +26,11 @@ Lors de la creation d'un style pour le back-office, les modifications doivent ce
     - [x] create
     - [x] delete
     - [x] update
-  - [ ] angle
+  - [x] angle
     - [X] view
     - [X] create
     - [X] delete
-    - [ ] update
+    - [x] update
 - [x] CLASS_CRUD
   - [x] user
   - [x] statut
