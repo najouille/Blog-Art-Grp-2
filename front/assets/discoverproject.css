@@ -3,13 +3,22 @@ body {
     font-family: 'Manrope', sans-serif;
     color: #FFFFFF;
     position: relative;
+    max-width: 1280px;
+    margin-left: 320px;
+    margin-right: 320px;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
 h3 {
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 p {
     display: flex;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 1rem;
+    opacity: 85%;
 }
