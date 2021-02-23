@@ -30,12 +30,14 @@ $motcle = new MOTCLE;
 
 
 <body class="twa-back">
+    <div class="title">
+        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
+    </div>
 
-    <h1>BLOGART21 Admin - Gestion du CRUD MotCle</h1>
-
-    <h3>Créer un MotCle : <a href="./createMotCle.php">CREER MotCle</a></h3>
-
-    <table border='3'>
+    <h3>Créer un MotClé : <a href="./createMotCle.php">Créer un Mot-clé</a></h3>
+<div class='container-center' >
+    <table class='twa-table' border='3'>
         <thead>
             <tr>
                 <th>numMotCle</th>
@@ -61,7 +63,7 @@ $motcle = new MOTCLE;
                     </td>
                     <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>
                     </td>
-                    <td><a href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>
+                    <td><a class='link-delete' href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>
                     </td>
                 </tr>
 
@@ -70,7 +72,7 @@ $motcle = new MOTCLE;
             ?>
         </tbody>
     </table>
-
+</div>
     <?php
     require_once __DIR__ . '/footer.php';
     ?>

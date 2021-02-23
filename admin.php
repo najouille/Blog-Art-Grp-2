@@ -16,22 +16,10 @@ require_once __DIR__ . '/util/utilErrOn.php';
 
 <head>
 	<title>Gestion des CRUD</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<?php include('./front/includes/commons/headRequired.php') ?>
+
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<style type="text/css">
-		div {
-			padding-top: 60px;
-			padding-bottom: 40px;
-			margin-bottom: 0px;
-			margin-left: 60px;
-		}
-
-		span {
-			background-color: yellow;
-		}
-	</style>
 </head>
 
 <body>
