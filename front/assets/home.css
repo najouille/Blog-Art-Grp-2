@@ -3,7 +3,25 @@
   margin: 0;
 }
 html {
-  background-color: #050505;
+  background-color: #0E0E0E;
+  ;
+}
+.presentation {
+    padding-left: 235px;
+    padding-right: 235px;
+    padding-top: 23px;
+    text-align: justify;
+    font-weight: 300;
+    opacity: 85%;
+}
+h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding-left: 235px;
+    padding-right: 235px;
+    margin-top: -20px;
 }
 .blog-preview-container {
   padding: 10px;
@@ -24,11 +42,12 @@ html {
   transition: ease 0.15s;
 }
 .streetart:hover:not(.more) {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 img {
   width: 160px;
   object-fit: cover;
+  height: 100%;
 }
 .tagtxt {
   flex: 2;
@@ -46,7 +65,7 @@ h2 {
   color: white;
   margin-left: 238px;
   padding-bottom: 38px;
-  padding-top: 50px;
+  padding-top: 156px;
 }
 h4 {
   font-family: "Manrope", sans-serif;
@@ -117,5 +136,5 @@ p {
     background-color: black;
     color: #ffee32;
     border: 1px solid #ffee32;
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
