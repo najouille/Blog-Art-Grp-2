@@ -3,6 +3,8 @@
 	--dark: #0e0e0e;
 }
 
+@import url('./navbar.css');
+
 .card {
 	padding: 8px;
 	background: #000;
