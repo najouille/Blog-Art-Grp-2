@@ -8,11 +8,11 @@ html {
 .blog-preview-container {
   padding: 10px;
   max-width: 1138px;
-display: grid;
-grid-template-columns: repeat(2,minmax(0,1fr));
-grid-column-gap: 20px;
-grid-row-gap: 18px;
-margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 18px;
+  margin: 0 auto;
 }
 .streetart {
   display: flex;
@@ -21,8 +21,12 @@ margin: 0 auto;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 16px;
+  transition: ease 0.15s;
 }
- img {
+.streetart:hover:not(.more) {
+    transform: scale(1.05);
+}
+img {
   width: 160px;
   object-fit: cover;
 }
@@ -34,9 +38,15 @@ margin: 0 auto;
   align-items: start;
 }
 h2 {
-  font-family: ""
+  font-family: "Monument Extended";
   font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
   color: white;
+  margin-left: 238px;
+  padding-bottom: 38px;
+  padding-top: 50px;
 }
 h4 {
   font-family: "Manrope", sans-serif;
@@ -67,34 +77,45 @@ p {
   padding-bottom: 4px;
 }
 .more {
-    position: relative;
+  position: relative;
 }
-.more img, .more .tagtxt {
-    opacity: 40%;
-    filter: grayscale(100%);
+.more img,
+.more .tagtxt {
+  opacity: 40%;
+  filter: grayscale(100%);
 }
 
 .button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .button a {
-    text-decoration: none;
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: #FFEE32;
-    color: black;
-    border: 1px solid #FFEE32;
-    border-radius: 4px;
-    padding: 10px;
-    z-index: 10;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffee32;
+  color: black;
+  border: 1px solid #ffee32;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  z-index: 10;
+  transition: ease 0.15s;
+}
+.button a:hover {
+    background-color: black;
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    transform: scale(1.02);
 }
