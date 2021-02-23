@@ -84,6 +84,8 @@ h4 {
   justify-content: space-between;
   align-items: center;
   background-color: #050505;
+  padding: 0 42px;
+  position: sticky;
 }
 .bouton-space {
   margin-left: 42px;
@@ -94,14 +96,16 @@ h4 {
 }
 
 .bouton-space:hover {
-    color: #FFEE32;
+  color: #ffee32;
 }
 .header-space {
   margin-left: 42px;
   margin-right: 42px;
 }
-.header-space:hover {
-    fill: #ffffff;
+
+
+a {
+    text-decoration: none;
 }
 
 .logo-navbar {
@@ -111,6 +115,6 @@ h4 {
 }
 
 .navbar-content-right {
-    display: flex;
-
+  display: flex;
+  align-items: center;
 }
