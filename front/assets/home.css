@@ -34,7 +34,7 @@ margin: 0 auto;
   align-items: start;
 }
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: ""
   font-size: 25px;
   color: white;
 }
@@ -67,5 +67,34 @@ p {
   padding-bottom: 4px;
 }
 .more {
+    position: relative;
+}
+.more img, .more .tagtxt {
     opacity: 40%;
+    filter: grayscale(100%);
+}
+
+.button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.button a {
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #FFEE32;
+    color: black;
+    border: 1px solid #FFEE32;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 10;
 }
