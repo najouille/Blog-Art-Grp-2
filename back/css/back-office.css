@@ -1,7 +1,8 @@
 /* Back-office styling */
 
 .twa-back {
-    background-color: #0e0e0e;
+    background-color: #050505;
+    ;
 }
 
 h1 {
@@ -11,10 +12,24 @@ h1 {
     font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 h3 {
-    margin-left: 100px;
+    margin-left: 110px;
     color: white;
     font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a{
+   color:#81AEF7;
+}
+
+.link-delete{
+    color: #D8C816;
 }
 
 .logo {
@@ -49,4 +64,28 @@ h3 {
 .twa-table td {
     padding: 10px;
     border: 1px solid #ddd
+}
+
+input{
+    cursor:pointer; 
+    padding:5px 20px; 
+    background-color:lightsteelblue; 
+    border:line 2px white; 
+    border-radius:5px;
+}
+
+select{
+    border:line 2px white; 
+    border-radius:5px;
+}
+#footer-style{
+    padding: 40px;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: center;
 }
