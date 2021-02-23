@@ -11,32 +11,47 @@
 	<div id="intro">
 		<h1>Contact</h1>
 		<p> N'hésitez pas à nous contacter pour plus d’informations</p>
-		<img src="front/assets/image/Line 3.svg" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
+		<div id="line">
+			<img src="front/assets/image/Line 3.svg" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
+		</div>
 	</div>
-	<div id="image">
+	<div id="formimg">
+		<div id="formulaire">
+			<form>
+				<div>
+					<label for="name">Nom</label>
+				</div>
+				<input type="text" name="name" id="name" />
+				<br>
+
+				<div>
+					<label for="firstname">Prénom</label>
+				</div>
+				<input type="text" name="firstname" id="firstname" />
+				<br>
+
+				<div>
+					<label for="email">Email</label>
+				</div>
+				<input type="email" name="email" id="email" />
+				<br>
+
+
+				<div>
+					<label for="body">Message</label>
+				</div>
+				<textarea name="body" id="body" cols="30" rows="10"></textarea>
+				<br>
+				<button name="button">Envoyer</button>
+			</form>
+		</div>
+		<div id="image">
 		<img src="front/assets/image/Statue_portrait.png" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
 	</div>
-
-	<div id="formulaire">
-		<form>
-			<label for="name">Nom</label>
-			<input type="text" name="name" id="name" />
-			<br>
-
-			<label for="firstname">Prénom</label>
-			<input type="text" name="firstname" id="firstname" />
-			<br>
-
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" />
-			<br>
-
-
-			<label for="body">Message</label>
-			<textarea name="body" id="body" cols="30" rows="10"></textarea>
-			<br>
-		</form>
 	</div>
+	
+
+
 </body>
 
 </html>
