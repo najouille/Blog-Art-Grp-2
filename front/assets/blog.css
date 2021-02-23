@@ -1,6 +1,4 @@
-.style {
-  background-color: #0e0e0e;
-}
+
 h3 {
   margin-top: 11px;
   font-family: "Manrope", sans-serif;
@@ -33,6 +31,7 @@ h4 {
 .tailleimg {
   height: 200px;
   width: 355px;
+  object-fit: cover;
 }
 .tag {
   font-family: "Manrope", sans-serif;

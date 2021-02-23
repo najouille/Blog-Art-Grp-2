@@ -7,6 +7,10 @@ html{
 }
 #preview{
     padding: 10px;
+    max-width: 1138px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #streetart{
     display: flex;
@@ -14,11 +18,15 @@ html{
     border: 1px solid #9CEDFF;
     box-sizing: border-box;
     border-radius: 4px;
-    max-width: 35%;
+    max-width: 559px;
     padding: 16px;
 }
 #street_img{
     flex: 1;
+}
+#street_img img{
+    width: 160px;
+    height: 151px;
 }
 #tagtxt{
     flex: 2;
@@ -37,6 +45,8 @@ h4{
     font-size: 18px;
     font-weight: 500;
     color: white;
+    padding-bottom: 16px;
+    padding-top: 8px;
 }
 p{
     font-family: 'Manrope', sans-serif;
@@ -51,4 +61,7 @@ p{
     margin-right: 8px;
     background-color: #F1F5F9;
     border-radius: 4px;
-    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
