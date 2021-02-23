@@ -3,6 +3,41 @@
 	--dark: #0e0e0e;
 }
 
+@font-face {
+    font-family: 'Monument Extended';
+    src: local('Monument Extended Bold'), local('MonumentExtended-Bold'),
+        url('./fonts/subset-MonumentExtended-Bold.woff2') format('woff2'),
+        url('./fonts/subset-MonumentExtended-Bold.woff') format('woff'),
+        url('./fonts/subset-MonumentExtended-Bold.svg#MonumentExtended-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: local('Monument Extended Ultralight'), local('MonumentExtended-Ultralight'),
+        url('./fonts/subset-MonumentExtended-Ultralight.woff2') format('woff2'),
+        url('./fonts/subset-MonumentExtended-Ultralight.woff') format('woff'),
+        url('./fonts/subset-MonumentExtended-Ultralight.svg#MonumentExtended-Ultralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: local('Monument Extended Regular'), local('MonumentExtended-Regular'),
+        url('./fonts/subset-MonumentExtended-Regular.woff2') format('woff2'),
+        url('./fonts/subset-MonumentExtended-Regular.woff') format('woff'),
+        url('./fonts/subset-MonumentExtended-Regular.svg#MonumentExtended-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 .card {
 	padding: 8px;
 	background: #000;
@@ -12,3 +47,4 @@
 	width: 100px;
 	height: 100px;
 }
+
