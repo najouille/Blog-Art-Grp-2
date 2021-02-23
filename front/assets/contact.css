@@ -1,0 +1,34 @@
+html {
+    background-color :#0E0E0E;
+    color: white;
+    font-family: 'Manrope' , sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top: auto;
+}
+
+p {
+    font-weight: lighter;
+}
+
+#intro {
+    margin-left: 3rem;
+}
+
+#image {
+margin-left: 45rem;    
+}
+
+#formulaire {
+    margin-left: 8rem;
+}
+
+input[type=text],input[type=email], textarea {
+    color: white;
+    background-color :#0E0E0E;
+    border-radius: 6px;
+    border-color :#FFEE32;
+    padding: 7px;
+}
