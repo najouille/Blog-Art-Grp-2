@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="../front/assets/gallerie.css">
 </head>
 
-<body class= "style">
+<body class="style">
     <h1> Les gallerie Towny'Art </h1>
+    <div class="img-gallerie">
+        <div class="linear-gradient">hhhhhh
+        </div>
+        <img src="../front\assets\image\Favorite.png" alt="">
+        <img src="../front\assets\image\tendance.png" alt="">
+    </div>
 </body>
 
 </html>
