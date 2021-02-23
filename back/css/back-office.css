@@ -2,7 +2,6 @@
 
 .twa-back {
     background-color: #050505;
-    ;
 }
 
 h1 {
@@ -65,27 +64,45 @@ a{
     padding: 10px;
     border: 1px solid #ddd
 }
+input[type=text],input[type=email], textarea {
+    color: white;
+    background-color :#0E0E0E;
+    border-radius: 6px;
+    border-color :#FFEE32;
+    padding: 7px;
+}
 
-input{
+.container-input{
+    padding: 10px;
+}
+
+:focus{
+    border: solid 1px white;
+}
+
+.input-button{
     cursor:pointer; 
     padding:5px 20px; 
-    background-color:lightsteelblue; 
-    border:line 2px white; 
+    background-color:#FFEE32; 
+    border:line 2px #FFEE32; 
     border-radius:5px;
+    transition: 0.3s;
+}
+
+.input-button:hover {
+    background: black;
+    color: #FFEE32;
+}
+
+#button-valid{
+    margin-left: 10px;
 }
 
 select{
-    border:line 2px white; 
+    padding: 7px; 
+    color: white;
+    border:line 2px;
+    border-color: #FFEE32;
     border-radius:5px;
-}
-#footer-style{
-    padding: 40px;
-    max-width: 500px;
-    text-align: center;
-    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#footer-container{
-    display: flex;
-    justify-content: center;
+    background-color:black; 
 }

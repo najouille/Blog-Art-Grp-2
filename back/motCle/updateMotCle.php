@@ -52,6 +52,7 @@ if ($resultMotCle) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/back-office.css" rel="stylesheet" type="text/css" />
+    <link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="twa-back">
@@ -59,7 +60,7 @@ if ($resultMotCle) {
         <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
         <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
     </div>
-    <h3>Modification d'un mot clé</h2>
+    <h3>Modification d'un mot clé</h3>
 
     <?php
     if ($updated) {
@@ -69,52 +70,55 @@ if ($resultMotCle) {
     }
     ?>
 
-
     <form method="post" action="<?= "./updateMotCle.php?id=" . $numMotCle; ?>" enctype="multipart/form-data">
-        <div id="fieldset-container">
+        <div class="fieldset-container">
             <fieldset>
-                <legend class="legend1">Formulaire Langue...</legend>
+                <legend class="legend1">Formulaire Langue</legend>
 
                 <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
                 <div class="control-group">
-                    <label for="libMotCle">Libellé : </label>
-                    <input type="text" name="libMotCle" id="libMotCle" placeholder="Désignation" value="<?= $libMotCle ?>" autofocus>
 
-                    <label class="control-label" for="numLang"><b>Pays :</b></label>
-                    <select name="numLang" id="numLang">
-                        <?php
-                        $allLang = $lang->get_AllLangues();
-                        foreach ($allLang as $row) {
-                            if ($row["numLang"] === $numLang) {
-                                $selected = "selected";
-                            } else {
-                                $selected = "";
-                            }
-                            echo '<option value="' . $row["numLang"] . '" ' . $selected . '>' . $row["lib2Lang"] . '</option>';
+                    <div class="container-input">
+                        <label for="libMotCle">Libellé : </label>
+                        <input type="text" name="libMotCle" id="libMotCle" placeholder="Désignation" value="<?= $libMotCle ?>" autofocus>
+                    </div>
+
+                    <div class="container-input">
+                        <label class="control-label" for="numLang"><b>Pays :</b></label>
+                        <select name="numLang" id="numLang">
+                    </div>
+
+                    <?php
+                    $allLang = $lang->get_AllLangues();
+                    foreach ($allLang as $row) {
+                        if ($row["numLang"] === $numLang) {
+                            $selected = "selected";
+                        } else {
+                            $selected = "";
                         }
-                        ?>
+                        echo '<option value="' . $row["numLang"] . '" ' . $selected . '>' . $row["lib2Lang"] . '</option>';
+                    }
+                    ?>
                     </select>
-                </div>
 
-                <div class="control-group">
                     <div class="controls">
                         <br><br>
-
-                        <input type="submit" value="Initialiser" name="Submit" />
-
-                        <input type="submit" value="Valider" name="Submit" />
+                        <input class="input-button" type="submit" value="Initialiser" name="Submit"/>
+                        <input class="input-button" id="button-valid" type="submit" value="Valider" name="Submit"/>
                         <br>
                     </div>
                 </div>
             </fieldset>
         </div>
     </form>
-    <?php
 
-    require_once __DIR__ . '/footerMotCle.php';
-    require_once __DIR__ . '/footer.php';
-    ?>
+    <div class="align-footer">
+        <?php
+        require_once __DIR__ . '/footerMotCle.php';
+        require_once __DIR__ . '/footer.php';
+        ?>
+    </div>
 </body>
 
 </html>

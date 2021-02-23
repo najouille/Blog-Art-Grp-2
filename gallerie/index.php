@@ -13,12 +13,21 @@
 </head>
 
 <body class="style">
-    <h1> Les gallerie Towny'Art </h1>
+    <h1> Les galleries Towny'Art </h1>
     <div class="img-gallerie">
-        <div class="linear-gradient">hhhhhh
+        <div class="gradient">
+            <span class="texte-haut">TOUTES </span>
+            <span class="texte-bas"> les photos</span>
         </div>
-        <img src="../front\assets\image\Favorite.png" alt="">
-        <img src="../front\assets\image\tendance.png" alt="">
+        <div class="gradient2">
+            <span class="texte-haut">VOS PHOTOS </span>
+            <span class="texte-bas"> favorite</span>
+        </div>
+        <div class="gradient3">
+            <span class="texte-haut">TENDANCE </span>
+            <span class="texte-bas"> du moment</span>
+        </div>
+       
     </div>
 </body>
 
