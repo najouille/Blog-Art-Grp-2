@@ -12,17 +12,17 @@ body {
 	color: steelblue;
 }
 
-#fieldset-container{
+.fieldset-container{
 	display: flex;
-	justify-content: center;
-	padding: 10px;
+	justify-content: right;
+	padding: 0 110px;
 }
 fieldset {
-	background-color: rgba(255, 255, 255, 0.301); /* color: oldlace */
+	background-color:#0E0E0E; /* color: oldlace */
 	max-width: 800px; /* largeur maximale cadre */
 	padding: 16px; /* marge interne / sépare le contenu de la bordure	*/
 	/* Coins arrondis et couleur du cadre */
-	border: 2px solid white;
+	border-color: #FFEE32;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
@@ -81,12 +81,23 @@ label {
 	width: 90%;
 }
 
+.control-group{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.controls{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
 span {
 	background-color: white;
 }
 
 input {
-	border: 1px solid white;
+	border: 1px solid #FFEE32;
 	background-color: #a6bede;
 
 }

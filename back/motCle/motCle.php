@@ -18,10 +18,13 @@ $motcle = new MOTCLE;
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
     <title>Admin - Gestion du CRUD Membre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
+    <?php
+    
+    
+    include ("../../front/includes/commons/headRequired.php")
+    ?>
     <meta name="author" content="" />
 
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
