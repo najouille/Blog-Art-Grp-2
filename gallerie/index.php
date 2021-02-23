@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../front/assets/gallerie.css">
 </head>
 
-<body>
+<body class= "style">
     <h1> Les gallerie Towny'Art </h1>
 </body>
 
