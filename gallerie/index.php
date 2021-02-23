@@ -13,7 +13,7 @@
 </head>
 
 <body class="style">
-    <h1> Les galleries Towny'Art </h1>
+    <h1> Les galeries Towny'Art </h1>
     <div class="img-gallerie">
         <div class="gradient">
             <span class="texte-haut">TOUTES </span>
