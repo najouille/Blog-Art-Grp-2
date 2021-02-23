@@ -33,6 +33,7 @@ h4 {
 .tailleimg {
   height: 200px;
   width: 355px;
+  object-fit: cover;
 }
 .tag {
   font-family: "Manrope", sans-serif;
