@@ -1,0 +1,23 @@
+*{  margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0E0E0E;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container-profile {
+    padding: 80px;
+    max-width: 800px;
+}
+
+.left-profile {
+    padding: 80px;
+}
+
+hr {
+    border-color: #FFEE32;
+    max-width: 1280px;
+}

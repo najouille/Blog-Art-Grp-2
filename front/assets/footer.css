@@ -11,6 +11,7 @@ footer {
     height: 30vh;
     width: 100%;
     margin-top: 0vh;
+    padding: 20px 0 10px 0;
     /*border-top-width: 2px;
     border-top-style: solid;
     border-top-color: #FFEE32;
@@ -23,23 +24,33 @@ footer a:link, footer a:visited {
 
 /*TOP*/
 
-.footer-top-section {
+.line-top-left {
+    position: ;
     display: flex;
-    height: 85%;
-    margin: 0 80px;
-    position: relative;
+    height: 1px;
+    max-width: 30%;
+    background: #FFEE32;
+    margin: 0 260px auto auto;
 }
 
-.line-top {
+.line-top-right {
+    display: flex;
     height: 1px;
-    width: 73%;
+    max-width: 30%;
     background: #FFEE32;
-    margin: 0 auto;
+    margin: 0 auto auto 260px;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: row;
+}
+
+.footer-top-section {
+    display: flex;
+    height: 90%;
+    margin: 0 80px;
+    position: relative;
 }
 
 .footer-logo:before, .footer-logo:after{
@@ -106,7 +117,6 @@ footer a:link, footer a:visited {
     justify-content: space-between;
     margin: auto;
     box-sizing: border-box;
-    color: #A8A8A8;
 }
 
 input {
@@ -117,18 +127,24 @@ input {
     border: 1px solid #FFEE32;
     background: #0E0E0E;
     outline: none;
+    font-size: 0.75rem;
+    color: #A8A8A8;
 }
 
-.submit-button a:visited {
-    color: #0E0E0E;
-}
 
-.submit-button {
-    width: 200px;
+
+.submit-button, .submit-button:visited, .submit-button:link {
     background: #FFEE32;
-    border-radius: 25px;
-    text-decoration: none;
+    width: 200px;
+    color: #0E0E0E;
+    border: none;
+    padding: 7px 25px;
     text-align: center;
+    font-size: 0.75rem;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 .submit-button:hover {
@@ -136,7 +152,7 @@ input {
     border-color: #FFEE32;
     background-color: #000000;
     color: #FFEE32;
-    transition-duration: 00.3s;
+    transition-duration: 0.3s;
 }
 
 /*NAVBAR*/
