@@ -1,34 +1,69 @@
 html {
-    background-color :#0E0E0E;
-    color: white;
-    font-family: 'Manrope' , sans-serif;
+  background-color: #0e0e0e;
+  color: white;
+  font-family: "Manrope", sans-serif;
 }
 
 h1 {
-    font-weight: bold;
-    margin-top: auto;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: auto;
 }
 
 p {
-    font-weight: lighter;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+#line {
+    margin-top: 3rem;
 }
 
 #intro {
-    margin-left: 3rem;
+    margin-top: 3rem;
+  margin-left: 4rem;
 }
 
 #image {
-margin-left: 45rem;    
+    margin-right: 4rem;
 }
 
 #formulaire {
-    margin-left: 8rem;
+    margin-top: 3rem;
+    margin-left: 11rem;
+    justify-content: space-around;
 }
 
-input[type=text],input[type=email], textarea {
-    color: white;
-    background-color :#0E0E0E;
-    border-radius: 6px;
-    border-color :#FFEE32;
-    padding: 7px;
+#formulaire label {
+  width: 120px;
+  text-align: right;
+}
+#formimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: white;
+  background-color: #0e0e0e;
+  border-radius: 6px;
+  border-color: #ffee32;
+  border-collapse: separate;
+  border-spacing: 5px;
+  padding: 5px;
+}
+
+button {
+  color: #0e0e0e;
+  background-color: #ffee32;
+  border-color: #ffee32;
+  border-radius: 6px;
+  width: 6rem;
+  padding: 4px;
+  font-size: 16px;
 }
