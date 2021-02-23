@@ -1,85 +1,116 @@
 .style {
-        background-color: #0E0E0E;
+  background-color: #0e0e0e;
 }
-h3{
-    margin-top: 11px;
-   font-family: 'Manrope', sans-serif;
-   font-size: 18px;
-   font-weight: 500;
-   color: #Ffffff;
-  
+h3 {
+  margin-top: 11px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
 }
-h4{
-    font-family: 'Manrope', sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   color: #Ffffff;
-   opacity: 85%;
-   margin-top: -5px;
- 
+h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 85%;
+  margin-top: -5px;
 }
-.etiquetteblog{
-    border-radius: 0.125rem;
-    max-width:355px;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-color: #0E0E0E;
-    display: flex;
-    flex-direction: column;
-    
-    padding: 20px;
-    border: solid;
-    border-color: #9CEDFF;
-    border-width: 2px;
+.etiquetteblog {
+  border-radius: 0.125rem;
+  max-width: 355px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
 
+  padding: 20px;
+  border: solid;
+  border-color: #9cedff;
+  border-width: 2px;
+}
+.tailleimg {
+  height: 200px;
+  width: 355px;
+}
+.tag {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding: 5px;
+}
+.conteneurblog {
+  margin-top: 19px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+.maxiconteneurblog {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.opacity-10 {
+  opacity: 10%;
+}
+.soon-banner-container {
+  position: relative;
+}
+.soon-banner {
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #050505;
 }
-.tailleimg{ 
-    height: 200px;
-    width: 355px;
+.bouton-space {
+  margin-left: 42px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
 }
-.tag{
-    font-family: 'Manrope', sans-serif;
-   font-size: 14px;
-   font-weight: 400;
-   color: #1E293B;
-    margin-right: 8px;
-    background-color: #F1F5F9;
-    border-radius: 4px;
-    padding: 5px;
-}
-.conteneurblog{
-    margin-top: 19px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    justify-content: flex-start;
-}
-.maxiconteneurblog{
-    margin: 0 auto;
-    max-width: 1280px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
+.bouton-space:hover {
+    color: #FFEE32;
 }
-.opacity-10{
-    opacity: 10%;
+.header-space {
+  margin-left: 42px;
+  margin-right: 42px;
 }
-.soon-banner-container{
-position: relative;
+.header-space:hover {
+    fill: #ffffff;
 }
-.soon-banner{
-    background-color: aqua;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+
+.logo-navbar {
+  width: 105px;
+  height: 25px;
+  margin-left: 42px;
+}
+
+.navbar-content-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
