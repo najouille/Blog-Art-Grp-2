@@ -9,34 +9,38 @@
 
 require_once __DIR__ . '/../../util/utilErrOn.php';
 require_once __DIR__ . '/../../CLASS_CRUD/langue.class.php';
-require_once __DIR__ . '/../../CLASS_CRUD/pays.class.php';
-include __DIR__ . '/initLangue.php';
+require_once __DIR__ . '/../../CLASS_CRUD/motcle.class.php';
+include __DIR__ . '/initMotCle.php';
 
 if (!isset($_GET['id'])) $_GET['id'] = '';
+
 $lang = new LANGUE;
-$country = new PAYS;
+$motcle = new MOTCLE;
 $updated = false;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $numLang = $_POST["id"];
-    $lib1Lang = $_POST["lib1Lang"];
-    $lib2Lang = $_POST["lib2Lang"];
-    $numPays = $_POST["numPays"];
-    if (isset($lib1Lang) && isset($lib2Lang) && isset($numPays)) {
-        $lang->update($numLang, $lib1Lang, $lib2Lang, $numPays);
+    $numMotCle = $_POST["id"];
+    $libMotCle = $_POST["libMotCle"];
+    $numLang = $_POST["numLang"];
+
+    
+    if (isset($numMotCle) && isset($libMotCle) && isset($numLang)) {
+        $motcle->update($numMotCle, $libMotCle, $numLang);
         $updated = true;
+    } else {
+        $updated = false;
+
     }
 } else {
-    $numLang = $_GET["id"];
+    $numMotCle = $_GET["id"];
 }
 
-$resultLangue = $lang->get_1LangueByPays($numLang);
+$resultMotCle = $motcle->get_1MotCle($numMotCle);
 
-if ($resultLangue) {
-    $lib1Lang = $resultLangue["lib1Lang"];
-    $lib2Lang = $resultLangue["lib2Lang"];
-    $numPays = $resultLangue["numPays"];
-    $frPays = $resultLangue["frPays"];
+if ($resultMotCle) {
+    $numMotCle = $resultMotCle["numMotCle"];
+    $libMotCle = $resultMotCle["libMotCle"];
+    $numLang = $resultMotCle["numLang"];
 }
 
 ?>
@@ -51,16 +55,19 @@ if ($resultLangue) {
 </head>
 
 <body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Langue</h1>
-    <h2>Ajout d'une langue</h2>
+    <h1>BLOGART21 Admin - Gestion du CRUD MotCle</h1>
+    <h2>Modifification d'un mot cle</h2>
 
     <?php
     if ($updated) {
-        echo '<p style="color:green;">La langue "' . $lib2Lang . '" a été bien modifiée.</p>';
+        echo '<p style="color:blue;">Le mot-clé "' . $libMotCle . '" a été bien modifié.</p>';
+    } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        echo '<p style="color:red;">Le mot-clé pas été modifié</p>';
     }
     ?>
 
-    <form method="post" action="<?= "./updateLangue.php?id=" . $numLang; ?>" enctype="multipart/form-data">
+
+    <form method="post" action="<?= "./updateMotCle.php?id=" . $numMotCle; ?>" enctype="multipart/form-data">
 
         <fieldset>
             <legend class="legend1">Formulaire Langue...</legend>
@@ -68,23 +75,20 @@ if ($resultLangue) {
             <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
             <div class="control-group">
-                <label class="control-label" for="lib1Lang"><b>Désignation :</b></label>
-                <input type="text" name="lib1Lang" id="lib1Lang" size="80" maxlength="80" value="<?= isset($lib1Lang) ? $lib1Lang : ''; ?>" /><br><br>
+                <label for="libMotCle">Libellé</label>
+                <input type="text" name="libMotCle" id="libMotCle" placeholder="Désignation" value="<?= $libMotCle ?>" autofocus>
 
-                <label class="control-label" for="lib2Lang"><b>Dénomination :</b></label>
-                <input type="text" name="lib2Lang" id="lib2Lang" size="80" maxlength="80" value="<?= isset($lib2Lang) ? $lib2Lang : ''; ?>" /><br><br>
-
-                <label class="control-label" for="numPays"><b>Pays :</b></label>
-                <select name="numPays" id="numPays">
+                <label class="control-label" for="numLang"><b>Pays :</b></label>
+                <select name="numLang" id="numLang">
                     <?php
-                    $allPays = $country->get_AllPays();
-                    foreach ($allPays as $row) {
-                        if ($row["numPays"] === $numPays) {
+                    $allLang = $lang->get_AllLangues();
+                    foreach ($allLang as $row) {
+                        if ($row["numLang"] === $numLang) {
                             $selected = "selected";
                         } else {
                             $selected = "";
                         }
-                        echo '<option value="' . $row["numPays"] . '" ' . $selected . '>' . $row["frPays"] . '</option>';
+                        echo '<option value="' . $row["numLang"] . '" ' . $selected . '>' . $row["lib2Lang"] . '</option>';
                     }
                     ?>
                 </select>
@@ -104,7 +108,7 @@ if ($resultLangue) {
     </form>
     <?php
 
-    require_once __DIR__ . '/footerLangue.php';
+    require_once __DIR__ . '/footerMotCle.php';
     require_once __DIR__ . '/footer.php';
     ?>
 </body>

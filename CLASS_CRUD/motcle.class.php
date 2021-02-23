@@ -22,6 +22,37 @@ class MOTCLE
     $query->closeCursor();
     return ($result);
   }
+
+  function get_1MotCleWithLang($numMotCle) // FIXME
+  {
+    global $db;
+
+    $query = 'SELECT * FROM motcle INNER JOIN langue ON motcle.numLang = langue.numLang WHERE numMotCle = ?';
+
+    $request = $db->prepare($query);
+
+    $request->execute(array($numMotCle));
+
+    $result = $request->fetch();
+
+    $request->closeCursor();
+    return ($result);
+  }
+
+  function get_AllMotClesWithLang()
+  {
+    global $db;
+
+    $queryText = 'SELECT * FROM motcle INNER JOIN langue ON motcle.numLang = langue.numLang';
+
+    $query = $db->query($queryText);
+
+    $result = $query->fetchAll();
+
+    $query->closeCursor();
+    return ($result);
+  }
+
   function get_AllMotClesByLang($numLang)
   {
     global $db;

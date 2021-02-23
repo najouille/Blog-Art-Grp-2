@@ -1,4 +1,7 @@
 <?php
+
+
+// FIX
 require_once __DIR__ . '../../CONNECT/database.php';
 class THEMATIQUE
 {
@@ -59,7 +62,10 @@ class THEMATIQUE
 			$db->beginTransaction();
 			$queryText = "UPDATE thematique SET libThem = :libThem , numLang =  :numLang WHERE numThem = :numThem ";
 			$query = $db->prepare($queryText);
-			$query->execute(array($libThem, $numLang, $numThem));
+			$query->bindParam(':numThem', $numThem);
+			$query->bindParam(':libThem', $libThem);
+			$query->bindParam(':numLang', $numLang);
+			$query->execute();
 			$db->commit();
 			$query->closeCursor();
 		} catch (PDOException $e) {

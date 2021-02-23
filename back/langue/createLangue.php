@@ -47,13 +47,13 @@ include __DIR__ . '/initLangue.php';
             <!-- <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" /> -->
 
             <div class="control-group">
-                <label class="control-label" for="lib1Lang"><b>Désignation :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="lib1Lang"><b>Désignation :</b></label>
                 <input type="text" name="lib1Lang" id="lib1Lang" size="80" maxlength="80" autofocus /><br><br>
 
-                <label class="control-label" for="lib2Lang"><b>Dénomination :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="lib2Lang"><b>Dénomination :</b></label>
                 <input type="text" name="lib2Lang" id="lib2Lang" size="80" maxlength="80" /><br><br>
 
-                <label class="control-label" for="numPays"><b>Pays :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="numPays"><b>Pays :</b></label>
                 <select name="numPays" id="numPays">
                     <?php
                     $allPays = $country->get_AllPays();
@@ -67,9 +67,9 @@ include __DIR__ . '/initLangue.php';
             <div class="control-group">
                 <div class="controls">
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Initialiser" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
                     <br>
                 </div>

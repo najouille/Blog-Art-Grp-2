@@ -9,15 +9,15 @@ include __DIR__ . '/initLangue.php';
 
 
 // Init variables form
+if (!isset($_GET['id'])) $_GET['id'] = '';
 $supprImpossible = false;
 $deleted = false;
-if (!isset($_GET['id'])) $_GET['id'] = '';
 $numPays = '';
 $frPays = '';
-$maLangue = new LANGUE;
-$maThematique = new THEMATIQUE;
-$monAngle = new ANGLE;
-$monMotCle = new MOTCLE;
+$langue = new LANGUE;
+$thematique = new THEMATIQUE;
+$angl = new ANGLE;
+$motCle = new MOTCLE;
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     if ($_POST["Submit"] === "Annuler") {
@@ -26,21 +26,21 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     }
 
     $numLang = $_POST["id"];
-    $resultLangue = $maLangue->get_1LangueByPays($numLang);
+    $resultLangue = $langue->get_1LangueByPays($numLang);
 
-    $thematiques = $maThematique->get_AllThematiquesByLang($numLang);
-    $angles = $monAngle->get_AllAnglesByLang($numLang);
-    $motcles = $monMotCle->get_AllMotClesByLang($numLang);
+    $thematiques = $thematique->get_AllThematiquesByLang($numLang);
+    $angles = $angl->get_AllAnglesByLang($numLang);
+    $motcles = $motCle->get_AllMotClesByLang($numLang);
 
     if (!$thematiques && !$angles && !$motcles) {
-        $maLangue->delete($numLang);
+        $langue->delete($numLang);
         $deleted = true;
     } else {
         $supprImpossible = true;
     }
 } else {
     $numLang = $_GET["id"];
-    $resultLangue = $maLangue->get_1LangueByPays($numLang);
+    $resultLangue = $langue->get_1LangueByPays($numLang);
 }
 
 if ($resultLangue) {
@@ -61,30 +61,6 @@ if ($resultLangue) {
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        #p1 {
-            max-width: 600px;
-            width: 600px;
-            max-height: 200px;
-            height: 200px;
-            border: 1px solid #000000;
-            background-color: whitesmoke;
-            /* Coins arrondis et couleur du cadre */
-            border: 2px solid grey;
-            -moz-border-radius: 8px;
-            -webkit-border-radius: 8px;
-            border-radius: 8px;
-        }
-
-        .error {
-            padding: 2px;
-            border: solid 0px black;
-            color: red;
-            font-style: italic;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 
 <body>
@@ -98,13 +74,13 @@ if ($resultLangue) {
             <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
             <div class="control-group">
-                <label class="control-label" for="lib1Lang"><b>Désignation :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="lib1Lang"><b>Désignation :</b></label>
                 <input type="text" name="lib1Lang" id="lib1Lang" size="80" maxlength="80" value="<?= $deleted ? '' : $lib1Lang; ?>" disabled /><br><br>
 
-                <label class="control-label" for="lib2Lang"><b>Dénomination :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="lib2Lang"><b>Dénomination :</b></label>
                 <input type="text" name="lib2Lang" id="lib2Lang" size="80" maxlength="80" value="<?= $deleted ? '' : $lib2Lang; ?>" disabled /><br><br>
 
-                <label class="control-label" for="numPays"><b>Pays :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <label class="control-label" for="numPays"><b>Pays :</b></label>
                 <select name="numPays" id="numPays" disabled>
                     <option value="<?= $deleted ? '' : $numPays; ?>" selected><?php echo $deleted ? '' : $frPays; ?></option>
                 </select>
@@ -113,9 +89,9 @@ if ($resultLangue) {
             <div class="control-group">
                 <div class="controls">
                     <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Annuler" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
                     <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
                     <br>
                 </div>

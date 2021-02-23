@@ -6,9 +6,9 @@
 		function get_1Angle($numAngl){
 			global $db;
 
-			$query = 'SELECT * FROM angle WHERE numAngl = :numAngl';
+			$queryText = 'SELECT * FROM angle WHERE numAngl = :numAngl';
 
-			$query = $db->prepare($query);
+			$query = $db->prepare($queryText);
 			$query->bindParam(':numAngl', $numAngl);
 
 	
