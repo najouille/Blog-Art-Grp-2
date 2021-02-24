@@ -66,7 +66,7 @@ a{
     padding: 10px;
     border: 1px solid #ddd
 }
-input[type=text],input[type=email], textarea {
+input[type=text],input[type=email],input[type=password], textarea {
     color: white;
     background-color :#0E0E0E;
     border-radius: 6px;
@@ -100,6 +100,19 @@ input[type=text],input[type=email], textarea {
     border:line 2px #FFEE32; 
     border-radius:5px;
     transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.button-create{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 20px;
+    max-width: 100px;
+    max-height: 20px;
+    margin-right: 20px;
+
 }
 
 .input-button:hover {

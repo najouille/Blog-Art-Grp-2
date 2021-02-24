@@ -21,14 +21,12 @@ $motcle = new MOTCLE;
     <title>Admin - Gestion du CRUD Motclé</title>
     <meta name="description" content="" />
     <?php
-
-
     include("../../front/includes/commons/headRequired.php")
     ?>
     <meta name="author" content="" />
-
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/back-office.css" />
+    <link rel="stylesheet" href="../css/footer-back.css" />
 </head>
 
 
