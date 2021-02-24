@@ -33,8 +33,8 @@ $member = new MEMBRE;
         <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
     </div>
 
-    <div class="container-center">
     <a class="button-create input-button" href="./createMembre.php">Créer Membre</a>
+    <div class="container-center">
         <table class="twa-table" border='3'>
             <thead>
                 <tr>
@@ -47,6 +47,7 @@ $member = new MEMBRE;
                     <th>Date</th>
                     <th>souvenirMemb</th>
                     <th>accordMemb</th>
+                    <th>ACTION</th>
                 </tr>
             </thead>
             <tbody>
@@ -81,6 +82,10 @@ $member = new MEMBRE;
                         </td>
                         <td>
                             <h4> <?php echo $row['accordMemb']; ?> </h4>
+                        </td>
+                        <td><a href="./updateMembre.php?id=<?= $row['numMemb'] ?>"><i>Modifier</i></a>
+                        </td>
+                        <td><a class='link-delete' href="./deleteMembre.php?id=<?= $row['numMemb'] ?>"><i>Supprimer</i></a>
                         </td>
                     </tr>
 
