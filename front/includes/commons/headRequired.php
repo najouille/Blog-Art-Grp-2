@@ -7,8 +7,8 @@ if (strpos($requestUri, 'blog-art') !== false || strpos($requestUri, 'blogart') 
   $dir = str_replace("\\", "/", $matches[0][0]);
   echo '<!-- Using default dev env -->';
 } else {
-  $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-  $dir = $actual_link;
+  // $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+  $dir = '';
   echo '<!-- Using root env -->';
 }
 
