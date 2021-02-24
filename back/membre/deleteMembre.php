@@ -2,7 +2,7 @@
 
 // Mode DEV
 require_once __DIR__ . '/../../util/utilErrOn.php';
-include __DIR__ . '/initMotCle.php';
+include __DIR__ . '/initMembre.php';
 
 $supprImpossible = false;
 $deleted = false;
@@ -12,7 +12,7 @@ require_once __DIR__ . '/../../CLASS_CRUD/motcle.class.php';
 require_once __DIR__ . '/../../CLASS_CRUD/motclearticle.class.php';
 require_once __DIR__ . '/../../CLASS_CRUD/langue.class.php';
 require_once __DIR__ . '/../../CLASS_CRUD/membre.class.php';
-
+$hey = null;
 $member = new MEMBRE;
 
 // Gestion du $_SERVER["REQUEST_METHOD"] => En POST
@@ -26,11 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $numMemb = $_POST["id"];
     $resultMember = $member->get_1Membre($numMemb);
 
-    if (!$resultMember) {
-        $motcle->delete($numMemb);
+    if ($resultMember) {
+        $member->delete($numMemb);
         $deleted = true;
     } else {
         $supprImpossible = true;
+        $hey = "wtf";
     }
 } else {
     $numMemb = $_GET["id"];
@@ -75,14 +76,17 @@ if ($resultMember) {
         //     }
         //     echo '</ul>';
         // }
-
+        echo $supprImpossible;
+        
         echo '</div>';
     } elseif ($deleted) {
         echo '<p style="color:green;">Le mot-clé "' . $prenomMemb . '" a été supprimé.</p>';
     }
     ?>
 
-    <form method="post" action=".\deleteMotCle.php?id=<?= $numMemb ?>">
+
+
+    <form method="post" action=".\deleteMembre.php?id=<?= $numMemb ?>">
         <div class="fieldset-container">
             <fieldset>
                 <legend class="legend1">Formulaire Mot clé...</legend>
@@ -92,13 +96,13 @@ if ($resultMember) {
                     <div class="container-input">
                         <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
                         <label>Libellé</label>
-                        <input type="text" name="libMotCle" id="libMotCle" placeholder="Désignation" value="<?= $libMotCle ?>" disabled>
+                        <input type="text" name="numMemb" id="numMemb" placeholder="Désignation" value="<?= $numMemb ?>" disabled>
                     </div>
 
                     <div class="container-input">
                         <label>Langue</label>
-                        <input class="select-especial" name="prenomMemb" id="prenomMemb" value="<?php $memb = $member->get_1Membre($numMemb);
-                                                                                                echo $memb['prenomMemb'];  ?>" disabled>
+                        <input type="text" class="select-especial" name="prenomMemb" id="prenomMemb" value="<?php $memb = $member->get_1Membre($numMemb);
+                                                                                                            echo $memb['prenomMemb'];  ?>" disabled>
                     </div>
 
                     <div class="controls">
@@ -110,7 +114,7 @@ if ($resultMember) {
             </fieldset>
             <div class="align-footer">
                 <?php
-                require_once __DIR__ . '/footerMotCle.php';
+                require_once __DIR__ . '/footerMembre.php';
                 require_once __DIR__ . '/footer.php';
                 ?>
             </div>
