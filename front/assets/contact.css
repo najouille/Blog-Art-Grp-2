@@ -10,6 +10,11 @@ h1 {
   margin-top: auto;
 }
 
+h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 p {
   font-weight: lighter;
   font-size: 14px;
@@ -30,7 +35,7 @@ p {
 }
 
 #formulaire {
-    margin-top: 3rem;
+    margin-top: 5px;
     margin-left: 11rem;
     justify-content: space-around;
 }
@@ -52,10 +57,14 @@ textarea {
   color: white;
   background-color: #0e0e0e;
   border-radius: 6px;
-  border-color: #ffee32;
-  border-collapse: separate;
-  border-spacing: 5px;
   padding: 5px;
+  width: 80%;
+  border: 1px solid #FFEE32;
+}
+
+textarea {
+    height: 80px;
+    width: 400px;
 }
 
 button {
@@ -66,4 +75,26 @@ button {
   width: 6rem;
   padding: 4px;
   font-size: 16px;
+  border: 1px solid #FFEE32;
+  transition: 0.3s;
+  margin-top: 15px;
+  margin-left: 76%;
+}
+
+button:hover {
+    background: #0E0E0E;
+    color: #FFEE32;
+    border: 1px solid #FFEE32;
+}
+
+.name {
+    padding-top: 35px;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    width: 55%;
+    display: flex;
+    border: 0.8px solid #FFEE32;
 }

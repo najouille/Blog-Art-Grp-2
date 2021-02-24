@@ -101,14 +101,15 @@ if ($resultMotCle) {
 
                     <div class="container-input">
                         <label>Langue</label>
-                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);
-                                                                                            echo $langue['lib1Lang'];  ?>" disabled>
+                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);                                                                    echo $langue['lib1Lang'];  ?>" disabled>
                     </div>
+
                     <div class="controls">
                         <br>
                         <button class="input-button" type="submit" value="Annuler" name="Submit">Annuler</button>
                         <button class="input-button" type="submit" value="Valider" name="Submit">Valider</button>
                     </div>
+                </div>
             </fieldset>
             
         </div>

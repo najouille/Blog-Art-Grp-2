@@ -52,6 +52,7 @@ a{
 
 .twa-table {
     width: 85%;
+    background-color: #0E0E0E;
     border-collapse: collapse;
     border-color: white;
     text-align: center;
@@ -75,6 +76,9 @@ input[type=text],input[type=email], textarea {
 
 .container-input{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 :focus{
