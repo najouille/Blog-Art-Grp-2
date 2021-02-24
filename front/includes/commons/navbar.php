@@ -15,10 +15,10 @@ if (strpos($_SERVER['PHP_SELF'], 'blog/') !== false) {
         <a href="<?= $dir ?>" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
             ACCUEIL
         </a>
-        <a href="<?= $dir  . '/blog' ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
+        <a href="<?= $dir . '/blog' ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
             BLOG
         </a>
-        <a href="<?= $dir  . '/galerie' ?>" class="bouton-space">
+        <a href="<?= $dir . '/galerie' ?>" class="bouton-space">
             GALLERIE
         </a>
         <a href="#" class="bouton-space">
