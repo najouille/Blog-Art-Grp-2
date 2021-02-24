@@ -243,3 +243,11 @@ h4{
 #arene {
     grid-column: span 2 /span 2;
 }
+.insta {
+    display: flex;
+    flex-direction: row;
+}
+.website {
+    display: flex;
+    flex-direction: row;
+}
