@@ -2,13 +2,13 @@
 <html lang="fr">
 
 <head>
+
     <?php
     include('../front/includes/commons/headRequired.php')
     ?>
     <title>Document</title>
-    <link rel="stylesheet" href="<?= $dir . '../front/assets/master.css' ?> ">
-    <link rel="stylesheet" href="<?= $dir . '../front/assets/blog.css' ?> ">
-    <link rel="stylesheet" href="<?= $dir . '../front/assets/navbar.css' ?> ">
+    <link rel="stylesheet" href="<?= $dir . '/front/assets/blog.css' ?> ">
+    <link rel="stylesheet" href="<?= $dir . '/front/assets/navbar.css' ?> ">
 </head>
 
 <body class='style'>
@@ -82,8 +82,8 @@
     </div>
     <div class='maxiconteneurblog opacity-10 soon-banner-container'>
         <div class="soon-banner">
-           <span class= "soon-texte"> Ne soit pas trop impatient...<br>
-Ça arrive très prochainement !</span>
+            <span class="soon-texte"> Ne soit pas trop impatient...<br>
+                Ça arrive très prochainement !</span>
         </div>
         <div class='etiquetteblog'>
             <img class='tailleimg' src="<?= $dir . '/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
