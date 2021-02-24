@@ -14,6 +14,12 @@ body {
     max-width: 800px;
 }
 
+.logo-before svg {
+    width: 48px;
+    height: 48px;
+}
+
+
 /*LEFT*/
 
 .left-profile {
