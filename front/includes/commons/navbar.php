@@ -1,9 +1,9 @@
 <?php
 
 $page = "";
-if (str_contains($_SERVER['PHP_SELF'], 'blog/')) {
+if (strpos($_SERVER['PHP_SELF'], 'blog/') !== false) {
     $page = "blog";
-} else if (str_contains($_SERVER['PHP_SELF'], 'index.php')) {
+} else if (strpos($_SERVER['PHP_SELF'], 'index.php') !== false) {
     $page = "index";
 }
 ?>
@@ -12,13 +12,13 @@ if (str_contains($_SERVER['PHP_SELF'], 'blog/')) {
 <div class="header">
     <img class="logo-navbar" src="<?= $dir . '/front/assets/image/Townyart-blanc (2).svg' ?>" alt="">
     <div class="navbar-content-right">
-        <a href="#" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
+        <a href="<?= $dir ?>" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
             ACCUEIL
         </a>
-        <a href="#" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
+        <a href="<?= $dir  . '/blog' ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
             BLOG
         </a>
-        <a href="#" class="bouton-space">
+        <a href="<?= $dir  . '/galerie' ?>" class="bouton-space">
             GALLERIE
         </a>
         <a href="#" class="bouton-space">
