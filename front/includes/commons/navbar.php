@@ -12,14 +12,14 @@ if (strpos($_SERVER['PHP_SELF'], 'blog/') !== false) {
 <div class="header">
     <img class="logo-navbar" src="<?= $dir . '/front/assets/image/Townyart-blanc (2).svg' ?>" alt="">
     <div class="navbar-content-right">
-        <a href="<?= $dir ?>" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
+        <a href="<?= $dir . '/' ?>" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
             ACCUEIL
         </a>
-        <a href="<?= $dir  . '/blog' ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
+        <a href="<?= $dir . '/blog' ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
             BLOG
         </a>
-        <a href="<?= $dir  . '/galerie' ?>" class="bouton-space">
-            GALLERIE
+        <a href="<?= $dir . '/galerie' ?>" class="bouton-space">
+            GALERIE
         </a>
         <a href="#" class="bouton-space">
             CONTACT

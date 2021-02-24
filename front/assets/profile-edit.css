@@ -67,6 +67,11 @@ h3 {
     padding: 90px;
 }
 
+.logo-before svg {
+    width: 48px;
+    height: 48px;
+}
+
 .logo-email {
     
 }

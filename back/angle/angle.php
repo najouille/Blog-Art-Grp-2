@@ -35,11 +35,11 @@ $angle = new ANGLE;
     </div>
 
     <br />
-    <a class="align-footer" class="button" href="./createAngle.php">Créer un statut</a>
+    <a class="button-create input-button"  href="./createAngle.php">Créer un Angle</a>
     <br />
     
     <div class="container-center">
-        <table class="twa-table" border="3" bgcolor="aliceblue">
+        <table class="twa-table" border="3">
             <thead>
                 <tr>
                     <th>numAngl</th>

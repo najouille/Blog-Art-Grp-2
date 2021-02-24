@@ -13,5 +13,5 @@ require_once __DIR__ . '/../../util/utilErrOn.php';
 
 <link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 <footer>
-    <a class="button-footer" id="button-CRUD" href="../../admin.php">Gestion CRUD</a>
+    <a class="button-footer button-CRUD" href="../../admin.php">Gestion CRUD</a>
 </footer>
