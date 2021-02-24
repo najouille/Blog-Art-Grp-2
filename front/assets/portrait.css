@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+html {
+    background-color: #0E0E0E;
+    ;
+  }
+h1 {
+    color: white;
+    font-family: Monument Extended;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 90px;
+}
+#intro {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: white;
+    opacity: 90%;
+    padding-left: 228px;
+    padding-right: 228px;
+    padding-top: 73px;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 22px;
+}
+h5 {
+    font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.button a {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;    
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button {
+    text-align: right;
+    padding-right: 228px;
+    margin-top: -25px;
+}
+.bandeau {
+    background-color: #171717;
+    width: 100%;
+    height: 322px;
+    position: relative;
+    margin-top: 82px;
+    text-align: center;
+}
+#frederic {
+    border-radius: 250px;
+}
+.portrait {
+    padding-top: 0 auto;
+    margin-top: 36px;
+    padding-bottom: 0 auto;
+    padding-left: 16%; 
+    position: absolute;
+}
+.quote {
+    z-index: 1;
+    display: flex;
+    padding-left: 41%;
+    padding-right: 46%;
+    padding-top: 28px;
+    padding-bottom: 104px;
+}
+h2 {
+    position: absolute;
+    color: white;
+    opacity: 85%;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    max-width: 500px;
+    padding-left: 48%;
+    padding-right: 17%;
+    padding-top: 115px;
+    padding-bottom: 63px;
+}
+p {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: white;
+    opacity: 85%;
+    padding-left: 228px;
+    padding-right: 228px;
+    text-indent: 5%;
+    padding-bottom: 20px;
+}
+h3 {
+    color: white;
+    opacity: 85%;
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 228px;
+    padding-right: 228px;
+    padding-top: 48px;
+    padding-bottom: 25px;
+}
+.introduction a {
+    color: #FFEE32;
+}
+.article a {
+    color: #FFEE32;
+}
+h6 {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    color: white;
+    opacity: 85%;
+    padding-left: 228px;
+    padding-right: 228px;
+    padding-top: 32px;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+}
+#insta {
+    padding-left: 228px;
+    padding-bottom: 20px;
+}
+#internet {
+    padding-left: 228px;
+}
+.links {
+    color: white;
+    opacity: 90%;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #393939;
+    border-radius: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 228px;
+}
+.galerie {
+    height: 540px;
+    width: 100%;
+    background-color: #171717;
+    margin-top: 40px;
+}
+h4{
+    color: white;
+    opacity: 90%;
+    font-family: Monument Extended;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 228px;
+    padding-top: 38px;
+    padding-bottom: 52px;
+}
+#eiffel {
+    width: 238px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#quais {
+    width: 494px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.button a {
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 78.5px;
+    padding-bottom: 78.5px;
+}
+#bourse2 {
+    width: 556px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+#arene {
+    width: 367px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+#bourse1 {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+}
