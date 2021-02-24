@@ -1,31 +1,36 @@
 html {
-  background-color: #0e0e0e;
-  color: white;
-  font-family: "Manrope", sans-serif;
-}
+    background-color: #0e0e0e;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+  }
 
 h2 {
-  font-size: 20px;
+    margin-top: 8rem;
+    font-size: 24px;
 }
 
 h3 {
-  font-size: 18px;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: bold;
+
 }
 
 p {
-  font-size: 12px;
-  font-weight: thin;
+    margin-top: 4rem;
+    font-weight: thin;
 }
 
-input[type="text"],
 input[type="email"],
 textarea {
   color: white;
   background-color: #0e0e0e;
   border-radius: 6px;
-  padding: 8px;
+  padding: 14px;
   width: 30%;
   border: 1px solid #ffee32;
+  margin-top: 5rem;
 }
 
 button {
@@ -46,29 +51,3 @@ button:hover {
   color: #ffee32;
   border: 1px solid #ffee32;
 }
-
-#formimg {
-  display: flex;
-  flex-direction:row-reverse;
-  justify-content: left;
-  justify-content: space-between;
-}
-
-#form {
-  margin-top: 5rem;
-  margin-right: 12rem;
-}
-
-#img {
-    margin-top: 2rem;
-}
-
-#formco {
-    margin-top: 3rem;
-}
-
-#forminscr {
-    margin-top: 3rem;
-}
-
-
