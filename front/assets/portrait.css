@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+html {
+    background-color: #0E0E0E;
+    ;
+  }
+h1 {
+    color: white;
+    font-family: Monument Extended;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 90px;
+}
+p {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: white;
+    opacity: 90%;
+    padding-left: 228px;
+    padding-right: 228px;
+    padding-top: 73px;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 22px;
+}
+h5 {
+    font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.button a {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;    
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.button {
+    text-align: right;
+    padding-right: 228px;
+    margin-top: -25px;
+}
+.bandeau {
+    background-color: #171717;
+    width: 100%;
+    height: 322px;
+    position: relative;
+}
+#frederic {
+    border-radius: 250px;
+}
+.portrait {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 233px; 
+    position: absolute;
+}
+.quote {
+    z-index: 1;
+    display: flex;
+    padding-left: 590px;
+    padding-right: 660px;
+    padding-top: 28px;
+    padding-bottom: 104px;
+}
