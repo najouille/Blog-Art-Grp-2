@@ -73,7 +73,7 @@ if ($resultMotCle) {
     <form method="post" action="<?= "./updateMotCle.php?id=" . $numMotCle; ?>" enctype="multipart/form-data">
         <div class="fieldset-container">
             <fieldset>
-                <legend class="legend1">Formulaire Langue</legend>
+                <legend class="legend1">Formulaire Langue...</legend>
 
                 <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
