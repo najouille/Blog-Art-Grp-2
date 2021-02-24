@@ -18,13 +18,13 @@ h4 {
 }
 .etiquetteblog {
   border-radius: 0.125rem;
-  max-width: 355px;
-  margin: 0 auto;
+  max-width: 398px;
+  width: 100%;
+  /* margin: 0 auto; */
   margin-top: 30px;
   background-color: #0e0e0e;
   display: flex;
   flex-direction: column;
-
   padding: 20px;
   border: solid;
   border-color: #9cedff;
@@ -32,7 +32,7 @@ h4 {
 }
 .tailleimg {
   height: 200px;
-  width: 355px;
+  /* width: 355px; */
   object-fit: cover;
 }
 .tag {

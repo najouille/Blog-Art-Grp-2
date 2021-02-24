@@ -89,6 +89,10 @@ input {
     min-width: 200px;
 }
 
+.placeholder {
+    color: #EEEEEE;
+}
+
 .mdpoublié {
     color: #A8A8A8;
     transition: 0.3s;

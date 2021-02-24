@@ -45,8 +45,8 @@ $motcle = new MOTCLE;
                 <tr>
                     <th>numMotCle</th>
                     <th>libMotCle</th>
-                    <th>numLang</th>
-
+                    <th colspan="1">numLang</th>
+                    <th colspan="2">Action</th>
                 </tr>
             </thead>
             <tbody>

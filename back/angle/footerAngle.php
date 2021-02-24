@@ -1,17 +1,17 @@
 <?php
-//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 //
 //  Footer tous les CRUD (PDO) - Modifié - 8 Aout 2020
 //
-//  Script  : footerAngle.php
+//  Script  : footerMotCle.php
 //
-//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 // Mode DEV
 require_once __DIR__ . '/../../util/utilErrOn.php';
 ?>
 
+<link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 <footer>
-    <br /><br /><hr />
-    <h2>Retour à la gestion des angles : <a href="./angle.php">CRUD Angle</a></h2>
+<a class="button-footer" href="./angle.php">CRUD Mots Clés</a>
 </footer>
