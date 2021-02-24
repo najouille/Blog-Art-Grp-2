@@ -1,0 +1,53 @@
+html {
+    background-color: #0e0e0e;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+  }
+
+h2 {
+    margin-top: 8rem;
+    font-size: 24px;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+p {
+    margin-top: 4rem;
+    font-weight: thin;
+}
+
+input[type="email"],
+textarea {
+  color: white;
+  background-color: #0e0e0e;
+  border-radius: 6px;
+  padding: 14px;
+  width: 30%;
+  border: 1px solid #ffee32;
+  margin-top: 5rem;
+}
+
+button {
+  color: #0e0e0e;
+  background-color: #ffee32;
+  border-color: #ffee32;
+  border-radius: 6px;
+  width: 6rem;
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #ffee32;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background: #0e0e0e;
+  color: #ffee32;
+  border: 1px solid #ffee32;
+}

@@ -14,24 +14,27 @@
 	</div>
 	<hr>
 	<div id="formimg">
+		<div id="img">
+			<img src="front/assets/image/Statue_portrait.png" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
+		</div>
 		<div id="formulaire">
 			<form>
 				<div class="name">
 					<h3>Nom</h3>
 				</div>
-				<input type="text" name="name" id="name" placeholder="Insérez votre Nom ..."/>
+				<input type="text" name="name" id="name" placeholder="Insérez votre Nom ..." />
 				<br>
 
 				<div>
 					<h3>Prénom</h3>
 				</div>
-				<input type="text" name="firstname" id="firstname" placeholder="Insérez votre Prénom ..."/>
+				<input type="text" name="firstname" id="firstname" placeholder="Insérez votre Prénom ..." />
 				<br>
 
 				<div>
 					<h3>E-mail</h3>
 				</div>
-				<input type="email" name="email" id="email" placeholder="Insérez votre adresse mail ..."/>
+				<input type="email" name="email" id="email" placeholder="Insérez votre adresse mail ..." />
 				<br>
 
 
@@ -43,11 +46,8 @@
 				<button name="button">Envoyer</button>
 			</form>
 		</div>
-		<div id="image">
-		<img src="front/assets/image/Statue_portrait.png" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
 	</div>
-	</div>
-	
+
 
 
 </body>

@@ -20,62 +20,45 @@ require_once __DIR__ . '/util/utilErrOn.php';
 
 	<meta name="description" content="" />
 	<meta name="author" content="" />
+	<link rel="stylesheet" href="./back/css/back-office.css" />
+	<link href="./back/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-
-	<?php echo PHP_OS ?>
-	<br />
-	<h1>Panneau d'Admin : Gestion des CRUD - BLOGART21</h1>
-	<small><span><i>CRUD fini et valide (reste à tester et à intégrer)</i></span></small>
-	<br />
-	<hr />
-	<div>
-		Gestion du CRUD :
-		<a href="./BACK/angle/angle.php">Angle </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/article/article.php">Article </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/comment/comment.php">Commentaire </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/commentplus/commentplus.php">Réponse sur Commentaire </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/langue/langue.php"><span>Langue</span></a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/likeart/likeart.php">Like Article </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/likecom/likecom.php">Like Commentaire </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/membre/membre.php">Membre </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/motcle/motcle.php">Mot-clé </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/motclearticle/motclearticle.php">Mot-clé Article </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/statut/statut.php"><span>Statut (*)</span></a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/thematique/thematique.php">Thématique </a>
-		<br /><br />
-		Gestion du CRUD :
-		<a href="./BACK/user/user.php">User </a>
+<body class="twa-back">
+	<div class="title">
+		<img class='logo' src="./front/assets/image/Townyart.png" alt="logo-townyart">
+		<h1>Panneau d'Admin : Gestion des CRUD - BLOGART21</h1>
 	</div>
-	<br>
-	<hr>
-	<h3><i>- - Etudiants - -</i></h3>
-	<?php
-	require_once __DIR__ . '/footer.php';
-	?>
+
+	<div class="admin-container">
+
+		<a class="button-admin input-button" href="./BACK/angle/angle.php">Angle </a>
+
+		<a class="button-admin input-button" href="./BACK/article/article.php">Article </a>
+
+		<a class="button-admin input-button" href="./BACK/comment/comment.php">Commentaire </a>
+
+		<a class="button-admin input-button" href="./BACK/commentplus/commentplus.php">Réponse sur Commentaire </a>
+
+		<a class="button-admin input-button" href="./BACK/langue/langue.php">Langue</a>
+
+		<a class="button-admin input-button" href="./BACK/likeart/likeart.php">Like Article </a>
+
+		<a class="button-admin input-button" href="./BACK/likecom/likecom.php">Like Commentaire </a>
+
+		<a class="button-admin input-button" href="./BACK/membre/membre.php">Membre </a>
+
+		<a class="button-admin input-button" href="./BACK/motcle/motcle.php">Mot-clé </a>
+
+		<a class="button-admin input-button" href="./BACK/motclearticle/motclearticle.php">Mot-clé Article </a>
+
+		<a class="button-admin input-button" href="./BACK/statut/statut.php">Statut (*)</a>
+
+		<a class="button-admin input-button" href="./BACK/thematique/thematique.php">Thématique </a>
+
+		<a class="button-admin input-button" href="./BACK/user/user.php">User </a>
+	</div>
+
 </body>
 
 </html>

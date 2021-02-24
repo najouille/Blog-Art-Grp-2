@@ -99,11 +99,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             ?>
                         </select>
                     </div>
-                    <br>
 
                     <button class="input-button" type="submit" value="Initialiser" name="Submit">Initialiser</button>
-
                     <button class="input-button" id="button-valid" type="submit" value="Valider" name="Submit">Valider</button>
+            
             </fieldset>
         </div>
     </form>

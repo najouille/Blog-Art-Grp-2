@@ -23,23 +23,23 @@ footer a:link, footer a:visited {
 }
 
 /*TOP*/
-
-.line-top-left {
-    position: ;
+.line-top  {
     display: flex;
-    height: 1px;
-    max-width: 30%;
-    background: #FFEE32;
-    margin: 0 260px auto auto;
+    align-items: center;
+}
+.line-top img {
+    margin: 0 1rem;
 }
 
-.line-top-right {
+
+.line-top hr {
     display: flex;
     height: 1px;
-    max-width: 30%;
+    width: 100%;
     background: #FFEE32;
-    margin: 0 auto auto 260px;
+    border-radius: 100px;
 }
+
 
 .footer-logo {
     display: flex;
