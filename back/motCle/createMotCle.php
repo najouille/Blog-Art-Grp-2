@@ -55,13 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
+    <link rel="stylesheet" href="../css/back-office.css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <!--<link href="../css/style.css" rel="stylesheet" type="text/css" />-->
 </head>
 
-<body >
-    <h1>BLOGART21 Admin - Gestion du CRUD Mot-Clé</h1>
-    <h2>Création d'un Mot-Clé</h2>
+<body class="twa-back">
+    <div class="title">
+        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
+    </div>
+
+    <h3>Création d'un Mot-Clé</h3>
     <br>
 
     <?php
@@ -74,33 +79,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ?>
 
     <form method="post" action=".\createMotCle.php">
-        <div>
-            <label>Libellé</label>
-            <input type="text" name="libMotCle" id="libMotCle" placeholder="Libellé">
-        </div>
-        <div>
-            <label>Langue</label>
-            <select name="numLang" id="numLang">
-                <?php
-                $allLangues = $lang->get_AllLangues();
-                foreach ($allLangues as $row) {
-                    echo '<option value="' . $row["numLang"] . '">' . $row["lib1Lang"] . '</option>';
-                }
-                ?>
-            </select>
-        </div>
-        <br>
+        <div class="fieldset-container">
+            <fieldset>
+                <div class="container-input">
+                    <label>Libellé</label>
+                    <input type="text" name="libMotCle" id="libMotCle" placeholder="Libellé">
+                </div>
+                <div class="container-input">
+                    <label>Langue</label>
+                    <select name="numLang" id="numLang">
+                        <?php
+                        $allLangues = $lang->get_AllLangues();
+                        foreach ($allLangues as $row) {
+                            echo '<option value="' . $row["numLang"] . '">' . $row["lib1Lang"] . '</option>';
+                        }
+                        ?>
+                    </select>
+                </div>
+                <br>
 
-        <button type="submit" value="Initialiser" name="Submit">Initialiser</button>
+                <button class="input-button" type="submit" value="Initialiser" name="Submit">Initialiser</button>
 
-        <button type="submit" value="Valider" name="Submit">Valider</button>
+                <button class="input-button" id="button-valid" type="submit" value="Valider" name="Submit">Valider</button>
+            </fieldset>
+        </div>
     </form>
-    <?php
-
+    <div class="align-footer">
+   <?php
     require_once __DIR__ . '/footerMotCle.php';
-
     require_once __DIR__ . '/footer.php';
     ?>
+    <div></div>
 </body>
 
 </html>

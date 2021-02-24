@@ -104,19 +104,26 @@ if ($resultMotCle) {
 
                     <div class="controls">
                         <br><br>
-                        <input class="input-button" type="submit" value="Initialiser" name="Submit"/>
-                        <input class="input-button" id="button-valid" type="submit" value="Valider" name="Submit"/>
+                        <input class="input-button" type="submit" value="Initialiser" name="Submit" />
+                        <input class="input-button" id="button-valid" type="submit" value="Valider" name="Submit" />
                         <br>
                     </div>
                 </div>
             </fieldset>
         </div>
+        <div class="align-footer">
+            <?php
+
+            require_once __DIR__ . '/footerMotCle.php';
+            require_once __DIR__ . '/footer.php';
+            ?>
+        </div>
     </form>
 
     <div class="align-footer">
         <?php
-        require_once __DIR__ . '/footerMotCle.php';
-        require_once __DIR__ . '/footer.php';
+        //require_once __DIR__ . '/footerMotCle.php';
+        // require_once __DIR__ . '/footer.php';
         ?>
     </div>
 </body>
