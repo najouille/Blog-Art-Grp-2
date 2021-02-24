@@ -79,7 +79,7 @@ include __DIR__ . '/initMembre.php';
 
                 <div class="control-group-colonne">
                     <div class="container-input">
-                        <label class="control-label" for="prenomMemb"><b>Prènom du membre :</b></label>
+                        <label class="control-label" for="prenomMemb"><b>Prénom du membre :</b></label>
                         <input type="text" name="prenomMemb" id="prenomMemb" size="40" maxlength="80" autofocus /><br><br>
                     </div>
 
