@@ -18,13 +18,13 @@ h4 {
 }
 .etiquetteblog {
   border-radius: 0.125rem;
-  max-width: 355px;
-  margin: 0 auto;
+  max-width: 398px;
+  width: 100%;
+  /* margin: 0 auto; */
   margin-top: 30px;
   background-color: #0e0e0e;
   display: flex;
   flex-direction: column;
-
   padding: 20px;
   border: solid;
   border-color: #9cedff;
@@ -32,7 +32,7 @@ h4 {
 }
 .tailleimg {
   height: 200px;
-  width: 355px;
+  /* width: 355px; */
   object-fit: cover;
 }
 .tag {
@@ -60,14 +60,14 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
 }
-.opacity-10 {
+.opacity-10 .etiquetteblog{
   opacity: 10%;
 }
 .soon-banner-container {
   position: relative;
 }
 .soon-banner {
-  background-color: aqua;
+  
   position: absolute;
   top: 0;
   bottom: 0;
@@ -78,5 +78,15 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.soon-texte{
+  background-color: rgba(0, 255, 255, 0.301);
+  padding: 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  margin-top: -12px;
 }
 
