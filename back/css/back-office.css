@@ -103,8 +103,20 @@ input[type=text],input[type=email],input[type=password], textarea {
     text-decoration: none;
     color: black;
 }
-#button-admin{ 
-	padding: 200px;
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 640px;
+    margin: 0 auto ;
+    align-items: center;
+    justify-content: center;
+}
+.button-admin{ 
+    padding: 16px;
+    width: 16rem;
 }
 .button-create{
     display: flex;
