@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 25 fév. 2021 à 00:30
+-- Généré le : jeu. 25 fév. 2021 à 00:38
 -- Version du serveur :  10.4.17-MariaDB
 -- Version de PHP : 8.0.0
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `blogart21`
 --
+CREATE DATABASE IF NOT EXISTS `blogart21` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `blogart21`;
 
 -- --------------------------------------------------------
 
