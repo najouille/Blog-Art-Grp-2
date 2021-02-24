@@ -100,7 +100,8 @@ if ($resultMotCle) {
 
                     <div class="container-input">
                         <label>Langue</label>
-                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);                                                                    echo $langue['lib1Lang'];  ?>" disabled>
+                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);
+                                                                                            echo $langue['lib1Lang'];  ?>" disabled>
                     </div>
 
                     <div class="controls">
@@ -110,15 +111,14 @@ if ($resultMotCle) {
                     </div>
                 </div>
             </fieldset>
-            
-        </div>
-        <div class="align-footer">
+            <div class="align-footer">
                 <?php
-
                 require_once __DIR__ . '/footerMotCle.php';
                 require_once __DIR__ . '/footer.php';
                 ?>
             </div>
+        </div>
+
     </form>
     <br>
 

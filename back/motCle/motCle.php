@@ -21,14 +21,12 @@ $motcle = new MOTCLE;
     <title>Admin - Gestion du CRUD Motclé</title>
     <meta name="description" content="" />
     <?php
-
-
     include("../../front/includes/commons/headRequired.php")
     ?>
     <meta name="author" content="" />
-
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/back-office.css" />
+    <link rel="stylesheet" href="../css/footer-back.css" />
 </head>
 
 
@@ -38,8 +36,9 @@ $motcle = new MOTCLE;
         <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
     </div>
 
-    <a class="align-footer" class="button" href="./createMotCle.php">Créer un Mot-clé</a></h3>
+    
     <div class="container-center">
+    <a class="button-create input-button" href="./createMotCle.php">Créer un Mot-clé</a>
         <table class="twa-table" border='3'>
             <thead>
                 <tr>

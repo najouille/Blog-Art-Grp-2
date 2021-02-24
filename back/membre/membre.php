@@ -23,73 +23,79 @@ $member = new MEMBRE;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
-    <link href="../css/style.css"  rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/back-office.css" />
 </head>
 
-<body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
+<body class="twa-back">
+    <div class="title">
+        <img class="logo" src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
+    </div>
 
-    <h3>Créer un membre : <a href="./createMembre.php">CREER Membre</a></h3>
-
-    <table border='3'>
-        <thead>
-            <tr>
-                <th>numMemb</th>
-                <th>prenomMemb</th>
-                <th>nomMemb</th>
-                <th>pseudoMemb</th>
-                <th>passMemb</th>
-                <th>eMailMemb</th>
-                <th>dtCreaMemb</th>
-                <th>souvenirMemb</th>
-                <th>accordMemb</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $allMembres = $member->get_AllMembres();
-            foreach ($allMembres as $row) {
-            ?>
+    <div class="container-center">
+    <a class="button-create input-button" href="./createMembre.php">Créer Membre</a>
+        <table class="twa-table" border='3'>
+            <thead>
                 <tr>
-                    <td>
-                        <h4> <?php echo $row['numMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['prenomMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo  $row['nomMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['pseudoMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['passMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['eMailMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['dtCreaMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['souvenirMemb']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?php echo $row['accordMemb']; ?> </h4>
-                    </td>
+                    <th>Numéro</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Pseudo</th>
+                    <th>Password</th>
+                    <th>E-mail</th>
+                    <th>Date</th>
+                    <th>souvenirMemb</th>
+                    <th>accordMemb</th>
                 </tr>
+            </thead>
+            <tbody>
+                <?php
+                $allMembres = $member->get_AllMembres();
+                foreach ($allMembres as $row) {
+                ?>
+                    <tr>
+                        <td>
+                            <h4> <?php echo $row['numMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['prenomMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo  $row['nomMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['pseudoMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['passMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['eMailMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['dtCreaMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['souvenirMemb']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?php echo $row['accordMemb']; ?> </h4>
+                        </td>
+                    </tr>
 
-            <?php
-            }
-            ?>
-        </tbody>
-    </table>
-
-    <?php
-    require_once __DIR__ . '/footer.php';
-    ?>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="align-footer">
+        <?php
+        require_once __DIR__ . '/footer.php';
+        require_once __DIR__ . '/footerMembre.php';
+        ?>
+    </div>
 </body>
 
 </html>

@@ -87,6 +87,12 @@ label {
 	justify-content: space-between;
 }
 
+.control-group-colonne{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .controls{
 	display: flex;
 	justify-content: center;
@@ -94,12 +100,6 @@ label {
 }
 span {
 	background-color: white;
-}
-
-input {
-	border: 1px solid #FFEE32;
-	background-color: #a6bede;
-
 }
 
 input[type="radio"] {
