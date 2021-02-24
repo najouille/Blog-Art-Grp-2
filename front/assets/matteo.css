@@ -3,6 +3,7 @@
 }
 
 h1 {
+  margin-top: 3rem;
   font-family: Monument Extented;
   font-size: 36px;
   text-align: center;
@@ -10,7 +11,8 @@ h1 {
   font-family: Monument Extended;
   line-height: 43px;
 }
-.paragraph {
+.paragraph-start{
+  margin-top: 1rem;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -34,6 +36,7 @@ h1 {
   margin-bottom: 2rem;
 }
 .tag {
+  margin-top: 1rem;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -124,4 +127,15 @@ letter-spacing: 0em;
 text-align: left;
 color: rgba(255, 255, 255, 0.781);
 text-indent: 20px;
+}
+.date{
+  font-family: "Manrope", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff75;
+margin-top: 3rem;
 }
