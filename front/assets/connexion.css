@@ -1,0 +1,63 @@
+html {
+  background-color: #0e0e0e;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: thin;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: white;
+  background-color: #0e0e0e;
+  border-radius: 6px;
+  padding: 8px;
+  width: 30%;
+  border: 1px solid #ffee32;
+}
+
+button {
+  color: #0e0e0e;
+  background-color: #ffee32;
+  border-color: #ffee32;
+  border-radius: 6px;
+  width: 6rem;
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #ffee32;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0e0e0e;
+  color: #ffee32;
+  border: 1px solid #ffee32;
+}
+
+#formimg {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: left;
+  justify-content: space-between;
+}
+
+#form {
+  margin-top: 2rem;
+  margin-right: 12rem;
+}
+
+#img {
+    margin-top: 2rem;
+}
