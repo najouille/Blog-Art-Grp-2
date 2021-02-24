@@ -14,54 +14,48 @@ body {
     max-width: 800px;
 }
 
-/*LEFT*/
-
-.left-profile {
-    padding: 80px;
-}
-
 .top-container {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
 }
 
+.left-profile {
+    padding: 80px;
+}
+
 hr {
     border-color: #FFEE32;
     max-width: 1280px;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
-/*MODIFIER PROFIL BOUTON*/
-
-.modifier-profile {
+.valider-profile {
     max-width: 180px;
-    border: 1px solid #FFEE32;
-    border-radius: 6px;
-    padding: 0 40px;
-    max-height: 45px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.modifier-profile:hover {
+    text-align: center;
     border: 1px solid #FFEE32;
     background: #FFEE32;
     color: #0E0E0E;
+    border-radius: 6px;
+    padding: 0 40px;
+    max-height: 45px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-p {
+.valider-profile:hover {
+    background: #0E0E0E;
+    color: #FFEE32;
+    border: 1px solid #FFEE32;
+}
+
+h3 {
     padding: 10px 0;
-    font-weight: 300;
 }
-
-/*MIDDLE*/
 
 .middle-container {
     display: flex;
 }
-
-/*BOTTOM*/
 
 .bottom-container {
     display: flex;
@@ -73,15 +67,34 @@ p {
     padding: 90px;
 }
 
-h2 {
-    font-size: 2rem;
+.logo-email {
+    
 }
 
-h3 {
-    padding-top: 8px;
+h2 {
+    font-size: 2rem;
 }
 
 .top-text {
     margin: 80px;
     padding: 80px;
+}
+
+input {
+    color: #fff;
+    border: 1px solid #FFEE32;
+    background: #0E0E0E ;
+    border-radius: 6px;
+    padding: 5px;
+    min-width: 200px;
+}
+
+.mdpoublié {
+    color: #A8A8A8;
+    transition: 0.3s;
+    font-size: 0.8rem;
+}
+
+.mdpoublié:hover {
+    color: #FFEE32;
 }
