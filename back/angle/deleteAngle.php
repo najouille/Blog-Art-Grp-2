@@ -53,68 +53,75 @@ if ($resultAngle) {
 <head>
     <meta charset="utf-8" />
     <title>Admin - Gestion du CRUD Langue</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/back-office.css" rel="stylesheet" type="text/css" />
+    <link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Angle</h1>
-    <h2>Suppression d'un angle</h2>
+<body class="twa-back">
+    <div class="title">
+        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD Angle</h1>
+    </div>
+    <h3>Suppression d'un Angle</h3>
     <form method="post" action="<?= "./deleteAngle.php?id=" . $numLang; ?>" enctype="multipart/form-data">
+        <div class="fieldset-container">
+            <fieldset>
+                <legend class="legend1">Formulaire Angle...</legend>
 
-        <fieldset>
-            <legend class="legend1">Formulaire Angle...</legend>
+                <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
-            <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
+                <div class="control-group">
+                    <div class="container-input">
+                        <label class="control-label" for="numAngl"><b>NumAngl :</b></label>
+                        <input type="text" name="numAngl" id="numAngl" size="40" maxlength="80" value="<?= $deleted ? '' : $numAngl; ?>" disabled /><br><br>
+                    </div>
 
-            <div class="control-group">
-                <label class="control-label" for="numAngl"><b>NumAngl :</b></label>
-                <input type="text" name="numAngl" id="numAngl" size="80" maxlength="80" value="<?= $deleted ? '' : $numAngl; ?>" disabled /><br><br>
+                    <div class="container-input">
+                        <label class="control-label" for="libAngl"><b>libAngl :</b></label>
+                        <input type="text" name="libAngl" id="libAngl" size="40" maxlength="80" value="<?= $deleted ? '' : $libAngl; ?>" disabled /><br><br>
+                    </div>
 
-                <label class="control-label" for="libAngl"><b>libAngl :</b></label>
-                <input type="text" name="libAngl" id="libAngl" size="80" maxlength="80" value="<?= $deleted ? '' : $libAngl; ?>" disabled /><br><br>
+                    <div class="container-input">
+                        <label class="control-label" for="numLang">Langue :</b></label>
+                        <select name="numLang" id="numLang" disabled>
+                            <option value="<?= $deleted ? '' : $numLang; ?>" selected><?php echo $deleted ? '' : $numLang; ?></option>
+                        </select>
+                    </div>
 
-                <label class="control-label" for="numLang"><b>Langue :</b></label>
-                <select name="numLang" id="numLang" disabled>
-                    <option value="<?= $deleted ? '' : $numLang; ?>" selected><?php echo $deleted ? '' : $numLang; ?></option>
-                </select>
-            </div>
-
-            <div class="control-group">
-                <div class="controls">
-                    <br><br>
-
-                    <input type="submit" value="Initialiser" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-
-                    <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    <br>
+                    <div class="controls">
+                        <br>
+                        <input class="input-button" type="submit" value="Initialiser" name="Submit" />
+                        <input class="input-button" type="submit" value="Valider" name="Submit" />
+                    </div>
                 </div>
-            </div>
-        </fieldset>
+            </fieldset>
+
+        </div>
+        <div class="align-footer">
+            <?php
+
+            if ($supprImpossible) {
+                echo '<p style="color:red;">Impossible de supprimer l angle "' . $libAngl . '" car elle est référencée par les éléments suivant :</p>';
+
+                if ($articles) {
+                    echo '<p>Table article :</p>';
+                    echo '<ul>';
+                    foreach ($articles as $row) {
+                        echo '<li>' . $row["numArt"] . ' - ' . $row["libTitrArt"] . '</li>';
+                    }
+                    echo '</ul>';
+                }
+            } elseif ($deleted) {
+                echo '<p style="color:green;">L\'angle "' . $libAngl . '" a été supprimée.</p>';
+            }
+
+            require_once __DIR__ . '/footerAngle.php';
+            require_once __DIR__ . '/footer.php';
+            ?>
+        </div>
     </form>
     <br>
-    <?php
-
-    if ($supprImpossible) {
-        echo '<p style="color:red;">Impossible de supprimer l angle "' . $libAngl . '" car elle est référencée par les éléments suivant :</p>';
-
-        if ($articles) {
-            echo '<p>Table article :</p>';
-            echo '<ul>';
-            foreach ($articles as $row) {
-                echo '<li>' . $row["numArt"] . ' - ' . $row["libTitrArt"] . '</li>';
-            }
-            echo '</ul>';
-        }
-    } elseif ($deleted) {
-        echo '<p style="color:green;">L\'angle "' . $libAngl . '" a été supprimée.</p>';
-    }
-
-    require_once __DIR__ . '/footerAngle.php';
-    require_once __DIR__ . '/footer.php';
-    ?>
 </body>
 
 </html>

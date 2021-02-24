@@ -1,0 +1,104 @@
+*{  margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0E0E0E;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container-profile {
+    display: flex;
+    padding: 80px;
+    max-width: 800px;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.left-profile {
+    padding: 80px;
+}
+
+hr {
+    border-color: #FFEE32;
+    max-width: 1280px;
+    margin: 50px 0;
+}
+
+.valider-profile {
+    max-width: 180px;
+    text-align: center;
+    border: 1px solid #FFEE32;
+    background: #FFEE32;
+    color: #0E0E0E;
+    border-radius: 6px;
+    padding: 0 40px;
+    max-height: 45px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.valider-profile:hover {
+    background: #0E0E0E;
+    color: #FFEE32;
+    border: 1px solid #FFEE32;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+.middle-container {
+    display: flex;
+}
+
+.bottom-container {
+    display: flex;
+    white-space: nowrap;
+}
+
+.profile-img {
+    max-width: 510px;
+    padding: 90px;
+}
+
+.logo-email {
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.top-text {
+    margin: 80px;
+    padding: 80px;
+}
+
+input {
+    color: #fff;
+    border: 1px solid #FFEE32;
+    background: #0E0E0E ;
+    border-radius: 6px;
+    padding: 5px;
+    min-width: 200px;
+}
+
+.placeholder {
+    color: #EEEEEE;
+}
+
+.mdpoublié {
+    color: #A8A8A8;
+    transition: 0.3s;
+    font-size: 0.8rem;
+}
+
+.mdpoublié:hover {
+    color: #FFEE32;
+}

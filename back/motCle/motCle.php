@@ -21,9 +21,9 @@ $motcle = new MOTCLE;
     <title>Admin - Gestion du CRUD Membre</title>
     <meta name="description" content="" />
     <?php
-    
-    
-    include ("../../front/includes/commons/headRequired.php")
+
+
+    include("../../front/includes/commons/headRequired.php")
     ?>
     <meta name="author" content="" />
 
@@ -34,51 +34,53 @@ $motcle = new MOTCLE;
 
 <body class="twa-back">
     <div class="title">
-        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <img class="logo" src="../../front/assets/image/Townyart.png" alt="logo-townyart">
         <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
     </div>
 
-    <h3>Créer un MotClé : <a href="./createMotCle.php">Créer un Mot-clé</a></h3>
-<div class='container-center' >
-    <table class='twa-table' border='3'>
-        <thead>
-            <tr>
-                <th>numMotCle</th>
-                <th>libMotCle</th>
-                <th>numLang</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $allMotCles = $motcle->get_AllMotCles();
-            foreach ($allMotCles as $row) {
-            ?>
+    <a class="align-footer" class="button" href="./createMotCle.php">Créer un Mot-clé</a></h3>
+    <div class="container-center">
+        <table class="twa-table" border='3'>
+            <thead>
                 <tr>
-                    <td>
-                        <h4> <?= $row['numMotCle']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?= $row['libMotCle']; ?> </h4>
-                    </td>
-                    <td>
-                        <h4> <?= $row['numLang']; ?> </h4>
-                    </td>
-                    <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>
-                    </td>
-                    <td><a class='link-delete' href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>
-                    </td>
+                    <th>numMotCle</th>
+                    <th>libMotCle</th>
+                    <th colspan="1">numLang</th>
+                    <th colspan="2">Action</th>
                 </tr>
+            </thead>
+            <tbody>
+                <?php
+                $allMotCles = $motcle->get_AllMotCles();
+                foreach ($allMotCles as $row) {
+                ?>
+                    <tr>
+                        <td>
+                            <h4> <?= $row['numMotCle']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?= $row['libMotCle']; ?> </h4>
+                        </td>
+                        <td>
+                            <h4> <?= $row['numLang']; ?> </h4>
+                        </td>
+                        <td><a href="./updateMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Modifier</i></a>
+                        </td>
+                        <td><a class='link-delete' href="./deleteMotCle.php?id=<?= $row['numMotCle'] ?>"><i>Supprimer</i></a>
+                        </td>
+                    </tr>
 
-            <?php
-            }
-            ?>
-        </tbody>
-    </table>
-</div>
-    <?php
-    require_once __DIR__ . '/footer.php';
-    ?>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="align-footer">
+        <?php
+        require_once __DIR__ . '/footer.php';
+        ?>
+    </div>
 </body>
 
 </html>

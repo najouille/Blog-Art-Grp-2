@@ -41,6 +41,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 120px;
 }
 
 .container-center {
@@ -51,6 +52,7 @@ a{
 
 .twa-table {
     width: 85%;
+    background-color: #0E0E0E;
     border-collapse: collapse;
     border-color: white;
     text-align: center;
@@ -74,12 +76,23 @@ input[type=text],input[type=email], textarea {
 
 .container-input{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 :focus{
     border: solid 1px white;
 }
 
+.select-especial{
+    padding: 7px; 
+    color: white;
+    border:line 2px;
+    border-color: #FFEE32;
+    border-radius:5px;
+    background-color:black; 
+}
 .input-button{
     cursor:pointer; 
     padding:5px 20px; 
@@ -106,3 +119,4 @@ select{
     border-radius:5px;
     background-color:black; 
 }
+
