@@ -172,7 +172,7 @@ h6 {
     font-style: normal;
     font-weight: 400;
     background-color: #393939;
-    border-radius: px;
+    border-radius: 8px;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 4px;
@@ -196,5 +196,47 @@ h4{
     padding-left: 228px;
     padding-top: 38px;
     padding-bottom: 52px;
-
+}
+#eiffel {
+    width: 238px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#quais {
+    width: 494px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.button a {
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 78.5px;
+    padding-bottom: 78.5px;
+}
+#bourse2 {
+    width: 556px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+#arene {
+    width: 367px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+#bourse1 {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
 }
