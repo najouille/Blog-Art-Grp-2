@@ -64,7 +64,6 @@ if ($resultMotCle) {
         <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
     </div>
     <h3>Suppression d'un Mot-Clé</h3>
-    <br>
 
     <?php
     if ($supprImpossible) {
@@ -89,7 +88,7 @@ if ($resultMotCle) {
     <form method="post" action=".\deleteMotCle.php?id=<?= $numMotCle ?>">
         <div class="fieldset-container">
             <fieldset>
-                <legend class="legend1">Formulaire Langue</legend>
+                <legend class="legend1">Formulaire Mot clé...</legend>
 
                 <div class="control-group">
 
@@ -101,14 +100,15 @@ if ($resultMotCle) {
 
                     <div class="container-input">
                         <label>Langue</label>
-                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);
-                                                                                            echo $langue['lib1Lang'];  ?>" disabled>
+                        <input class="select-especial" name="numLang" id="numLang" value="<?php $langue = $lang->get_1Langue($numLang);                                                                    echo $langue['lib1Lang'];  ?>" disabled>
                     </div>
+
                     <div class="controls">
                         <br>
                         <button class="input-button" type="submit" value="Annuler" name="Submit">Annuler</button>
                         <button class="input-button" type="submit" value="Valider" name="Submit">Valider</button>
                     </div>
+                </div>
             </fieldset>
             
         </div>

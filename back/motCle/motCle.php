@@ -18,7 +18,7 @@ $motcle = new MOTCLE;
 <html lang="fr">
 
 <head>
-    <title>Admin - Gestion du CRUD Membre</title>
+    <title>Admin - Gestion du CRUD Motclé</title>
     <meta name="description" content="" />
     <?php
 
@@ -45,8 +45,8 @@ $motcle = new MOTCLE;
                 <tr>
                     <th>numMotCle</th>
                     <th>libMotCle</th>
-                    <th>numLang</th>
-
+                    <th colspan="1">numLang</th>
+                    <th colspan="2">Action</th>
                 </tr>
             </thead>
             <tbody>

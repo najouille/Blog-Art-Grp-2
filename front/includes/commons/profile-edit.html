@@ -9,7 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./front/assets/master.css">
     <link rel="stylesheet" href="../../assets/test.css">
-    <link rel="stylesheet" href="../../assets/profile.css">
+    <link rel="stylesheet" href="../../assets/profile-edit.css">
 </head>
 <body>
     <div class="top-text">
@@ -24,18 +24,18 @@
                         <div class="infos-profile">
                             <div class="nom-pseudo">
                                 <h3>Nom</h3>
-                                <p>Barre</p>
+                                <input type="text" name="nom" placeholder="Insérez votre nom ..." required />
                                 <h3>Pseudo</h3>
-                                <p>eymeric-barre</p>
+                                <input type="text" name="pseudo" placeholder="Choisissez un pseudo ..." required />
                             </div>
                             <div class="prenom-date">
                                 <h3>Prénom</h3>
-                                <p>Eymeric</p>
+                                <input type="text" name="prenom" placeholder="Insérez votre prénom ..." required />
                                 <h3>Date de naissance</h3>
-                                <p>10/05/1990</p>
+                                <input type="text" name="date" placeholder="JJ/MM/AAAA" required />
                             </div>
                         </div>
-                        <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg"><h3>Modifier</h3></div>
+                        <a class="valider-profile" href=""><h3>Valider</h3></a>
                     </div>
             </div>
             <hr>
@@ -44,9 +44,9 @@
                     <div class="middle-container">
                         <div class="email-profile">
                             <h3>Votre adresse e-mail</h3>
-                            <p>eymeric.barre@gmail.com</p>
+                            <input type="text" name="mail" placeholder="Insérez votre adresse mail ..." required />
                         </div>
-                        <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg"><h3>Modifier</h3></div>
+                        <a class="valider-profile" href=""><h3>Valider</h3></a>
                     </div>
             </div>
             <hr>
@@ -54,10 +54,12 @@
                 <div class="logo-password"><img src="../../assets/image/icones/password.svg"></div> 
                     <div class="bottom-container">
                         <div class="password-set">
-                            <h3>Votre mot de passe</h3>
-                            <p>***********</p>
+                            <h3>Modifier votre mot de passe</h3>
+                            <input type="text" name="mdp" placeholder="Mot de passe actuel ..." required />
+                            <input type="text" name="mdp" placeholder="Nouveau mot de passe actuel ..." required />
+                            <a class="mdpoublié" href="">Mot de passe oublié ?</a>
                         </div>
-                        <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg"><h3>Modifier</h3></div>
+                        <a class="valider-profile" href=""><h3>Valider</h3></a>
                     </div>
             </div>
         </div>

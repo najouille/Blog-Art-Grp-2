@@ -57,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="author" content="" />
     <link rel="stylesheet" href="../css/back-office.css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <!--<link href="../css/style.css" rel="stylesheet" type="text/css" />-->
 </head>
 
 <body class="twa-back">
@@ -67,7 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <h3>Création d'un Mot-Clé</h3>
-    <br>
 
     <?php
     if ($created) {
@@ -81,35 +79,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form method="post" action=".\createMotCle.php">
         <div class="fieldset-container">
             <fieldset>
-                <div class="container-input">
-                    <label>Libellé</label>
-                    <input type="text" name="libMotCle" id="libMotCle" placeholder="Libellé">
-                </div>
-                <div class="container-input">
-                    <label>Langue</label>
-                    <select name="numLang" id="numLang">
-                        <?php
-                        $allLangues = $lang->get_AllLangues();
-                        foreach ($allLangues as $row) {
-                            echo '<option value="' . $row["numLang"] . '">' . $row["lib1Lang"] . '</option>';
-                        }
-                        ?>
-                    </select>
-                </div>
-                <br>
+                <legend class="legend1">Formulaire Mot clé...</legend>
 
-                <button class="input-button" type="submit" value="Initialiser" name="Submit">Initialiser</button>
+                <div class="control-group">
 
-                <button class="input-button" id="button-valid" type="submit" value="Valider" name="Submit">Valider</button>
+                    <div class="container-input">
+                        <label>Libellé</label>
+                        <input type="text" name="libMotCle" id="libMotCle" placeholder="Libellé">
+                    </div>
+
+                    <div class="container-input">
+                        <label>Langue</label>
+                        <select name="numLang" id="numLang">
+                            <?php
+                            $allLangues = $lang->get_AllLangues();
+                            foreach ($allLangues as $row) {
+                                echo '<option value="' . $row["numLang"] . '">' . $row["lib1Lang"] . '</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <br>
+
+                    <button class="input-button" type="submit" value="Initialiser" name="Submit">Initialiser</button>
+
+                    <button class="input-button" id="button-valid" type="submit" value="Valider" name="Submit">Valider</button>
             </fieldset>
         </div>
     </form>
     <div class="align-footer">
-   <?php
-    require_once __DIR__ . '/footerMotCle.php';
-    require_once __DIR__ . '/footer.php';
-    ?>
-    <div></div>
+        <?php
+        require_once __DIR__ . '/footerMotCle.php';
+        require_once __DIR__ . '/footer.php';
+        ?>
+        <div></div>
 </body>
 
 </html>

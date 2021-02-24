@@ -1,0 +1,127 @@
+.style {
+  background-color: #0e0e0e;
+}
+
+h1 {
+  font-family: Monument Extented;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Monument Extended;
+  line-height: 43px;
+}
+.paragraph {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #f4f4f5;
+}
+.conteneur-principal {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.conteneurblog {
+  margin-top: 19px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.tag {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding: 5px;
+}
+.contenant-tag-blog{
+    display: flex;
+    flex-direction: column;
+
+}
+.imgstreet{
+    border: 3px solid rgba(255, 255, 255, 0.23);
+box-sizing: border-box;
+border-radius: 4px;
+}
+.conteneurintro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+h3{
+    color: white;
+    font-family: "Manrope", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+margin-left:1rem;
+
+
+}
+h4{
+    font-family: "Manrope", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+margin-left: 2.5rem;
+margin-top: 1rem;
+
+}
+.maxiconteneurintro{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.089);
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 59px;
+
+}
+
+.lien{
+    color: #FFEE32;
+    text-decoration: underline;
+
+}
+
+h2{
+    font-family: "Manrope", sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.paragraph{
+    font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(255, 255, 255, 0.781);
+text-indent: 20px;
+}

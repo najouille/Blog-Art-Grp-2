@@ -48,11 +48,16 @@ if ($resultLangue) {
     <title>Admin - Gestion du CRUD Langue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/back-office.css" rel="stylesheet" type="text/css" />
+    <link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Langue</h1>
-    <h2>Ajout d'une langue</h2>
+<body class="twa-back">
+    <div class="title">
+        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD Langue</h1>
+    </div>
+    <h3>Modification d'une langue</h3>
 
     <?php
     if ($updated) {
@@ -61,52 +66,62 @@ if ($resultLangue) {
     ?>
 
     <form method="post" action="<?= "./updateLangue.php?id=" . $numLang; ?>" enctype="multipart/form-data">
+        <div class="fieldset-container">
+            <fieldset>
+                <legend class="legend1">Formulaire Langue...</legend>
 
-        <fieldset>
-            <legend class="legend1">Formulaire Langue...</legend>
+                <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
 
-            <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
+                <div class="control-group">
 
-            <div class="control-group">
-                <label class="control-label" for="lib1Lang"><b>Désignation :</b></label>
-                <input type="text" name="lib1Lang" id="lib1Lang" size="80" maxlength="80" value="<?= isset($lib1Lang) ? $lib1Lang : ''; ?>" /><br><br>
+                    <div class="container-input">
+                        <label class="control-label" for="lib1Lang">Désignation :</label>
+                        <input type="text" name="lib1Lang" id="lib1Lang" size="40" maxlength="80" value="<?= isset($lib1Lang) ? $lib1Lang : ''; ?>" /><br><br>
+                    </div>
 
-                <label class="control-label" for="lib2Lang"><b>Dénomination :</b></label>
-                <input type="text" name="lib2Lang" id="lib2Lang" size="80" maxlength="80" value="<?= isset($lib2Lang) ? $lib2Lang : ''; ?>" /><br><br>
+                    <div class="container-input">
+                        <label class="control-label" for="lib2Lang">Dénomination :</label>
+                        <input type="text" name="lib2Lang" id="lib2Lang" size="40" maxlength="80" value="<?= isset($lib2Lang) ? $lib2Lang : ''; ?>" /><br><br>
+                    </div>
 
-                <label class="control-label" for="numPays"><b>Pays :</b></label>
-                <select name="numPays" id="numPays">
-                    <?php
-                    $allPays = $country->get_AllPays();
-                    foreach ($allPays as $row) {
-                        if ($row["numPays"] === $numPays) {
-                            $selected = "selected";
-                        } else {
-                            $selected = "";
-                        }
-                        echo '<option value="' . $row["numPays"] . '" ' . $selected . '>' . $row["frPays"] . '</option>';
-                    }
-                    ?>
-                </select>
-            </div>
+                    <div class="container-input">
+                        <label class="control-label" for="numPays"><b>Pays :</b></label>
+                        <select name="numPays" id="numPays">
+                            <?php
+                            $allPays = $country->get_AllPays();
+                            foreach ($allPays as $row) {
+                                if ($row["numPays"] === $numPays) {
+                                    $selected = "selected";
+                                } else {
+                                    $selected = "";
+                                }
+                                echo '<option value="' . $row["numPays"] . '" ' . $selected . '>' . $row["frPays"] . '</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
 
-            <div class="control-group">
-                <div class="controls">
-                    <br><br>
-                    
-                    <input type="submit" value="Initialiser" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    
-                    <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    <br>
-                </div>
-            </div>
-        </fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <br><br>
+
+                            <input class="input-button" type="submit" value="Initialiser" name="Submit" />
+
+                            <input class="input-button" type="submit" value="Valider" name="Submit" />
+                            <br>
+                        </div>
+                    </div>
+            </fieldset>
+        </div>
+        <div class="align-footer">
+            <?php
+
+            require_once __DIR__ . '/footerLangue.php';
+            require_once __DIR__ . '/footer.php';
+            ?>
+        </div>
     </form>
-    <?php
 
-    require_once __DIR__ . '/footerLangue.php';
-    require_once __DIR__ . '/footer.php';
-    ?>
 </body>
 
 </html>

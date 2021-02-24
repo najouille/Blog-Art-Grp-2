@@ -44,6 +44,7 @@ footer a:link, footer a:visited {
 .footer-logo {
     display: flex;
     flex-direction: row;
+    max-height: 32px;
 }
 
 .footer-top-section {
@@ -114,7 +115,6 @@ footer a:link, footer a:visited {
 .newsletter {
     position: relative;
     display: flex;
-    justify-content: space-between;
     margin: auto;
     box-sizing: border-box;
 }
@@ -140,19 +140,16 @@ input {
     border: none;
     padding: 7px 25px;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     border-radius: 25px;
-    cursor: pointer;
     text-decoration: none;
     transition-duration: 0.3s;
 }
 
 .submit-button:hover {
-    border: solid 1px;
-    border-color: #FFEE32;
+    border: 1px solid #FFEE32;
     background-color: #000000;
     color: #FFEE32;
-    transition-duration: 0.3s;
 }
 
 /*NAVBAR*/
