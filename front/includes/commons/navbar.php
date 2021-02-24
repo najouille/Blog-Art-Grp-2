@@ -1,10 +1,21 @@
+<?php
+
+$page = "";
+if (str_contains($_SERVER['PHP_SELF'], 'blog/')) {
+    $page = "blog";
+} else if (str_contains($_SERVER['PHP_SELF'], 'index.php')) {
+    $page = "index";
+}
+?>
+
+
 <div class="header">
-    <img class="logo-navbar" src="../front/assets/image/Townyart-blanc (2).svg" alt="">
+    <img class="logo-navbar" src="<?= $dir . '/front/assets/image/Townyart-blanc (2).svg' ?>" alt="">
     <div class="navbar-content-right">
-        <a href="#" class="bouton-space">
+        <a href="#" class="bouton-space <?= $page == "index" ? 'active' : '' ?>">
             ACCUEIL
         </a>
-        <a href="#" class="bouton-space">
+        <a href="#" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
             BLOG
         </a>
         <a href="#" class="bouton-space">
@@ -25,4 +36,3 @@
     </div>
 
 </div>
-
