@@ -9,7 +9,7 @@
   color: white;
 }
 .conteneur-commentaire {
-  max-width: 1298px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -26,6 +26,7 @@
   border: white 2px solid;
   border-radius: 10px;
   width: 100%;
+  margin-bottom:.75rem;
 }
 p {
   font-family: "Manrope", sans-serif;
@@ -52,18 +53,16 @@ p {
 
 .interaction-button svg {
     margin-left: .25rem;
+    color: white;
+    fill: none;
 }
 
-.svgheart {
-  width: 32px;
-  height: 32px;
-  fill: white;
+.interaction-button:hover svg {
+    color: #FFEE32;
+    fill:  #FFEE32;
 }
-.commentsvg {
-  width: 36px;
-  height: 29px;
-  fill: white;
-}
+
+
 .number {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
