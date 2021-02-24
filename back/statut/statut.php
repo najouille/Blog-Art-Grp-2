@@ -39,56 +39,63 @@ $statut = new STATUT;
             border-radius: 5px;
         }
     </style>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/back-office.css" />
+    <link rel="stylesheet" href="../css/footer-back.css" />
 </head>
 
 <body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Statut</h1>
 
-    <hr /><br />
-    <h2>Nouveau statut :<a href="./createStatut.php"><i>Créer un statut</i></a></h2>
-    <br />
-    <hr />
-    <h2>Tous les statuts</h2>
+    <body class="twa-back">
+        <div class="title">
+            <img class="logo" src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+            <h1>BLOGART21 Admin - Gestion du CRUD Statut</h1>
+        </div>
 
-    <table border="3" bgcolor="aliceblue">
-        <thead>
-            <tr>
-                <th>Numéro</th>
-                <th>Nom</th>
-                <th colspan="2">Action</th>
-            </tr>
-        </thead>
-        <tbody>
+        <div class="container-center">
+            <a class="button-create input-button" id="button-create-motcle" href="./createStatut.php">Créer un statut</a>
+            <table class="twa-table" border="3">
+                <thead>
+                    <tr>
+                        <th>Numéro</th>
+                        <th>Nom</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Appel méthode : tous les statuts en BDD
+
+                    $allStatuts = $statut->get_AllStatuts();
+                    foreach ($allStatuts as $row) {
+                        // Boucle pour afficher
+                    ?>
+                        <tr>
+                            <td>
+                                <h4> <?php echo $row["idStat"]; ?> </h4>
+                            </td>
+
+                            <td> <?php echo $row["libStat"]; ?> </td>
+
+                            <td><a href="./updateStatut.php?id=<?= $row["idStat"]; ?>"><i>Modifier</i></a>
+                                <br />
+                            </td>
+                            <td><a href="./deleteStatut.php?id=<?= $row["idStat"]; ?>"><i>Supprimer</i></a>
+                                <br />
+                            </td>
+                        </tr>
+                    <?php
+                    }    // End of foreach
+                    ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="align-footer">
             <?php
-            // Appel méthode : tous les statuts en BDD
-
-            $allStatuts = $statut->get_AllStatuts();
-            foreach ($allStatuts as $row) {
-                // Boucle pour afficher
+            require_once __DIR__ . '/footer.php';
+            require_once __DIR__ . '/footerStatut.php';
             ?>
-                <tr>
-                    <td>
-                        <h4> <?php echo $row["idStat"]; ?> </h4>
-                    </td>
-
-                    <td> <?php echo $row["libStat"]; ?> </td>
-
-                    <td><a href="./updateStatut.php?id=<?= $row["idStat"]; ?>"><i>Modifier</i></a>
-                        <br />
-                    </td>
-                    <td><a href="./deleteStatut.php?id=<?= $row["idStat"]; ?>"><i>Supprimer</i></a>
-                        <br />
-                    </td>
-                </tr>
-            <?php
-            }    // End of foreach
-            ?>
-        </tbody>
-    </table>
-    <br><br>
-    <?php
-    require_once __DIR__ . '/footer.php';
-    ?>
-</body>
+        </div>
+    </body>
 
 </html>

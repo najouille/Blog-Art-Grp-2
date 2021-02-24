@@ -35,43 +35,50 @@ include __DIR__ . '/initStatut.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
+    <link rel="stylesheet" href="../css/back-office.css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <h1>BLOGART21 Admin - Gestion du CRUD Statut</h1>
-    <h2>Ajout d'un statut</h2>
+<body class="twa-back">
+    <div class="title">
+        <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
+        <h1>BLOGART21 Admin - Gestion du CRUD Statut</h1>
+    </div>
+
+    <h3>Création d'un Statut</h3>
 
     <form method="post" action="" enctype="multipart/form-data">
+        <div class="fieldset-container">
+            <fieldset>
+                <legend class="legend1">Formulaire Statut...</legend>
 
-        <fieldset>
-            <legend class="legend1">Formulaire Statut...</legend>
+                <!-- <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" /> -->
 
-            <!-- <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" /> -->
-
-            <div class="control-group">
-                <label class="control-label" for="libStat"><b>Nom du statut :</b></label>
-                <input type="text" name="libStat" id="libStat" size="80" maxlength="80" value="<?= $libStat; ?>" autofocus="autofocus" />
-            </div>
-
-            <div class="control-group">
-                <div class="controls">
-                    <br><br>
-                    
-                    <input type="submit" value="Initialiser" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    
-                    <input type="submit" value="Valider" style="cursor:pointer; padding:5px 20px; background-color:lightsteelblue; border:dotted 2px grey; border-radius:5px;" name="Submit" />
-                    <br>
+                <div class="control-group">
+                    <div class="container-input">
+                        <label class="control-label" for="libStat"><b>Nom du statut :</b></label>
+                        <input type="text" name="libStat" id="libStat" size="40" maxlength="80" value="<?= $libStat; ?>" autofocus="autofocus" />
+                    </div>
                 </div>
-            </div>
-        </fieldset>
-    </form>
+
+                <div class="control-group">
+
+                    <div class="controls">
+                        <input class="input-button" type="submit" value="Initialiser" name="Submit" />
+
+                        <input class="input-button" type="submit" value="Valider" name="Submit" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    <div class="align-footer"> 
     <?php
     require_once __DIR__ . '/footerStatut.php';
-
     require_once __DIR__ . '/footer.php';
     ?>
+    </div>
+    </form>
+    
 </body>
 
 </html>
