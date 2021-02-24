@@ -134,3 +134,67 @@ h3 {
     padding-top: 48px;
     padding-bottom: 25px;
 }
+.introduction a {
+    color: #FFEE32;
+}
+.article a {
+    color: #FFEE32;
+}
+h6 {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    color: white;
+    opacity: 85%;
+    padding-left: 228px;
+    padding-right: 228px;
+    padding-top: 32px;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+}
+#insta {
+    padding-left: 228px;
+    padding-bottom: 20px;
+}
+#internet {
+    padding-left: 228px;
+}
+.links {
+    color: white;
+    opacity: 90%;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #393939;
+    border-radius: px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 228px;
+}
+.galerie {
+    height: 540px;
+    width: 100%;
+    background-color: #171717;
+    margin-top: 40px;
+}
+h4{
+    color: white;
+    opacity: 90%;
+    font-family: Monument Extended;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 228px;
+    padding-top: 38px;
+    padding-bottom: 52px;
+
+}
