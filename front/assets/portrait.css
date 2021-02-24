@@ -179,11 +179,12 @@ h6 {
     padding-bottom: 4px;
     margin-left: 228px;
 }
-.galerie {
+.oeuvres {
     height: 540px;
     width: 100%;
     background-color: #171717;
     margin-top: 40px;
+
 }
 h4{
     color: white;
@@ -197,20 +198,6 @@ h4{
     padding-top: 38px;
     padding-bottom: 52px;
 }
-#eiffel {
-    width: 238px;
-    height: 175px;
-    object-fit: cover;
-    margin-right: 16px;
-    margin-bottom: 16px;
-}
-#quais {
-    width: 494px;
-    height: 175px;
-    object-fit: cover;
-    margin-right: 16px;
-    margin-bottom: 16px;
-}
 .button a {
     text-decoration: none;
     font-family: "Manrope", sans-serif;
@@ -218,25 +205,41 @@ h4{
     font-weight: 500;
     color: #ffee32;
     border: 1px solid #ffee32;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 78.5px;
-    padding-bottom: 78.5px;
+}
+#portfolio {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;    
+    color: #ffee32;
+    border: 1px solid #ffee32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2 /span 2;
+}
+.galerie {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.galerie img{
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+}
+#quais {
+    grid-column: span 3 /span 3;
 }
 #bourse2 {
-    width: 556px;
-    height: 175px;
-    object-fit: cover;
-    margin-right: 16px;
+    grid-column: span 3 /span 3;
 }
 #arene {
-    width: 367px;
-    height: 175px;
-    object-fit: cover;
-    margin-right: 16px;
-}
-#bourse1 {
-    width: 175px;
-    height: 175px;
-    object-fit: cover;
+    grid-column: span 2 /span 2;
 }
