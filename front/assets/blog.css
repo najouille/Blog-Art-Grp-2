@@ -60,14 +60,14 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
 }
-.opacity-10 {
+.opacity-10 .etiquetteblog{
   opacity: 10%;
 }
 .soon-banner-container {
   position: relative;
 }
 .soon-banner {
-  background-color: aqua;
+  
   position: absolute;
   top: 0;
   bottom: 0;
@@ -81,7 +81,12 @@ h4 {
 
 }
 .soon-texte{
+  background-color: rgba(0, 255, 255, 0.301);
+  padding: 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
   color: #ffffff;
-  font-family: manrope;
+  font-family: "Manrope", sans-serif;
+  margin-top: -12px;
 }
 
