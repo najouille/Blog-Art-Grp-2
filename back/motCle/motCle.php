@@ -18,7 +18,7 @@ $motcle = new MOTCLE;
 <html lang="fr">
 
 <head>
-    <title>Admin - Gestion du CRUD Membre</title>
+    <title>Admin - Gestion du CRUD Motclé</title>
     <meta name="description" content="" />
     <?php
 

@@ -82,7 +82,8 @@
     </div>
     <div class='maxiconteneurblog opacity-10 soon-banner-container'>
         <div class="soon-banner">
-            Soon
+           <span class= "soon-texte"> Ne soit pas trop impatient...<br>
+Ça arrive très prochainement !</span>
         </div>
         <div class='etiquetteblog'>
             <img class='tailleimg' src="<?= $dir . '/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">

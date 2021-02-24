@@ -1,0 +1,44 @@
+.style {
+  background-color: #0e0e0e;
+}
+
+h1 {
+  font-family: Monument Extented;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Monument Extended;
+  line-height: 43px;
+}
+.paragraph {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #F4F4F5;
+}
+.conteneur-principal {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.conteneurblog {
+  margin-top: 19px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tag {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding: 5px;
+}

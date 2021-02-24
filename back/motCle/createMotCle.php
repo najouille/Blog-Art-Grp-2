@@ -66,7 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <h3>Création d'un Mot-Clé</h3>
-    <br>
 
     <?php
     if ($created) {
@@ -80,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form method="post" action=".\createMotCle.php">
         <div class="fieldset-container">
             <fieldset>
-                <legend class="legend1">Formulaire Angle...</legend>
+                <legend class="legend1">Formulaire Mot clé...</legend>
 
                 <div class="control-group">
 
