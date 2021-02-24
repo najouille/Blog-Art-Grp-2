@@ -1,5 +1,4 @@
 <?php
-
 preg_match('/[\\\\\/][^\\\\\/]*$/', dirname(dirname(dirname(__DIR__))), $matches, PREG_OFFSET_CAPTURE, 0);
 $dir = str_replace("\\", "/", $matches[0][0]);
 ?>
@@ -11,13 +10,4 @@ $dir = str_replace("\\", "/", $matches[0][0]);
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" />
 <link rel="stylesheet" href="<?=  $dir . '/front/assets/master.css' ?>">
-
-
-<!-- 
-
-     <?php echo $dir;
-
-
-
-        ?>
-    -->
+<link rel="stylesheet" href="<?=  $dir . '/front/assets/navbar.css' ?>">
