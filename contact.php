@@ -8,6 +8,9 @@
 </head>
 
 <body>
+<?php
+    include('./front/includes/commons/navbar.php')
+    ?>
 	<div id="intro">
 		<h1>Contact</h1>
 		<p> N'hésitez pas à nous contacter pour plus d’informations</p>

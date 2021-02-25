@@ -1,42 +1,96 @@
 .style {
-    background-color: #0e0e0e;
-  }
-  .nom{
-    font-family: "Manrope",sans serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    color: white;
-    
-  }
-  .conteneur-commentaire{
-      max-width: 1298px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      margin-top: 3rem;
-  }
-  .conteneur-profil{
-      display: flex;
-      flex-direction: column;
+  background-color: #0e0e0e;
+}
+.nom {
+  font-family: "Manrope", sans serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+.conteneur-commentaire {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.conteneur-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+.comment {
+  padding: 1rem;
+  border: white 2px solid;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom:.25rem;
+}
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.interaction {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.interaction-button {
+    display: flex;
     align-items: center;
-    margin-right: 1rem;
-  }
-  .comment{
-      padding: 1rem;
-      border: white 2px solid;
-      border-radius: 10px;
-      width: 100%;
-  }
-  p{
-    font-family: "Manrope",sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-  }
+    margin-left: 0.5rem;
+}
+
+.interaction-button svg {
+    margin-left: .25rem;
+    color: #FFEE32;
+    fill: none;
+}
+
+.interaction-button:hover svg {
+    color: #FFEE32;
+    fill:  #FFEE32;
+}
 
 
+.number {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  color: white;
+}
+.sous-titre-comment{
+  font-family: "Manrope", sans-serif;
+font-size: 14px;
+font-weight: 300;
+color: rgba(255, 255, 255, 0.521);
+text-decoration: underline;
+margin-right: 0.5rem;
+}
+.time svg{
+  margin-right: 0.5rem;
+  color: rgba(255, 255, 255, 0.521);
+}
+.time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

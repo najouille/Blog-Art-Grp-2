@@ -8,6 +8,9 @@
 </head>
 
 <body>
+<?php
+    include('./front/includes/commons/navbar.php')
+    ?>
     <div id="formimg">
         <div id="form">
             <div id="membre">
