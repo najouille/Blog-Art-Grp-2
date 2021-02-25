@@ -17,7 +17,7 @@ Lors de la creation d'un style pour le back-office, les modifications doivent ce
     - [X] delete
     - [x] update
   - [ ] article
-    - [ ] view
+    - [x] view
     - [ ] create
     - [ ] delete
     - [ ] update

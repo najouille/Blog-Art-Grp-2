@@ -10,22 +10,89 @@ html {
 	position: relative;
 }
 
-.hero-text {
+.hero-container {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-  display: flex;
+	display: flex;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	padding-right: 5rem;
+	margin-bottom: 5rem;
+  position: relative;
+}
+
+/* .hero-text {
+  position: relative;
+  padding: 5rem;
   width: 100%;
   height: 100%;
-  justify-content: flex-end;
-  align-items: flex-end;
+  background: #0e0e0e;
+  backdrop-filter: blur(46px);
+  border-radius: 179px 0px 0px 0px;
+  transform: scaleX(1.5) scaleY(1.5);
+} */
+
+.hero-text h1,.hero-text p,.hero-text .hero-nav {
+  z-index: 10;
+}
+
+.hero-back {
+  position: absolute;
+  /* padding: 5rem; */
+  width: 1032px;
+  height: 400px;
+  z-index: 0;
+  background-color: #111;
+  user-select: none;
+  margin-left: -100px;
+  margin-top: 28px;
+  filter: blur(46px);
+  border-radius: 179px 0px 0px 0px;
+  transform: scaleX(1.3) scaleY(2.4);
+}
+
+.hero-text p {
+	max-width: 460px;
+	font-family: Manrope;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+
+	color: rgba(255, 255, 255, 0.84);
+}
+.tiles__line-img {
+	background: red;
+}
+.hero-nav a {
+	border: 1px solid #ffee32;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Monument Extended;
+
+	font-size: 18px;
+	line-height: 22px;
+	color: #ffee32;
+	text-align: right;
+	text-transform: uppercase;
 }
 
 .hero-nav {
-  display: flex;
-  column-gap: 42px;
+	margin-top: 36px;
+	display: flex;
+	column-gap: 42px;
 }
 
 .tilescroll-container h1 {
@@ -170,46 +237,46 @@ p {
 	transform: scale(1.03);
 }
 .grille {
-  display: grid;
-  gap: 1rem;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  margin-left: 150px;
-  margin-right: 150px;
+	display: grid;
+	gap: 1rem;
+	grid-template-rows: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	margin-left: 150px;
+	margin-right: 150px;
 }
 .grille img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-  transition: ease(0.15s);
+	height: 175px;
+	width: 100%;
+	object-fit: cover;
+	transition: ease(0.15s);
 }
 #comedie {
-  grid-column: span 2 / span 2;
+	grid-column: span 2 / span 2;
 }
 #statue {
-  grid-column: span 2 / span 2;
+	grid-column: span 2 / span 2;
 }
 #lune {
-  grid-column: span 2 / span 2;
+	grid-column: span 2 / span 2;
 }
 #portfolio {
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  color: #ffee32;
-  border: 1px solid #ffee32;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: span 2 / span 2;
-  transition: ease(0.15s);
+	font-family: Manrope;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	color: #ffee32;
+	border: 1px solid #ffee32;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: span 2 / span 2;
+	transition: ease(0.15s);
 }
 #pellegrin {
-  object-position: center top;
+	object-position: center top;
 }
 #cathedrale {
-  object-position: center top;
+	object-position: center top;
 }

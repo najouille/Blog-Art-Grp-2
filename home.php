@@ -31,17 +31,24 @@
   include('./front/includes/commons/navbar.php')
   ?>
 
-  <main class="tilescroll-container">
-    <div class="hero-text">
-      <h1>L'urbain et l'art</h1>
-      <p>La ville offre un paysage en constante évolution, changeant sans cesse au grès des saisons et des modes. A travers la métropôle bordelaise, partez à la rencontre de cet art et découvrez ses trésors cachés. </p>
-      <div class="hero-nav">
-        <a href="">Accueil</a>
-        <a href="">Blog</a>
-        <a href="">galerie</a>
+  <main>
+
+    <section class="tiles tiles--rotated tilescroll-container" id="grid2">
+      <div class="hero-container">
+        <div class="hero-text">
+
+          <h1>L'urbain et l'art</h1>
+          <p>La ville offre un paysage en constante évolution, changeant sans cesse au grès des saisons et des modes. A travers la métropôle bordelaise, partez à la rencontre de cet art et découvrez ses trésors cachés. </p>
+          <div class="hero-nav">
+            <a href="">Accueil</a>
+            <a href="">Blog</a>
+            <a href="">galerie</a>
+          </div>
+          <div class="hero-back">
+
+          </div>
+        </div>
       </div>
-    </div>
-    <section class="tiles tiles--rotated" id="grid2">
       <div class="tiles__wrap">
         <div class="tiles__line pouched" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-offset="10" data-scroll-direction="horizontal">
           <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/1.jpg')"></div>
@@ -109,14 +116,11 @@
         </div>
 
       </div>
-  </section>
-  <section class="text">
-      <h2>Découvrez notre projet !</h2>
-      <h3>La ville, terrain de jeu artistique</h3>
-      <p class="presentation">Etudiants en DUT MMI (Métiers du Multimédia et de L’internet) à l’IUT Bordeaux Montaigne, nous vous présentons ce blog, né de 3 semaines de travail. En effet, à l’occasion de l’atelier “Blog’Art 2021”, nous avons conçu ce blog dans son intégralité. Vous y découvrirez de nombreux articles liés à l’art urbain et apprendrez les modes de réflexions de photographes, street-artistes, sculpteurs et bien plus encore. Grâce à une interface que nous souhaitons simple et agréable, nous espérons que vous prendrez du plaisir à acquérir de nombreuses connaissances liées à notre ville, Bordeaux.</p>
     </section>
+    
 
   </main>
+
   <section class="text">
     <h2>Découvrez notre projet !</h2>
     <h3>La ville, terrain de jeu artistique</h3>
@@ -178,33 +182,19 @@
             nombreux événements organisés autour de cet art.
           </p>
         </div>
-    </section>
+  </section>
   <section class="galerie">
     <h2>Notre galerie</h2>
     <div class="grille">
-          <img
-            src="./front/assets/image/pellegrin.jpg"
-            alt="pellegrin"
-            id="pellegrin"
-          />
-          <img src="./front/assets/image/comedie.jpg" alt="comedie" id="comedie" />
-          <img src="./front/assets/image/lafayette.jpg" alt="lafayette" id="lafayette" />
-          <a href="" id="portfolio" target="blank"
-            >Découvrir notre galerie</a
-          >
-          <img
-            src="./front/assets/image/meca.png"
-            alt="statue"
-            id="statue"
-          />
-          <img src="./front/assets/image/cathedrale.jpg" alt="cathedrale" id="cathedrale" />
-          <img
-            src="./front/assets/image/lune.jpg"
-            alt="port de la lune"
-            id="lune"
-          />
-          <img src="./front/assets/image/Jaguar.png" alt="jaguar" id="jaguar" />
-        </div>
+      <img src="./front/assets/image/pellegrin.jpg" alt="pellegrin" id="pellegrin" />
+      <img src="./front/assets/image/comedie.jpg" alt="comedie" id="comedie" />
+      <img src="./front/assets/image/lafayette.jpg" alt="lafayette" id="lafayette" />
+      <a href="" id="portfolio" target="blank">Découvrir notre galerie</a>
+      <img src="./front/assets/image/meca.png" alt="statue" id="statue" />
+      <img src="./front/assets/image/cathedrale.jpg" alt="cathedrale" id="cathedrale" />
+      <img src="./front/assets/image/lune.jpg" alt="port de la lune" id="lune" />
+      <img src="./front/assets/image/Jaguar.png" alt="jaguar" id="jaguar" />
+    </div>
   </section>
   <section class="nous">
     <h2>Qui sommes-nous ?</h2>
