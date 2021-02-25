@@ -6,9 +6,10 @@
     <?php
     include('../front/includes/commons/headRequired.php')
     ?>
+    <link rel="stylesheet" href="../front/assets/master.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="<?= $dir . '/front/assets/blog.css' ?> ">
-    <link rel="stylesheet" href="<?= $dir . '/front/assets/navbar.css' ?> ">
+    <link rel="stylesheet" href="../front/assets/blog.css">
+    <link rel="stylesheet" href="../front/assets/navbar.css">
 </head>
 
 <body class='style'>
@@ -30,11 +31,14 @@
             <circle cx="10" cy="10" r="7" />
             <line x1="21" y1="21" x2="15" y2="15" />
         </svg>
+        <span class="trier">
+            Trier par :
+        </span>
         </div>
     </div>
     <div class='maxiconteneurblog'>
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?= $dir . '/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
+            <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Street-Art
@@ -55,7 +59,7 @@
 
 
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?= $dir . '/front/assets/image/portaitphotographe.png' ?>" alt="portrait">
+            <img class='tailleimg' src="<?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Urbain
@@ -77,7 +81,7 @@
 
 
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?= $dir . '/front/assets/image/Statue.png' ?>" alt="Statue">
+            <img class='tailleimg' src="<?= '../front/assets/image/Statue.png' ?>" alt="Statue">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Street-Art
@@ -102,7 +106,7 @@
                 Ça arrive très prochainement !</span>
         </div>
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?= $dir . '/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
+            <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Street-Art
@@ -123,7 +127,7 @@
 
 
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?= $dir . '/front/assets/image/portaitphotographe.png' ?>" alt="portrait">
+            <img class='tailleimg' src="<?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Urbain
@@ -145,7 +149,7 @@
 
 
         <div class='etiquetteblog'>
-            <img class='tailleimg' src="<?php $dir . '../front/assets/image/Statue.png' ?>" alt="Statue">
+            <img class='tailleimg' src="<?php '../front/assets/image/Statue.png' ?>" alt="Statue">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Street-Art

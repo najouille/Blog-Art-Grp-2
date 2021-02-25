@@ -93,7 +93,6 @@ $statut = new STATUT;
         <div class="align-footer">
             <?php
             require_once __DIR__ . '/footer.php';
-            require_once __DIR__ . '/footerStatut.php';
             ?>
         </div>
     </body>

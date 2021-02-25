@@ -3,6 +3,8 @@
 	--dark: #0e0e0e;
 }
 
+@import 'navbar.css';
+
 @font-face {
     font-family: 'Monument Extended';
     src: local('Monument Extended Bold'), local('MonumentExtended-Bold'),

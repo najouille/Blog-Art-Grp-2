@@ -5,6 +5,7 @@
     <?php include('../commons/headRequired.php') ?>
     <link rel="stylesheet" href="../../assets/test.css">
     <link rel="stylesheet" href="../../assets/profile.css">
+    <link rel="stylesheet" href="../../assets/master.css" />
 </head>
 
 <body>

@@ -20,6 +20,7 @@ require_once __DIR__ . '/util/utilErrOn.php';
 
 	<meta name="description" content="" />
 	<meta name="author" content="" />
+	<link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
 	<link rel="stylesheet" href="./back/css/back-office.css" />
 	<link href="./back/css/style.css" rel="stylesheet" type="text/css" />
 </head>

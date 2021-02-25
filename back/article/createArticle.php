@@ -1,24 +1,34 @@
 <?php
-/////////////////////////////////////////////////////
-//
-//  CRUD LANGUE (PDO) - Modifié - 6 Décembre 2020
-//
-//  Script  : updateLangue.php  (ETUD)   -   BLOGART21
-//
-/////////////////////////////////////////////////////
-
 require_once __DIR__ . '/../../util/utilErrOn.php';
-require_once __DIR__ . '/../../CLASS_CRUD/membre.class.php';
 include __DIR__ . '/initMembre.php';
+$created = false;
 
-if (!isset($_GET['id'])) $_GET['id'] = '';
 
-$member = new MEMBRE;
-$erreur = '';
-$updated = false;
+require_once __DIR__ . '/../../CLASS_CRUD/article.class.php';
+require_once __DIR__ . '/../../CLASS_CRUD/angle.class.php';
+require_once __DIR__ . '/../../CLASS_CRUD/thematique.class.php';
+$article = new ARTICLE;
+$angle = new ANGLE;
+$thematique = new THEMATIQUE;
+
+// Gestion du $_SERVER["REQUEST_METHOD"] => En POST
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $numMemb = $_POST["id"];
+    if ($_POST["Submit"] === "Initialiser") {
+        header("Location: ./createArticle.php");
+        die();
+    }
+
+    $erreur = "";
+    $created = true;
+
+    // prenomMemb
+    // nomMemb
+    // pseudoMemb
+    // eMailMemb
+    // passMemb
+    // souvenirMemb
+    // accordMemb
 
     if (empty($_POST['prenomMemb'])) {
         $prenomMemb = '';
@@ -75,27 +85,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $idStat = $_POST['idStat'];
     }
 
-    if (isset($prenomMemb) && isset($nomMemb) && isset($pseudoMemb) && isset($eMailMemb) && isset($passMemb) && isset($souvenirMemb) && isset($accordMemb) && isset($idStat)) {
-        $member->update($numMemb, $prenomMemb, $nomMemb, $pseudoMemb, $eMailMemb, $passMemb, $idStat, $souvenirMemb, $accordMemb);
-        $updated = true;
-    } else {
-        $updated = false;
+
+    if ($created) {
+        $member->create($prenomMemb, $nomMemb, $pseudoMemb, $eMailMemb, $passMemb, $souvenirMemb, $accordMemb, $idStat);
     }
-} else {
-    $numMemb = $_GET["id"];
-}
-
-$resultMembre = $member->get_1Membre($numMemb);
-
-if ($resultMembre) {
-    $prenomMemb = $resultMembre["prenomMemb"];
-    $nomMemb = $resultMembre["nomMemb"];
-    $pseudoMemb = $resultMembre["pseudoMemb"];
-    $eMailMemb = $resultMembre["eMailMemb"];
-    $passMemb = $resultMembre["passMemb"];
-    $souvenirMemb = $resultMembre["souvenirMemb"];
-    $accordMemb = $resultMembre["accordMemb"];
-    $idStat = $resultMembre["idStat"];
 }
 
 ?>
@@ -106,9 +99,10 @@ if ($resultMembre) {
     <meta charset="utf-8" />
     <title>Admin - Gestion du CRUD Membre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="../css/back-office.css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link href="../css/back-office.css" rel="stylesheet" type="text/css" />
-    <link href="../css/footer-back.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="twa-back">
@@ -116,50 +110,50 @@ if ($resultMembre) {
         <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
         <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
     </div>
-    <h3>Modification d'un membre</h3>
+
+    <h3>Création d'un membre</h3>
 
     <?php
-    if ($updated) {
-        echo '<p style="color:blue;">Le mot-clé "' . $prenomMemb . '" a été bien modifié.</p>';
+    if ($created) {
+        echo '<p style="color:green;">Le mot-clé "' . $_POST['prenomMemb'] . '" a été créé.</p>';
     } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        echo '<p style="color:red;">Le mot-clé pas été modifié</p>';
+        echo '<p style="color:red;">Le mot-clé n\'a pas été créé car : </p>';
+        echo '<ul style="color:red;">' . $erreur . '</ul>';
     }
     ?>
 
-    <form method="post" action="<?= "./updateMembre.php?id=" . $numMemb; ?>" enctype="multipart/form-data">
+
+
+    <form method="post" action="./createMembre.php" enctype="multipart/form-data">
         <div class="fieldset-container">
             <fieldset>
-                <legend class="legend1">Formulaire Langue...</legend>
+                <legend class="legend1">Formulaire Membre...</legend>
+                <!-- ($prenomMemb, $nomMemb, $pseudoMemb, $passMemb, $eMailMemb, $souvenirMemb, $accordMemb) -->
 
-                <input type="hidden" id="id" name="id" value="<?= $_GET['id']; ?>" />
-
-                <div class="control-group">
-
-
-
+                <div class="control-group-colonne">
                     <div class="container-input">
                         <label class="control-label" for="prenomMemb"><b>Prénom du membre :</b></label>
-                        <input type="text" name="prenomMemb" id="prenomMemb" size="40" maxlength="80" autofocus value="<?= $prenomMemb ?>" /><br><br>
+                        <input type="text" name="prenomMemb" id="prenomMemb" size="40" maxlength="80" autofocus /><br><br>
                     </div>
 
                     <div class="container-input">
                         <label class="control-label" for="nomMemb"><b>Nom du membre :</b></label>
-                        <input type="text" name="nomMemb" id="nomMemb" size="40" maxlength="80" autofocus="autofocus" value="<?= $nomMemb ?>" /><br><br>
+                        <input type="text" name="nomMemb" id="nomMemb" size="40" maxlength="80" autofocus="autofocus" /><br><br>
                     </div>
 
                     <div class="container-input">
                         <label class="control-label" for="pseudoMemb"><b>Pseudo :</b></label>
-                        <input type="text" name="pseudoMemb" id="pseudoMemb" size="40" maxlength="80" autofocus="autofocus" value="<?= $pseudoMemb ?>" /><br><br>
+                        <input type="text" name="pseudoMemb" id="pseudoMemb" size="40" maxlength="80" autofocus="autofocus" /><br><br>
                     </div>
 
                     <div class="container-input">
                         <label class="control-label" for="eMailMemb"><b>Email :</b></label>
-                        <input type="email" name="eMailMemb" id="eMailMemb" size="40" maxlength="80" autofocus="autofocus" value="<?= $eMailMemb ?>" /><br><br>
+                        <input type="email" name="eMailMemb" id="eMailMemb" size="40" maxlength="80" autofocus="autofocus" /><br><br>
                     </div>
 
                     <div class="container-input">
                         <label class="control-label" for="passMemb"><b>Password :</b></label>
-                        <input type="password" name="passMemb" id="passMemb" size="40" maxlength="80" autofocus="autofocus" value="<?= $passMemb ?>" /><br><br>
+                        <input type="password" name="passMemb" id="passMemb" size="40" maxlength="80" autofocus="autofocus" /><br><br>
                     </div>
 
                     <div class="container-input">
@@ -176,38 +170,36 @@ if ($resultMembre) {
 
                     <div class="container-input">
                         <label class="control-label" for="souvenirMemb"><b>Se souvenir de ce membre :</b></label>
-                        <input type="checkbox" name="souvenirMemb" id="souvenirMemb" size="40" maxlength="80" autofocus="autofocus" <?= $souvenirMemb ? 'checked' : '' ?> /><br><br>
+                        <input type="checkbox" name="souvenirMemb" id="souvenirMemb" size="40" maxlength="80" autofocus="autofocus" /><br><br>
                     </div>
 
                     <div class="container-input">
                         <label class="control-label" for="accordMemb"><b>Accord :</b></label>
-                        <input type="checkbox" name="accordMemb" id="accordMemb" size="40" maxlength="80" autofocus="autofocus" <?= $accordMemb ? 'checked' : '' ?> />
+                        <input type="checkbox" name="accordMemb" id="accordMemb" size="40" maxlength="80" autofocus="autofocus" />
                     </div>
+                </div>
 
+                <div class="control-group">
                     <div class="controls">
                         <br><br>
                         <input class="input-button" type="submit" value="Initialiser" name="Submit" />
-                        <input class="input-button" id="button-valid" type="submit" value="Valider" name="Submit" />
+                        <input class="input-button" type="submit" value="Valider" name="Submit" />
                         <br>
                     </div>
                 </div>
             </fieldset>
         </div>
+
         <div class="align-footer">
             <?php
-
             require_once __DIR__ . '/footerMembre.php';
+
             require_once __DIR__ . '/footer.php';
             ?>
         </div>
+
     </form>
 
-    <div class="align-footer">
-        <?php
-        //require_once __DIR__ . '/footerMotCle.php';
-        // require_once __DIR__ . '/footer.php';
-        ?>
-    </div>
 </body>
 
 </html>

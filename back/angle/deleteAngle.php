@@ -78,7 +78,7 @@ if ($resultAngle) {
                     </div>
 
                     <div class="container-input">
-                        <label class="control-label" for="libAngl"><b>libAngl :</b></label>
+                        <label class="control-label" for="libAngl">libAngl :</label>
                         <input type="text" name="libAngl" id="libAngl" size="40" maxlength="80" value="<?= $deleted ? '' : $libAngl; ?>" disabled /><br><br>
                     </div>
 

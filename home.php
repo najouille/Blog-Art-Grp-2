@@ -4,6 +4,7 @@
 <head>
   <?php include("./front/includes/commons/headRequired.php"); ?>
   <title>Document</title>
+  <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
   <link rel="stylesheet" href="./front/assets/home.css" />
 </head>
 
@@ -73,8 +74,31 @@
           </p>
         </div>
       </div>
-
-
+  </section>
+  <section class="galerie">
+    <h2>Notre galerie</h2>
+    <div class="grille">
+          <img
+            src="./front/assets/image/eiffel.jpg"
+            alt="tour-eiffel"
+            id="eiffel"
+          />
+          <img src="./front/assets/image/quais.jpg" alt="quais" id="quais" />
+          <a href="https://www.fredericducos.com/" id="portfolio" target="blank"
+            >Découvrir son portfolio</a
+          >
+          <img
+            src="./front/assets/image/bourse2.jpg"
+            alt="bourse2"
+            id="bourse2"
+          />
+          <img src="./front/assets/image/arene.jpg" alt="arene" id="arene" />
+          <img
+            src="./front/assets/image/bourse1.jpg"
+            alt="bourse1"
+            id="bourse1"
+          />
+        </div>
   </section>
 </body>
 

@@ -153,3 +153,21 @@ p {
   display: flex;
   flex-direction: row;
 }
+.trier {
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: #c0c0c0;
+  border: 1px solid #494512;
+  border-radius: 28px;
+  position: relative;
+  z-index: 0;
+  height: 35px;
+  width: 235px;
+  margin-left: -235px;
+  margin-top: 230px;
+  padding-left: 10px;
+  padding-top: 5px;
+}

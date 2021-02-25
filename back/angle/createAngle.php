@@ -56,7 +56,7 @@ include __DIR__ . '/initAngle.php';
 
                 <div class="control-group">
                     <div class="container-input">
-                        <label for="libAngl"><b>Désignation :</b></label>
+                        <label for="libAngl">libAngl</label>
                         <input type="text" name="libAngl" id="libAngl" size="80" maxlength="80" autofocus /><br><br>
                     </div>
 
