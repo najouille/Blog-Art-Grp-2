@@ -8,19 +8,21 @@
 </head>
 
 <body>
+    <?php
+    include('./front/includes/commons/navbar.php')
+    ?>
+    <h2>Mot de passe oublié ?</h2>
+    <h3>Renseignez votre adresse mail ci-dessous</h3>
 
-<h2>Mot de passe oublié ?</h2>
-<h3>Renseignez votre adresse mail ci-dessous</h3>
+    <div id="formco">
+        <form>
+            <div class="e-mail">
+                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+            </div>
+            <button name="button">Valider</button>
 
-<div id="formco">
-                    <form>
-                        <div class="e-mail">
-                        <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
-                        </div>
-    <button name="button">Valider</button>
-
-<p>Nous avons bien pris en compte votre demande de réinitialisation de mot de passe. <br> 
-Rendez-vous sur votre boîte mail afin poursuivre la démarche.  </p>
+            <p>Nous avons bien pris en compte votre demande de réinitialisation de mot de passe. <br>
+                Rendez-vous sur votre boîte mail afin poursuivre la démarche. </p>
 
 </body>
 

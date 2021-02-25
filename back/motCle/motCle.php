@@ -36,9 +36,9 @@ $motcle = new MOTCLE;
         <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
     </div>
 
-    
+
     <div class="container-center">
-    <a class="button-create input-button" href="./createMotCle.php">Créer un Mot-clé</a>
+        <a class="button-create input-button" href="./createMotCle.php">Créer un Mot-clé</a>
         <table class="twa-table" border='3'>
             <thead>
                 <tr>
