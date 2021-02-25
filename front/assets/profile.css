@@ -1,93 +1,25 @@
-*{  margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #0E0E0E;
-    color: #fff;
-    font-family: 'Manrope', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
 }
 
-.container-profile {
-    display: flex;
-    padding: 80px;
-    max-width: 800px;
-}
-
-.logo-before svg {
-    width: 48px;
-    height: 48px;
-}
-
-
-/*LEFT*/
-
-.left-profile {
-    padding: 80px;
-}
-
-.top-container {
+.left-right{
     display: flex;
     flex-direction: row;
-    white-space: nowrap;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-hr {
-    border-color: #FFEE32;
-    max-width: 1280px;
-    margin: 30px 0;
+.right-profile{
+    width: 416px;
+    height: 431px;
 }
-
-/*MODIFIER PROFIL BOUTON*/
-
-.modifier-profile {
-    max-width: 180px;
-    border: 1px solid #FFEE32;
-    border-radius: 6px;
-    padding: 0 40px;
-    max-height: 45px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.modifier-profile:hover {
-    border: 1px solid #FFEE32;
-    background: #FFEE32;
-    color: #0E0E0E;
-}
-
-p {
-    padding: 10px 0;
-    font-weight: 300;
-}
-
-/*MIDDLE*/
-
-.middle-container {
-    display: flex;
-}
-
-/*BOTTOM*/
-
-.bottom-container {
-    display: flex;
-    white-space: nowrap;
-}
-
-.profile-img {
-    max-width: 510px;
-    padding: 90px;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    padding-top: 8px;
-}
-
-.top-text {
-    margin: 80px;
-    padding: 80px;
+.premier-logo{
+    width: 41px;
+    height: 41px;
 }

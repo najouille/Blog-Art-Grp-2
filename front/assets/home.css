@@ -1,142 +1,173 @@
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 html {
-  background-color: #0E0E0E;
-  ;
+	background-color: #0e0e0e;
 }
+
+.tilescroll-container {
+	position: relative;
+}
+
+.hero-text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-nav {
+  display: flex;
+  column-gap: 42px;
+}
+
+.tilescroll-container h1 {
+	font-family: "Monument Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: 250;
+	font-size: 42px;
+	line-height: 50px;
+}
+
 .presentation {
-    padding-left: 235px;
-    padding-right: 235px;
-    padding-top: 23px;
-    text-align: justify;
-    font-weight: 300;
-    opacity: 85%;
+	padding-left: 235px;
+	padding-right: 235px;
+	padding-top: 23px;
+	text-align: justify;
+	font-weight: 300;
+	opacity: 85%;
 }
 h3 {
-    font-family: "Manrope", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    padding-left: 235px;
-    padding-right: 235px;
-    margin-top: -20px;
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+	padding-left: 235px;
+	padding-right: 235px;
+	margin-top: -20px;
 }
 .blog-preview-container {
-  padding: 10px;
-  max-width: 1138px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-column-gap: 20px;
-  grid-row-gap: 18px;
-  margin: 0 auto;
+	padding: 10px;
+	max-width: 1138px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-column-gap: 20px;
+	grid-row-gap: 18px;
+	margin: 0 auto;
 }
 .streetart {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #9cedff;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 16px;
-  transition: ease 0.15s;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #9cedff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 16px;
+	transition: ease 0.15s;
 }
 .streetart:hover:not(.more) {
-    transform: scale(1.03);
+	transform: scale(1.03);
 }
 img {
-  width: 160px;
-  object-fit: cover;
-  height: 100%;
+	width: 160px;
+	object-fit: cover;
+	height: 100%;
 }
 .tagtxt {
-  flex: 2;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+	flex: 2;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 }
 h2 {
-  font-family: "Monument Extended";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: left;
-  color: white;
-  margin-left: 238px;
-  padding-bottom: 38px;
-  padding-top: 115px;
+	font-family: "Monument Extended";
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+	color: white;
+	margin-left: 238px;
+	padding-bottom: 38px;
+	padding-top: 115px;
 }
 h4 {
-  font-family: "Manrope", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  padding-bottom: 12px;
-  padding-top: 8px;
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	padding-bottom: 12px;
+	padding-top: 8px;
 }
 p {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: white;
-  opacity: 85%;
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+	opacity: 85%;
 }
 .tag {
-  font-family: "Manrope", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #1e293b;
-  margin-right: 8px;
-  background-color: #f1f5f9;
-  border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #1e293b;
+	margin-right: 8px;
+	background-color: #f1f5f9;
+	border-radius: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 .more {
-  position: relative;
+	position: relative;
 }
 .more img,
 .more .tagtxt {
-  opacity: 40%;
-  filter: grayscale(100%);
+	opacity: 40%;
+	filter: grayscale(100%);
 }
 
 .button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
 }
 
 .button a {
-  text-decoration: none;
-  font-family: "Manrope", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  background-color: #ffee32;
-  color: black;
-  border: 1px solid #ffee32;
-  border-radius: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  z-index: 10;
-  transition: ease 0.15s;
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: #ffee32;
+	color: black;
+	border: 1px solid #ffee32;
+	border-radius: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	z-index: 10;
+	transition: ease 0.15s;
 }
 .button a:hover {
-    background-color: black;
-    color: #ffee32;
-    border: 1px solid #ffee32;
-    transform: scale(1.03);
+	background-color: black;
+	color: #ffee32;
+	border: 1px solid #ffee32;
+	transform: scale(1.03);
 }
 .grille {
   display: grid;
