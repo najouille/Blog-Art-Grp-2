@@ -251,6 +251,7 @@ h4 {
   flex-direction: column;
   justify-content: left;
   margin-left: 228px;
+  align-items: flex-start;
 }
 
 .social-button {
