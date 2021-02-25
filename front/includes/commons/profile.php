@@ -14,57 +14,36 @@
         <h2>Mon profil</h2><br>
         <p>N'hésitez pas à modifier vos coordonnées ci-dessous pour que votre compte TownyArt soit parfaitement à jour.</p>
     </div>
-    <div class="container-profile">
-        <div class="left-profile">
-            <div class="top-profile">
-                <div class="logo-profile logo-before"><?php include('../../assets/image/icones/user.svg') ?></div>
-                <div class="top-container">
-                    <div class="infos-profile">
-                        <div class="nom-pseudo">
-                            <h3>Nom</h3>
-                            <p>Barre</p>
-                            <h3>Pseudo</h3>
-                            <p>eymeric-barre</p>
-                        </div>
-                        <div class="prenom-date">
-                            <h3>Prénom</h3>
-                            <p>Eymeric</p>
-                            <h3>Date de naissance</h3>
-                            <p>10/05/1990</p>
-                        </div>
-                    </div>
-                    <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg">
-                        <h3>Modifier</h3>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="email-profile">
-                <div class="logo-email logo-before"><?php include('../../assets/image/icones/email.svg') ?></div>
-                <div class="middle-container">
-                    <div class="email-profile">
-                        <h3>Votre adresse e-mail</h3>
-                        <p>eymeric.barre@gmail.com</p>
-                    </div>
-                    <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg">
-                        <h3>Modifier</h3>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="password-profile">
-                <div class="logo-password logo-before"><?php include('../../assets/image/icones/password.svg') ?></div>
-                <div class="bottom-container">
-                    <div class="password-set">
-                        <h3>Votre mot de passe</h3>
-                        <p>***********</p>
-                    </div>
-                    <div class="modifier-profile" href="" svg src="../../assets/image/icones/edit-profile.svg">
-                        <h3>Modifier</h3>
-                    </div>
-                </div>
-            </div>
+    <div class="left-right">
+        <div>
+        <div class="right-profile"><img src="../../assets/image/profil-picture.jpg"></div>
+    <svg class="premier-logo" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+    <rect width="256" height="256" fill="none"></rect>
+    <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
+    <circle cx="128" cy="120" r="40" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
+    <path d="M63.79905,199.37405a72.02812,72.02812,0,0,1,128.40177-.00026" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+</svg>
+            <h3>Nom</h3>
+            <input type="text" disabled value="Eymeric" />
+            <h3 class="espace">Pseudo</h3>
+            <input type="text" disabled value="Barre" />
         </div>
-        <div class="right-profile"><img class="profile-img" src="../../assets/image/profil-picture.jpg"></div>
+        <div>
+            <h3>Prénom</h3>
+            <input type="text" disabled value="Eymeric" />
+            <h3>Date de naissance</h3>
+            <input type="text" disabled value="Barre" />
+        </div>
+        <button>Modifier</button>
+        <hr>
     </div>
+
+
 </body>
+
+
+
+
+
+
+
