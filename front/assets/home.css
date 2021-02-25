@@ -295,3 +295,9 @@ p {
   object-position: center -160px;
   margin-bottom: 30px;
 }
+
+@media (min-width: 1440px) {
+  #groupe {
+    height: 50vh;
+  }
+}
