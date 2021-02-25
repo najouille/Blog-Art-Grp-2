@@ -7,58 +7,107 @@ body {
   background: #0e0e0e;
   color: #fff;
   font-family: "Manrope", sans-serif;
+}
+.top-text {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.left-right {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 62px;
+}
+.right-profile {
+  width: 416px;
+  height: 431px;
+}
+.premier-logo {
+  width: 41px;
+  height: 41px;
+}
+.left-profile {
+  max-width: 775px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
 }
-.top-text{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.left-right{
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.right-profile{
-    width: 416px;
-    height: 431px;
-}
-.premier-logo{
-    width: 41px;
-    height: 41px;
-}
-.left-profile{
-    max-width: 775px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-hr{
-border-color: yellow;
+hr {
+  height: 1px;
+  width: 100%;
+  background: #ffee32;
+  border-radius: 100px;
 }
 input:disabled {
-    
-    
-    background: none;
-border: none;
-    margin-top: 0.5rem;
+  background: none;
+  border: none;
+  margin-top: 0.5rem;
 }
-.block1-left{
-    margin-right: 10rem;
-    margin-left: 5rem;
+.block1-left {
+  /* margin-right: 10rem;
+  margin-left: 5rem; */
 }
-.titre-bas{
-    margin-top: 2rem;
+
+.icon-data {
+    width: 106px;
+}
+.icon-data svg {
+    height: 42px;
+    width: 42px;
+}
+.titre-bas {
+  margin-top: 2rem;
+}
+.button1 {
+  background: none;
+  border-color: yellow;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #FFEE32;
+border-radius: 6px;
+padding:8px 16px;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
 
 }
-.button1{
-    background: none;
-    border-color: yellow;
-    color: white;
+.left-right hr {
+    margin-top: 48px;
+    border-width: .5px;
+    border-color: hsl(55, 100%, 60%, 75%);
 }
-.block2-droite{
-    margin-right: 5rem;
+
+.email-elm {
+    margin-top: 48px;
+}
+
+.button1 svg {
+    margin-right: 16px;
+}
+.block2-droite {
+  /* margin-right: 5rem; */
+}
+.block-user {
+    display: flex;
+    align-items: flex-start;
+}
+.block-data-user {
+    display: flex;
+    flex-direction: column;
+}
+.part1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
