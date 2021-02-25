@@ -7,9 +7,15 @@ body {
   background: #0e0e0e;
   color: #fff;
   font-family: "Manrope", sans-serif;
-}
 
+}
+.top-text{
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .left-right{
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -22,4 +28,37 @@ body {
 .premier-logo{
     width: 41px;
     height: 41px;
+}
+.left-profile{
+    max-width: 775px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+hr{
+border-color: yellow;
+}
+input:disabled {
+    
+    
+    background: none;
+border: none;
+    margin-top: 0.5rem;
+}
+.block1-left{
+    margin-right: 10rem;
+    margin-left: 5rem;
+}
+.titre-bas{
+    margin-top: 2rem;
+
+}
+.button1{
+    background: none;
+    border-color: yellow;
+    color: white;
+}
+.block2-droite{
+    margin-right: 5rem;
 }
