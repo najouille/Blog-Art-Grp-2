@@ -71,6 +71,7 @@ h3 {
     left: 6rem;
     z-index: 1;
     position: absolute;
+    opacity: 75%;
 }
 
 .number_right {
@@ -78,6 +79,7 @@ h3 {
     right: 6rem;
     z-index: 1;
     position: absolute;
+    opacity: 75%;
 }
 
 .description {
