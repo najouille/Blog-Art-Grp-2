@@ -29,20 +29,16 @@ p {
     font-weight: 400;
     color: white;
     opacity: 85%;
-    padding-left: 280px;
-    padding-right: 280px;
     text-indent: 5%;
-    padding-bottom: 20px;
-    margin-right: 158px;
-    margin-top: 3rem;
 }
 
 #intro {
     margin-top: 30px;
 }
 
-#top1 {
-    text-align: left;
+.top1 {
+display: flex;
+flex-direction: row;
 }
 
 #top2 {
@@ -54,12 +50,14 @@ p {
 }
 
 .tags {
+    display: flex;
     flex-direction: row;
-    text-align: center;
+    margin-top: 48px;
     justify-content: center;
 }
 
-h5 {
+.etiquette {
+    margin: 8px;
     font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -69,7 +67,6 @@ h5 {
   padding: 5px;
   width: 100px;
   display: flex;
-    flex-direction: row;
     text-align: center;
     justify-content: center;
 }

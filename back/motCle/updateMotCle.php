@@ -85,7 +85,7 @@ if ($resultMotCle) {
                     </div>
 
                     <div class="container-input">
-                        <label class="control-label" for="numLang"><b>Pays :</b></label>
+                        <label class="control-label" for="numLang">Langue :</label>
                         <select name="numLang" id="numLang">
                     </div>
 

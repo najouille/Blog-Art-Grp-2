@@ -86,12 +86,12 @@ if ($resultThem) {
                 <div class="control-group">$
 
                     <div class="container-input">
-                        <label class="control-label" for="numThem">Désignation :</label>
+                        <label class="control-label" for="numThem">numThem :</label>
                         <input type="text" name="numThem" id="numThem" size="40" maxlength="80" disabled value="<?= isset($numThem) ? $numThem : ''; ?>" /><br><br>
                     </div>
 
                     <div class="container-input">
-                        <label class="control-label" for="libThem">Dénomination :</label>
+                        <label class="control-label" for="libThem">Nom de la thématique</label>
                         <input type="text" name="libThem" id="libThem" size="40" maxlength="80" value="<?= (isset($libThem) ? ($libThem) : ""); ?>" /><br><br>
                     </div>
 

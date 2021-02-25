@@ -31,7 +31,7 @@ $article = new ARTICLE;
         <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
     </div>
 
-    <a class="button-create input-button" href="./createMembre.php">Créer Membre</a>
+    <a class="button-create input-button" href="./createArticle.php">Créer Membre</a>
     <div class="container-center">
         <table class="twa-table" border='3'>
             <thead>

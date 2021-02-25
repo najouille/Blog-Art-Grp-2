@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../front/assets/navbar.css">
 </head>
 
-<body class='style'>
+<body class='style' >
     <?php
     include('../front/includes/commons/navbar.php')
     ?>

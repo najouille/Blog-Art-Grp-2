@@ -105,8 +105,6 @@ if ($resultMotCle) {
                     </div>
 
                     <div class="controls">
-                        <br>
-                        <button class="input-button" type="submit" value="Annuler" name="Submit">Annuler</button>
                         <button class="input-button" type="submit" value="Valider" name="Submit">Valider</button>
                     </div>
                 </div>
