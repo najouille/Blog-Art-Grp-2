@@ -8,6 +8,22 @@
 </head>
 
 <body class='style'>
+
+    <div class="conteneur-ajout">
+        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
+            <circle cx="128" cy="120" r="40" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
+            <path d="M63.79905,199.37405a72.02812,72.02812,0,0,1,128.40177-.00026" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+        </svg>
+        <div class="ask">
+            <div class="comment-1">
+                <textarea>ajouter un commentaire</textarea>
+                <div>Envoyer</div>
+            </div>
+        </div>
+    </div>
+
     <div class="conteneur-commentaire">
         <div class="conteneur-profil">
             <img src="./front/assets/image/Ellipse 3.png" alt="">
@@ -49,6 +65,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="conteneur-commentaire conteneur-answer">
+        <div class="conteneur-profil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="10"></circle>
+                <circle cx="128" cy="120" r="40" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="10"></circle>
+                <path d="M63.79905,199.37405a72.02812,72.02812,0,0,1,128.40177-.00026" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path>
+            </svg>
+            <span class="nom">Mirtille</span>
+        </div>
+        <div class="answer">
+            <div class="comment-2">
+                <textarea>Répondre au commentaire...</textarea>
+                <div>repondre</div>
+            </div>
+
         </div>
     </div>
 
