@@ -2,7 +2,7 @@
 
 $dir = '';
 $requestUri = $_SERVER['REQUEST_URI'];
-if (strpos($requestUri, 'blog-art') !== false || strpos($requestUri, 'blogart') !== false) {
+if (strpos($requestUri, 'blog-art') !== false || strpos($requestUri, 'blogart') !== false || strpos($requestUri, 'BlogArt') !== false || strpos($requestUri, 'Blog-Art') !== false) {
   preg_match('/[\\\\\/][^\\\\\/]*$/', dirname(dirname(dirname(__DIR__))), $matches, PREG_OFFSET_CAPTURE, 0);
   $dir = str_replace("\\", "/", $matches[0][0]);
   echo '<!-- Using default dev env -->';
