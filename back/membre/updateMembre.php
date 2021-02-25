@@ -104,7 +104,7 @@ if ($resultMembre) {
 
 <head>
     <meta charset="utf-8" />
-    <title>Admin - Gestion du CRUD Langue</title>
+    <title>Admin - Gestion du CRUD Membre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/back-office.css" rel="stylesheet" type="text/css" />
@@ -114,9 +114,9 @@ if ($resultMembre) {
 <body class="twa-back">
     <div class="title">
         <img class='logo' src="../../front/assets/image/Townyart.png" alt="logo-townyart">
-        <h1>BLOGART21 Admin - Gestion du CRUD MotClé</h1>
+        <h1>BLOGART21 Admin - Gestion du CRUD Membre</h1>
     </div>
-    <h3>Modification d'un mot clé</h3>
+    <h3>Modification d'un membre</h3>
 
     <?php
     if ($updated) {
@@ -160,6 +160,18 @@ if ($resultMembre) {
                     <div class="container-input">
                         <label class="control-label" for="passMemb"><b>Password :</b></label>
                         <input type="password" name="passMemb" id="passMemb" size="40" maxlength="80" autofocus="autofocus" value="<?= $passMemb ?>" /><br><br>
+                    </div>
+
+                    <div class="container-input">
+                        <label for="idStat">Status</label>
+                        <select name="idStat" id="idStat">
+                            <?php
+                            $allStatuts = $statut->get_AllStatuts();
+                            foreach ($allStatuts as $row) {
+                                echo '<option value="' . $row["idStat"] . '">' . $row["libStat"] . '</option>';
+                            }
+                            ?>
+                        </select>
                     </div>
 
                     <div class="container-input">
