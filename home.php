@@ -198,6 +198,7 @@
   </section>
   <section class="nous">
     <h2>Qui sommes-nous ?</h2>
+    <img src="./front/assets/image/groupe.png" alt="L'équipe" id="groupe" />
   </section>
   <script src="./front/assets/tilescroll/tilescroll-home.js"></script>
 </body>
