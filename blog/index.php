@@ -15,7 +15,23 @@
     <?php
     include('../front/includes/commons/navbar.php')
     ?>
-
+    <img src="../front/assets/image/blogbanniere.png" alt="urban banniere" id="banniere" />
+    <div class="intro">
+        <div class="text">
+            <h2>Notre blog</h2>
+            <p class="description">Nous nous sommes particulièrement intéressés à la culture urbaine, et après de multiples recherches personnelles et de magnifiques trouvailles, nous avons décidé de vous les partager. Alors, voici quelques articles, qui, on l’espère, te plairont ! Bonne lecture !</p>
+        </div>
+        <div class="search">
+        <span class="recherche">
+            Rechercher...
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+        </div>
+    </div>
     <div class='maxiconteneurblog'>
         <div class='etiquetteblog'>
             <img class='tailleimg' src="<?= $dir . '/front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
