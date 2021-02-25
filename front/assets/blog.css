@@ -96,7 +96,6 @@ h2 {
   font-weight: 400;
   text-align: left;
   color: #f1f5f9;
-  padding-left: 80px;
   padding-top: 74px;
   padding-bottom: 28px;
 }
@@ -107,7 +106,6 @@ p {
   font-weight: 400;
   text-align: left;
   color: #f1f5f9;
-  margin-left: 80px;
   padding-bottom: 50px;
   width: 632px;
 }
@@ -170,4 +168,8 @@ p {
   margin-top: 230px;
   padding-left: 10px;
   padding-top: 5px;
+}
+.intro {
+  margin: 0 auto;
+  max-width: 1280px;
 }

@@ -4,17 +4,26 @@ html {
   }
 
 h1 {
-    font-family: Monument Extended;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: "Monument Extended";
+    font-size: 42px;
+    font-style:normal;
+    font-weight: 800;
     text-align: left;
     color: #ffffff;
-    margin-left: 15rem;
+    margin-left: 176px;
     margin-top: 4rem;
 }
 
 h2 {
+    font-family: Monument Extended;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 146px;
+}
+
+h3 {
     font-family: "Manrope", sans-serif;
     font-size: 25px;
     font-style: normal;
@@ -22,31 +31,69 @@ h2 {
     color: #ffffff;
 }
 
-p {
+.intro {
+    margin-top: 30px;
+    margin-left: 146px;
+    text-align: left;
+    width: 60%;
+    font-size: 18px;
+    text-indent: 5%;
+}
+
+.top1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.top2 {
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 50px;
+}
+
+.top3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.img {
+    margin: 146px;
+    max-width: 510px;
+    max-height: 655px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.number_left {
+    margin-top: 4rem;
+    left: 6rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.number_right {
+    margin-top: 4rem;
+    right: 6rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.description {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: white;
     opacity: 85%;
-    text-indent: 5%;
+    max-width: 609.83px;
+    max-height: 556.23px;
+    margin: 146px;
 }
 
-#intro {
-    margin-top: 30px;
-}
-
-.top1 {
-display: flex;
-flex-direction: row;
-}
-
-#top2 {
-    text-align: right;
-}
-
-#top3 {
-    text-align: left;
+.lien {
+    color: #ffee32;
 }
 
 .tags {
@@ -59,14 +106,14 @@ flex-direction: row;
 .etiquette {
     margin: 8px;
     font-family: "Manrope", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #1e293b;
-  background-color: #f1f5f9;
-  border-radius: 4px;
-  padding: 5px;
-  width: 100px;
-  display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1e293b;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    display: flex;
     text-align: center;
     justify-content: center;
 }
