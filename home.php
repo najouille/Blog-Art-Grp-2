@@ -51,65 +51,73 @@
       </div>
       <div class="tiles__wrap">
         <div class="tiles__line pouched" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-offset="10" data-scroll-direction="horizontal">
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/1.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/2.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/3.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/4.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/5.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/6.jpg')"></div>
+
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/15.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/17.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/13.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/14.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/16.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/18.webp')"></div>
         </div>
         <div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/7.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/8.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/9.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/10.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/11.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/12.jpg')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/7.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/8.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/9.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/10.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/11.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/12.webp')"></div>
         </div>
         <div class="tiles__line pouched" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/13.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/14.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/15.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/16.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/17.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/18.jpg')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/1.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/2.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/3.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/4.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/5.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/6.webp')"></div>
+
         </div>
         <div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/19.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/20.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/21.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/22.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/23.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/24.jpg')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/19.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/20.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/21.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/22.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/23.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/24.webp')"></div>
         </div>
         <div class="tiles__line pouched" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/25.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/26.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/27.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/28.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/29.jpg')"></div>
-          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/30.jpg')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/25.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/26.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/27.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/28.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/29.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/30.webp')"></div>
         </div>
         <div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/1.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/2.webp')"></div>
+
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/8.webp')"></div>
+
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/19.webp')"></div>
+
+
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/5.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/6.webp')"></div>
         </div>
         <div class="tiles__line pouched" data-scroll data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
           <div class="tiles__line-img"></div>
           <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/3.webp')"></div>
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/4.webp')"></div>
+
           <div class="tiles__line-img"></div>
           <div class="tiles__line-img"></div>
         </div>
         <div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
           <div class="tiles__line-img"></div>
           <div class="tiles__line-img"></div>
-          <div class="tiles__line-img"></div>
+
+          <div class="tiles__line-img" style="background-image: url('./front/assets/tilescroll/out/21.webp')"></div>
           <div class="tiles__line-img"></div>
           <div class="tiles__line-img"></div>
           <div class="tiles__line-img"></div>
@@ -117,7 +125,7 @@
 
       </div>
     </section>
-    
+
 
   </main>
 
