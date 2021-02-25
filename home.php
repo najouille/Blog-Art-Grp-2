@@ -109,10 +109,12 @@
         </div>
 
       </div>
-
+  </section>
+  <section class="text">
+      <h2>Découvrez notre projet !</h2>
+      <h3>La ville, terrain de jeu artistique</h3>
+      <p class="presentation">Etudiants en DUT MMI (Métiers du Multimédia et de L’internet) à l’IUT Bordeaux Montaigne, nous vous présentons ce blog, né de 3 semaines de travail. En effet, à l’occasion de l’atelier “Blog’Art 2021”, nous avons conçu ce blog dans son intégralité. Vous y découvrirez de nombreux articles liés à l’art urbain et apprendrez les modes de réflexions de photographes, street-artistes, sculpteurs et bien plus encore. Grâce à une interface que nous souhaitons simple et agréable, nous espérons que vous prendrez du plaisir à acquérir de nombreuses connaissances liées à notre ville, Bordeaux.</p>
     </section>
-
-
 
   </main>
   <section class="text">
@@ -176,18 +178,36 @@
             nombreux événements organisés autour de cet art.
           </p>
         </div>
-      </div>
-  </section>
+    </section>
   <section class="galerie">
     <h2>Notre galerie</h2>
     <div class="grille">
-      <img src="./front/assets/image/eiffel.jpg" alt="tour-eiffel" id="eiffel" />
-      <img src="./front/assets/image/quais.jpg" alt="quais" id="quais" />
-      <a href="https://www.fredericducos.com/" id="portfolio" target="blank">Découvrir son portfolio</a>
-      <img src="./front/assets/image/bourse2.jpg" alt="bourse2" id="bourse2" />
-      <img src="./front/assets/image/arene.jpg" alt="arene" id="arene" />
-      <img src="./front/assets/image/bourse1.jpg" alt="bourse1" id="bourse1" />
-    </div>
+          <img
+            src="./front/assets/image/pellegrin.jpg"
+            alt="pellegrin"
+            id="pellegrin"
+          />
+          <img src="./front/assets/image/comedie.jpg" alt="comedie" id="comedie" />
+          <img src="./front/assets/image/lafayette.jpg" alt="lafayette" id="lafayette" />
+          <a href="" id="portfolio" target="blank"
+            >Découvrir notre galerie</a
+          >
+          <img
+            src="./front/assets/image/meca.png"
+            alt="statue"
+            id="statue"
+          />
+          <img src="./front/assets/image/cathedrale.jpg" alt="cathedrale" id="cathedrale" />
+          <img
+            src="./front/assets/image/lune.jpg"
+            alt="port de la lune"
+            id="lune"
+          />
+          <img src="./front/assets/image/Jaguar.png" alt="jaguar" id="jaguar" />
+        </div>
+  </section>
+  <section class="nous">
+    <h2>Qui sommes-nous ?</h2>
   </section>
   <script src="./front/assets/tilescroll/tilescroll-home.js"></script>
 </body>
