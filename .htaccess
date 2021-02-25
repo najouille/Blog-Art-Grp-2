@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule /galerie/(.*) galedsdrie/$1
+
+# RewriteRule ^source/(.*) //$1
+# RewriteRule ^source/(.*) /index.php
+
+
+RewriteEngine On
+RewriteRule ^source(.*) galerie/$1
+RewriteRule ^/(.*) home.php/$1
+# RewriteRule ^contact(.*) contact.php/$1
+# RewriteRule ^contact(.*)/ contact.php/$1
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.php [NC,L]
