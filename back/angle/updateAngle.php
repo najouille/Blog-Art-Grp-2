@@ -83,12 +83,12 @@ if ($resultAngle) {
                 <div class="control-group">
 
                     <div class="container-input">
-                        <label class="control-label" for="numAngl"><b>Désignation :</b></label>
+                        <label class="control-label" for="numAngl"><b>NumAngl</b></label>
                         <input type="text" name="numAngl" id="numAngl" size="40" maxlength="80" disabled value="<?= isset($numAngl) ? $numAngl : ''; ?>" /><br><br>
                     </div>
 
                     <div class="container-input">
-                        <label class="control-label" for="libAngl"><b>Dénomination :</b></label>
+                        <label class="control-label" for="libAngl">libAngl :</label>
                         <input type="text" name="libAngl" id="libAngl" size="40" maxlength="80" value="<?= (isset($libAngl) ? ($libAngl) : ""); ?>" /><br><br>
                     </div>
 

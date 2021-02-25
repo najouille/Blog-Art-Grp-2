@@ -94,8 +94,8 @@ p {
 }
 .conteneur-profil svg {
   color: #ffee32;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .conteneur-answer {
@@ -151,8 +151,9 @@ p {
 }
 .conteneur-ajout svg{
   color: #ffee32;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
 }
 .comment-1{
   display: flex;
