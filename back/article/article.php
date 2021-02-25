@@ -21,6 +21,7 @@ $article = new ARTICLE;
     <title>Admin - Gestion du CRUD Articles</title>
     <?php include('../../front/includes/commons/headRequired.php') ?>
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../front/assets/master.css" />
     <link rel="stylesheet" href="../css/back-office.css" />
 </head>
 
@@ -100,9 +101,9 @@ $article = new ARTICLE;
                         <td>
                             <h4> <?php echo $row['numAngl']; ?> </h4>
                         </td>
-                        <td><a href="./updateMembre.php?id=<?= $row['numMemb'] ?>"><i>Modifier</i></a>
+                        <td><a href="./updateArticle.php?id=<?= $row['numArt'] ?>"><i>Modifier</i></a>
                         </td>
-                        <td><a class='link-delete' href="./deleteMembre.php?id=<?= $row['numMemb'] ?>"><i>Supprimer</i></a>
+                        <td><a class='link-delete' href="./deleteArticle.php?id=<?= $row['numArt'] ?>"><i>Supprimer</i></a>
                         </td>
                     </tr>
 
@@ -115,7 +116,7 @@ $article = new ARTICLE;
     <div class="align-footer">
         <?php
         require_once __DIR__ . '/footer.php';
-        require_once __DIR__ . '/footerMembre.php';
+        require_once __DIR__ . '/footerArticle.php';
         ?>
     </div>
 </body>

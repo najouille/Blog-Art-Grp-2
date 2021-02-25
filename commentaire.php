@@ -3,6 +3,7 @@
 
 <head>
     <?php include('./front/includes/commons/headRequired.php'); ?>
+    <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="stylesheet" href="./front/assets/commentaire.css">
 </head>
 
