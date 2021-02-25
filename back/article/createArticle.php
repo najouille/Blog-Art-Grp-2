@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../../util/utilErrOn.php';
-include __DIR__ . '/initMembre.php';
+include __DIR__ . '/initArticle.php';
 $created = false;
 
 
