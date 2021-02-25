@@ -26,7 +26,7 @@
   border: white 2px solid;
   border-radius: 10px;
   width: 100%;
-  margin-bottom:.75rem;
+  margin-bottom:.25rem;
 }
 p {
   font-family: "Manrope", sans-serif;
@@ -43,6 +43,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .interaction-button {
@@ -53,7 +54,7 @@ p {
 
 .interaction-button svg {
     margin-left: .25rem;
-    color: white;
+    color: #FFEE32;
     fill: none;
 }
 
@@ -69,4 +70,27 @@ p {
   font-weight: 500;
   line-height: 25px;
   color: white;
+}
+.sous-titre-comment{
+  font-family: "Manrope", sans-serif;
+font-size: 14px;
+font-weight: 300;
+color: rgba(255, 255, 255, 0.521);
+text-decoration: underline;
+margin-right: 0.5rem;
+}
+.time svg{
+  margin-right: 0.5rem;
+  color: rgba(255, 255, 255, 0.521);
+}
+.time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
