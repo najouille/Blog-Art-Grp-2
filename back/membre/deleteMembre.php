@@ -1,5 +1,7 @@
 <?php
 
+// Pas fonctionnel lorsque dèja refférencer
+// FIXME
 // Mode DEV
 require_once __DIR__ . '/../../util/utilErrOn.php';
 include __DIR__ . '/initMembre.php';
