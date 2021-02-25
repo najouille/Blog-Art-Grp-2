@@ -5,16 +5,53 @@ html {
 }
 
 h2 {
+  text-align: center;
   font-size: 20px;
+  margin-top: 3rem;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
-
+h4 {
+  margin-left: 1rem;
+  font-size: 18;
+  font-weight: 300;
+}
 p {
   font-size: 12px;
   font-weight: thin;
+  margin-top: 0.5rem;
+}
+.forming {
+  max-width: 590px;
+  width: 100%;
+  margin: 0 auto;
+}
+.parallele {
+  display: flex;
+  flex-direction: row;
+}
+.connection {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#amdp {
+  margin: 0 1rem;
+
+}
+
+.champ {
+  margin-top: 2rem;
+}
+.check {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 input[type="text"],
@@ -24,8 +61,13 @@ textarea {
   background-color: #0e0e0e;
   border-radius: 6px;
   padding: 8px;
-  width: 30%;
+  width: 110%;
   border: 1px solid #ffee32;
+}
+.inscription input[type="text"],
+.inscription input[type="email"],
+.inscription textarea {
+  margin-top: 1rem;
 }
 
 button {
@@ -33,12 +75,11 @@ button {
   background-color: #ffee32;
   border-color: #ffee32;
   border-radius: 6px;
-  width: 6rem;
   padding: 4px;
   font-size: 16px;
   border: 1px solid #ffee32;
   transition: 0.3s;
-  margin-top: 2rem;
+  width: 100%;
 }
 
 button:hover {
@@ -46,29 +87,15 @@ button:hover {
   color: #ffee32;
   border: 1px solid #ffee32;
 }
-
-#formimg {
+.inscription {
   display: flex;
-  flex-direction:row-reverse;
-  justify-content: left;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-#form {
-  margin-top: 5rem;
-  margin-right: 12rem;
+.allignement {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem
 }
-
-#img {
-    margin-top: 2rem;
-}
-
-#formco {
-    margin-top: 3rem;
-}
-
-#forminscr {
-    margin-top: 3rem;
-}
-
-
