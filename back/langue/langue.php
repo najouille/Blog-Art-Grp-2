@@ -35,9 +35,9 @@ $statut = new LANGUE;
     </div>
 
     <h3>Toutes les Langues</h3>
-    <a class="align-footer" class="button" href="./createLangue.php">Créer une langue</a>
+    <a class="button-create input-button" href="./createLangue.php">Créer une langue</a>
     <div class="container-center">
-        <table class="twa-table" border="3" bgcolor="aliceblue">
+        <table class="twa-table" border="3">
             <thead>
                 <tr>
                     <th>NumLang</th>
