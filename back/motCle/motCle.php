@@ -26,6 +26,7 @@ $motcle = new MOTCLE;
     <meta name="author" content="" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/back-office.css" />
+    <link rel="stylesheet" href="../front/assets/master.css" />
     <link rel="stylesheet" href="../css/footer-back.css" />
 </head>
 

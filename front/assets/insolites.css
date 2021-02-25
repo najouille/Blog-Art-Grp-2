@@ -1,0 +1,72 @@
+html {
+    background-color: #0e0e0e;
+    color: white;
+  }
+
+h1 {
+    font-family: Monument Extended;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 15rem;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    opacity: 85%;
+    text-indent: 5%;
+}
+
+#intro {
+    margin-top: 30px;
+}
+
+.top1 {
+display: flex;
+flex-direction: row;
+}
+
+#top2 {
+    text-align: right;
+}
+
+#top3 {
+    text-align: left;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: center;
+}
+
+.etiquette {
+    margin: 8px;
+    font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #1e293b;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+  display: flex;
+    text-align: center;
+    justify-content: center;
+}
