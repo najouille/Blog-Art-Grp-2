@@ -142,6 +142,8 @@ h3 {
     color: #ffee32;
 }
 
+.lien:visited { color: #fff8a9; }
+
 .tags {
     display: flex;
     flex-direction: row;

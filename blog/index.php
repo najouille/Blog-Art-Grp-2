@@ -16,7 +16,7 @@
 <body class='style'>
     <?php
     include('../front/includes/commons/navbar.php');
-    
+
     ?>
     <img src="../front/assets/image/blogbanniere.png" alt="urban banniere" id="banniere" />
     <div class="intro">
