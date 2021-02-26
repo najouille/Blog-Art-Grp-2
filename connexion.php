@@ -4,8 +4,10 @@
 <head>
     <?php include('./front/includes/commons/headRequired.php') ?>
     <title>Document</title>
-    <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
+    <link rel="stylesheet" href="./front/assets/master.css" />
+    <link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="stylesheet" href="./front/assets/connexion.css" />
+    <link rel="stylesheet" href="./front/assets/footer.css" />
 </head>
 
 <body>
@@ -88,6 +90,9 @@
         </div>
 
     </div>
+    <?php
+    include('./front/includes/commons/footer.php');
+    ?>
 </body>
 
 </html>

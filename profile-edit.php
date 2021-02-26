@@ -8,11 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
-  <link rel="stylesheet" href="../../assets/test.css" />
-  <link rel="stylesheet" href="../../assets/profile-edit.css" />
+  <link rel="stylesheet" href="./front/assets/test.css" />
+  <link rel="stylesheet" href="./front/assets/profile-edit.css" />
 </head>
 
 <body>
+    
+<?php
+    include('./front/includes/commons/navbar.php');
+    ?>
   <div class="top-text">
     <h2>Mon profil</h2>
     <br />
@@ -21,7 +25,7 @@
   <div class="container-profile">
     <div class="left-profile">
       <div class="top-profile">
-        <div class="logo-profile logo-before"><?php include('../../assets/image/icones/user.svg') ?></div>
+        <div class="logo-profile logo-before"><?php include('./front/assets/image/icones/user.svg') ?></div>
         <div class="top-container">
           <div class="infos-profile">
             <div class="nom-pseudo">
@@ -44,7 +48,7 @@
       </div>
       <hr />
       <div class="email-profile">
-        <div class="logo-email logo-before"><?php include('../../assets/image/icones/email.svg') ?></div>
+        <div class="logo-email logo-before"><?php include('./front/assets/image/icones/email.svg') ?></div>
         <div class="middle-container">
           <div class="email-profile">
             <h3>Votre adresse e-mail</h3>
@@ -57,7 +61,7 @@
       </div>
       <hr />
       <div class="password-profile">
-        <div class="logo-password logo-before"><?php include('../../assets/image/icones/password.svg') ?></div>
+        <div class="logo-password logo-before"><?php include('./front/assets/image/icones/password.svg') ?></div>
         <div class="bottom-container">
           <div class="password-set">
             <h3>Modifier votre mot de passe</h3>
@@ -71,8 +75,12 @@
         </div>
       </div>
     </div>
-    <div class="right-profile"><img class="profile-img" src="../../assets/image/profil-picture.jpg" /></div>
+    <div class="right-profile"><img class="profile-img" src="./front/assets/image/profil-picture.jpg" /></div>
   </div>
+  
+  <?php
+    include('./front/includes/commons/footer.php');
+    ?>
 </body>
 
 </html>

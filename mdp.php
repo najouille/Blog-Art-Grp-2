@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./front/assets/master.css" />
     <link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="stylesheet" href="./front/assets/mdp.css" />
+    <link rel="stylesheet" href="./front/assets/footer.css" />
+
 </head>
 
 <body>
@@ -25,9 +27,7 @@
 
             <p>Nous avons bien pris en compte votre demande de réinitialisation de mot de passe. <br>
                 Rendez-vous sur votre boîte mail afin poursuivre la démarche. </p>
-
+            <?php
+            include('./front/includes/commons/footer.php');
+            ?>
 </body>
-
-</html>
-
-</html>
