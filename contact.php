@@ -4,14 +4,14 @@
 <head>
 	<?php include('./front/includes/commons/headRequired.php') ?>
 	<title>Document</title>
-	<link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
-	<link rel="stylesheet" href="./front/assets/contact.css" />
+	<link rel="stylesheet" href="./front/assets/master.css"/>
+	<link rel="stylesheet" href="./front/assets/master.css" />
+	<link rel="stylesheet" href="./front/assets/contact.css"/>
+	<link rel="stylesheet" href="./front/assets/navbar.css"/>
 </head>
 
 <body>
-<?php
-    include('./front/includes/commons/navbar.php')
-    ?>
+<?php include('./front/includes/commons/navbar.php') ?>
 	<div id="intro">
 		<h1>Contact</h1>
 		<p> N'hésitez pas à nous contacter pour plus d’informations</p>
@@ -19,7 +19,7 @@
 	<hr>
 	<div id="formimg">
 		<div id="img">
-			<img src="front/assets/image/Statue_portrait.png" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
+			<img src="front/assets/image/statuehome.png" alt="[ABC Tech posssède 75% de part de marché et XYZ 25%]" />
 		</div>
 		<div id="formulaire">
 			<form>
@@ -41,19 +41,16 @@
 				<input type="email" name="email" id="email" placeholder="Insérez votre adresse mail ..." />
 				<br>
 
-
 				<div>
 					<h3>Message</h3>
 				</div>
 				<textarea name="body" id="body" cols="30" rows="10" placeholder="Insérez votre message ..."></textarea>
 				<br>
+
 				<button name="button">Envoyer</button>
 			</form>
 		</div>
 	</div>
-
-
-
 </body>
 
 </html>
