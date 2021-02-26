@@ -64,8 +64,8 @@
         </a>
 
 
-        <a href="./portrait.php class='etiquetteblog'>
-            <img class='tailleimg' src=" <?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
+        <a href="./portrait.php" class='etiquetteblog'>
+            <img class='tailleimg' src="<?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Urbain
@@ -93,7 +93,7 @@
                     Street-Art
                 </span>
                 <span class='tag'>
-                    photographie
+                    Photographie
                 </span>
                 <span class='tag'>
                     Insolite
