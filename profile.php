@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <?php include('../commons/headRequired.php') ?>
-    <link rel="stylesheet" href="../../assets/profile.css">
-    <link rel="stylesheet" href="../../assets/master.css" />
-    <link rel="stylesheet" href="../../assets/navbar.css" />
+    <?php include('./front/includes/commons/headRequired.php') ?>
+    <link rel="stylesheet" href="./front/assets/profile.css">
+    <link rel="stylesheet" href="./front/assets/master.css" />
+    <link rel="stylesheet" href="./front/assets/navbar.css" />
+    <link rel="stylesheet" href="./front/assets/footer.css" />
 </head>
 
 <body>
-    <?php include('../commons/navbar.php') ?>
+    <?php include('./front/includes/commons/navbar.php') ?>
     <div class="top-text">
         <h2>Mon profil</h2><br>
         <p>N'hésitez pas à modifier vos coordonnées ci-dessous pour que votre compte TownyArt soit parfaitement à jour.</p>
@@ -112,5 +113,7 @@
         <div><img class="right-profile" src="../../assets/image/profil-picture.jpg"></div>
     </div>
 
-
+    <?php
+    include('./front/includes/commons/footer.php');
+    ?>
 </body>

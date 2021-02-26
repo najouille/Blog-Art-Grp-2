@@ -55,13 +55,18 @@ p {
 
 
 .contact-container {
-  max-width: 768px;
+  max-width: 640px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 
+@media (min-width: 768px) {
+  .contact-container {
+    max-width: 768px;
+  }
+}
 @media (min-width: 1024px) {
   .contact-container {
     max-width: 1040px;

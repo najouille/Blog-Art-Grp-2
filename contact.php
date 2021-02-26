@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./front/assets/master.css" />
 	<link rel="stylesheet" href="./front/assets/contact.css" />
 	<link rel="stylesheet" href="./front/assets/navbar.css" />
+	<link rel="stylesheet" href="./front/assets/footer.css" />
 </head>
 
 <body>
@@ -55,7 +56,10 @@
 		</div>
 
 	</div>
-
+	<?php
+    include('./front/includes/commons/footer.php');
+    ?>
+         
 </body>
 
 </html>
