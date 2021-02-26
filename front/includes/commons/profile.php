@@ -112,5 +112,5 @@
         <div><img class="right-profile" src="../../assets/image/profil-picture.jpg"></div>
     </div>
 
-
+    <?php include('./front/includes/commons/footer.html') ?>
 </body>

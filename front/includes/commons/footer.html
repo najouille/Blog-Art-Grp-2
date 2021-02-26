@@ -1,32 +1,7 @@
-<?php
-$page = "";
-$pathElm = "";
-
-$here = $_SERVER['PHP_SELF'];
-if (strpos($here, 'blog/') !== false) {
-    $page = "blog";
-    $pathElm = "../";
-} else if (strpos($here, 'home.php') !== false) {
-    $page = "home";
-    $pathElm = "./";
-} else if (strpos($here, 'galerie') !== false) {
-    $page = "galerie";
-    $pathElm = "../";
-} else if (strpos($here, 'blog') !== false) {
-    $page = "blog";
-    $pathElm = "../";
-} else if (strpos($here, 'contact') !== false) {
-    $page = "contact";
-    $pathElm = "./";
-}
-
-?>
-
+<!DOCTYPE html>
 <html lang="en">
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
   <head>
     <meta charset="UTF-8" />
@@ -108,15 +83,17 @@ if (strpos($here, 'blog/') !== false) {
           </div>
         </div>
         <!-- NEWSLETTER -->
-        <div class="newsletter">
-          <label class="newsletter-label">Newsletter</label>
-          <input
-            type="text"
-            name="mail"
-            placeholder="Votre adresse mail ..."
-            required
-          /><a class="submit-button" href="">Je m'inscris</a>
-        </div>
+          <div class="newsletter">
+            <form>
+              <h3 class="name">Newsletter</h3>
+              <input
+                type="text"
+                name="email"
+                placeholder="Votre adresse mail ..."
+                required
+              /><a class="submit-button" href="">Je m'inscris</a>
+            </form>
+          </div>
       </div>
       <!-- NAVBAR -->
       <div class="navbar">

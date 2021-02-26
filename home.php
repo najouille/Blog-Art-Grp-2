@@ -209,6 +209,7 @@
     <img src="./front/assets/image/groupe.png" alt="L'équipe" id="groupe" />
   </section>
   <script src="./front/assets/tilescroll/tilescroll-home.js"></script>
+  <?php include('./front/includes/commons/footer.html') ?>
 </body>
 
 </html>

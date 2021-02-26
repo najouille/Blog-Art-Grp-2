@@ -172,6 +172,7 @@
             <h4>Bordeaux regorge de trésors cachés. Nous vous livrons dans cet article trois de ces derniers.</h4>
         </div>
     </div>
+    <?php include('./front/includes/commons/footer.html') ?>
 </body>
 
 </html>

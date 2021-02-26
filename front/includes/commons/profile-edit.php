@@ -73,6 +73,7 @@
     </div>
     <div class="right-profile"><img class="profile-img" src="../../assets/image/profil-picture.jpg" /></div>
   </div>
+  <?php include('./front/includes/commons/footer.html') ?>
 </body>
 
 </html>

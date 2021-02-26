@@ -55,7 +55,7 @@
 		</div>
 
 	</div>
-
+	<?php include('./front/includes/commons/footer.html') ?>
 </body>
 
 </html>
