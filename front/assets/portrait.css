@@ -204,10 +204,7 @@ h4 {
   justify-content: center;
   align-items: center;
   grid-column: span 2 / span 2;
-  transition: ease(0.15s);
-}
-#portfolio :hover {
-  transform: scale(1.03);
+  transition: ease 0.15s;
 }
 .galerie {
   display: grid;
@@ -216,16 +213,16 @@ h4 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   margin-left: 150px;
   margin-right: 150px;
+ 
 }
-
+.galerie :hover {
+  transform: scale(1.03);
+}
 .galerie img {
   height: 175px;
   width: 100%;
   object-fit: cover;
-  transition: ease(0.15s);
-}
-.galerie img :hover {
-  transform: scale(1.03);
+  transition: ease 0.15s;
 }
 #quais {
   grid-column: span 3 / span 3;
