@@ -138,7 +138,7 @@
   <section class="blogpreview">
     <h2>Notre blog</h2>
     <div class="blog-preview-container">
-      <a href="" class="streetart">
+      <a href="./blog/matteo.php" class="streetart">
         <img src="./front/assets/image/trumpetist.png" alt="trumpetist" width="160" />
         <div class="tagtxt">
           <span class="tag">
