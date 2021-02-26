@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class='maxiconteneurblog'>
-        <a href="" class='etiquetteblog'>
+        <a href="matteo.php" class='etiquetteblog'>
             <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
             <div class='conteneurblog'>
                 <span class='tag'>

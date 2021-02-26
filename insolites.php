@@ -5,6 +5,7 @@
     <?php include('./front/includes/commons/headRequired.php') ?>
     <title>Document</title>
     <link rel="stylesheet" href="./front/assets/insolites.css" />
+    <link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="font" href="./front/assets/fonts/subset-MonumentExtended-Regular.svg"/>
 </head>
 
@@ -23,16 +24,16 @@
 </section>
 
 <div class="tags">
-    <div class="etiquette"
+    <div class="etiquette">
         <h5>Insolite</h5>
     </div>
-    <div class="etiquette"
+    <div class="etiquette">
         <h5>Photographie</h5>
     </div>
-    <div class="etiquette"
+    <div class="etiquette">
         <h5>Street-art</h5>
     </div>
-    <div class="etiquette"
+    <div class="etiquette">
         <h5>Art</h5>
     </div>
 </div>
