@@ -52,17 +52,26 @@ p {
   justify-content: space-between;
 }
 
+
+
+.contact-container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 1024px) {
+  .contact-container {
+    max-width: 1040px;
+  }
+}
+
 @media (min-width: 1280px) {
   .contact-container {
     max-width: 1280px;
   }
-}
-
-.contact-container {
-  max-width: 1040px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 input[type="text"],
