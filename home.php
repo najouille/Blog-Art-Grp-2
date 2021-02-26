@@ -38,7 +38,7 @@
         <div class="hero-text">
 
           <h1>L'urbain et l'art</h1>
-          <p>La ville offre un paysage en constante évolution, changeant sans cesse au grès des saisons et des modes. A travers la métropôle bordelaise, partez à la rencontre de cet art et découvrez ses trésors cachés. </p>
+          <p>La ville offre un paysage en constante évolution, changeant sans cesse au grès des saisons et des modes. A travers la métropole bordelaise, partez à la rencontre de cet art et découvrez ses trésors cachés. </p>
           <div class="hero-nav">
             <a href="">Accueil</a>
             <a href="./blog/index.php">Blog</a>
@@ -171,7 +171,7 @@
           </span>
           <h4>3 lieux insolites à découvrir absolument</h4>
           <p>
-            Bordeaux regorge de trésors cachés. Nous vous livrons dans cet article trois de ces articles.
+            Bordeaux regorge de trésors cachés. Nous vous livrons dans cet article trois de ces derniers.
           </p>
         </div>
       </a>
