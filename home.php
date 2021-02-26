@@ -170,7 +170,7 @@
           </p>
         </div>
       </a>
-      <a href="portrait.html" class="streetart">
+      <a href="./blog/portrait.php" class="streetart">
         <img src="./front/assets/image/portraitfredericducos.png" alt="frederic ducos" width="160" />
         <div class="tagtxt">
           <span class="tag">

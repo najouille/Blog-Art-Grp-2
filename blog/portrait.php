@@ -1,24 +1,19 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<html>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-      <link rel="stylesheet" href="./front/assets/master.css" />
-      <link rel="stylesheet" href="./front/assets/portrait.css" />
-    </head>
+<head>
+  <?php include('./front/includes/commons/headRequired.php') ?> 
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
+  <link rel="stylesheet" href="../front/assets/portrait.css" />
+  <link rel="stylesheet" href="../front/assets/footer.css" />
+</head>
 
     <body>
+    <?php include('../front/includes/commons/navbar.php')?>
       <section class="introduction">
         <h1>FRÉDERIC DUCOS</h1>
         <p id="intro">
@@ -44,13 +39,13 @@
           <h5>art</h5>
         </div>
         <div class="button">
-          <a href="" id="Voir ses photos">Voir ses photos</a>
+          <a href="https://www.fredericducos.com" id="Voir ses photos" target="blank">Voir ses photos</a>
         </div>
       </section>
       <div class="bandeau">
         <div class="portrait">
           <img
-            src="./front/assets/image/portraitfredericducos.png"
+            src="../front/assets/image/portraitfredericducos.png"
             alt="frederic ducos"
             width="250"
             id="frederic"
@@ -61,7 +56,7 @@
           certain minimalisme”
         </h2>
         <div class="quote">
-          <img src="./front/assets/image/quote.svg" alt="" width="190" />
+          <img src="../front/assets/image/quote.svg" alt="" width="190" />
         </div>
       </div>
       <section class="article">
@@ -176,7 +171,7 @@
             class="social-button"
             href="https://www.instagram.com/fredericducosphotographer/"
             target="blank"
-          ></a>
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-instagram"
@@ -235,27 +230,28 @@
         <h4>Les oeuvres du photographe</h4>
         <div class="galerie">
           <img
-            src="./front/assets/image/eiffel.jpg"
+            src="../front/assets/image/eiffel.jpg"
             alt="tour-eiffel"
             id="eiffel"
           />
-          <img src="./front/assets/image/quais.jpg" alt="quais" id="quais" />
+          <img src="../front/assets/image/quais.jpg" alt="quais" id="quais"/>
           <a href="https://www.fredericducos.com/" id="portfolio" target="blank"
             >Découvrir son portfolio</a
           >
           <img
-            src="./front/assets/image/bourse2.jpg"
+            src="../front/assets/image/bourse2.jpg"
             alt="bourse2"
             id="bourse2"
           />
-          <img src="./front/assets/image/arene.jpg" alt="arene" id="arene" />
+          <img src="../front/assets/image/arene.jpg" alt="arene" id="arene" />
           <img
-            src="./front/assets/image/bourse1.jpg"
+            src="../front/assets/image/bourse1.jpg"
             alt="bourse1"
             id="bourse1"
           />
         </div>
       </div>
+      <?php include('../front/includes/commons/footer.php');?>
     </body>
   </html>
 </html>
