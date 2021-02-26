@@ -27,7 +27,7 @@ p {
 
 #intro {
   margin-top: 3rem;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 #image {
@@ -36,7 +36,7 @@ p {
 
 #formulaire {
   margin-top: 5px;
-  margin-left: 11rem;
+  /* margin-left: 11rem; */
   justify-content: space-around;
 }
 
@@ -50,6 +50,13 @@ p {
   flex-direction: row;
   justify-content: right;
   justify-content: space-between;
+}
+
+.contact-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="text"],
@@ -94,7 +101,7 @@ button:hover {
 
 hr {
   margin-top: 3rem;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
   width: 55%;
   display: flex;
   border: 0.8px solid #ffee32;
