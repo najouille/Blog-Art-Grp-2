@@ -96,6 +96,12 @@ html {
   color: #ffee32;
   text-align: right;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+.hero-nav a:hover {
+  border: 1px solid #ffee32;
+  background: #ffee32;
+  color: #0e0e0e;
 }
 
 .hero-nav {
