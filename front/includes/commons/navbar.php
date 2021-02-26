@@ -30,9 +30,11 @@ if (strpos($here, 'blog/') !== false) {
     <pre style="color:white">
       //$page 
     </pre> -->
+    <a href="../../../Blogart/home.php">
     <img class="logo-navbar" src="<?= $page == "home" ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg" ?>" alt="">
+    </a>
     <div class=" navbar-content-right">
-    <a href="<?= $pathElm . "" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
+    <a href="<?= $pathElm . "home" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
         ACCUEIL
     </a>
     <a href="<?= $pathElm . "blog" ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">
@@ -44,7 +46,7 @@ if (strpos($here, 'blog/') !== false) {
     <a href="<?= $pathElm . "contact" ?>" class="bouton-space <?= $page == "contact" ? 'active' : '' ?>"">
             CONTACT
         </a>
-        <a href=" #" class="icon-right bouton-space">
+        <a href="../../../BlogArt/connexion.php" class="icon-right bouton-space">
 
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256">
             <rect width="256" height="256" fill="none"></rect>
