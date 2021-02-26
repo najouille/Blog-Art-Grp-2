@@ -16,7 +16,7 @@
 <body class='style'>
     <?php
     include('../front/includes/commons/navbar.php');
-    
+
     ?>
     <img src="../front/assets/image/blogbanniere.png" alt="urban banniere" id="banniere" />
     <div class="intro">
@@ -64,8 +64,8 @@
         </a>
 
 
-        <a href="../portrait.html" class='etiquetteblog'>
-            <img class='tailleimg' src="<?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
+        <a href="./portrait.php class='etiquetteblog'>
+            <img class='tailleimg' src=" <?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
             <div class='conteneurblog'>
                 <span class='tag'>
                     Urbain
