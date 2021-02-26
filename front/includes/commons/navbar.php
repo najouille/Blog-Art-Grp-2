@@ -51,7 +51,7 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
     <pre style="color:white">
       //$page 
     </pre> -->
-    <a href="../../../Blogart/home.php">
+    <a href="../../Blogart/home.php">
     <img class="logo-navbar" src="<?= $imageResolver ?>" alt="">
     </a>
     <div class=" navbar-content-right">

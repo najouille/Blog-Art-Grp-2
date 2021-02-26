@@ -108,7 +108,8 @@ footer a:link, footer a:visited {
 
 .icon-network {
     color: white;
-    padding: 0% 54%;
+    /* padding: 0% 54%;: */
+    margin-left: 1rem;
     transition: color 0.3s ease-out;
 }
 
@@ -124,17 +125,26 @@ footer a:link, footer a:visited {
     margin: auto;
     box-sizing: border-box;
 }
-
 input {
     width: 100%;
     border-radius: 25px;
     padding: 10px;
+    margin-top: 18px;
     margin-right: 25px;
     border: 1px solid #FFEE32;
     background: #0E0E0E;
     outline: none;
     font-size: 0.75rem;
     color: #A8A8A8;
+}
+
+.name {
+    position: absolute;
+    background: #0E0E0E;
+    margin-left: 15px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    padding: 0 5px;
 }
 
 

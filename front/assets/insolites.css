@@ -2,12 +2,16 @@ html {
     background-color: #0e0e0e;
     color: white;
   }
-
+#banniere {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 h1 {
     font-family: "Monument Extended";
     font-size: 42px;
     font-style:normal;
-    font-weight: 800;
+    font-weight: 600;
     text-align: left;
     color: #ffffff;
     margin-left: 176px;
@@ -32,10 +36,11 @@ h3 {
 }
 
 .intro {
+    font-family: "Manrope", sans-serif;
     margin-top: 30px;
     margin-left: 146px;
     text-align: left;
-    width: 60%;
+    width: 80%;
     font-size: 18px;
     text-indent: 5%;
 }
@@ -56,14 +61,31 @@ h3 {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    margin-bottom: 146px;
 }
 
-.img {
-    margin: 146px;
-    max-width: 510px;
-    height: 655px;
-    object-fit: cover;
+.photol {
+    margin-top: 156px;
+    margin-left: 146px;
     z-index: 2;
+}
+
+.photor {
+    margin-top: 156px;
+    margin-right: 146px;
+    z-index: 2;
+}
+
+.photol img{
+    max-width: 515px;
+    height: 687px;
+    object-fit: cover;
+}
+
+.photor img{
+    max-width: 515px;
+    height: 687px;
+    object-fit: cover;
 }
 
 .number_left {
@@ -71,7 +93,7 @@ h3 {
     left: 6rem;
     z-index: 1;
     position: absolute;
-    opacity: 75%;
+    opacity: 95%;
 }
 
 .number_right {
@@ -79,19 +101,41 @@ h3 {
     right: 6rem;
     z-index: 1;
     position: absolute;
-    opacity: 75%;
+    opacity: 95%;
 }
 
-.description {
+.descriptionr {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: white;
-    opacity: 85%;
-    max-width: 609.83px;
-    max-height: 556.23px;
-    margin: 146px;
+    opacity: 95%;
+    margin-top: 146px;
+    margin-left: 50px;
+    margin-right: 11%;
+}
+
+.descriptionr p{
+    width: 100%;
+    height: 100%
+}
+
+.descriptionl {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    opacity: 95%;
+    margin-top: 146px;
+    margin-right: 50px;
+    margin-left: 11%;
+}
+
+.descriptionl p{
+    width: 100%;
+    height: 100%
 }
 
 .lien {

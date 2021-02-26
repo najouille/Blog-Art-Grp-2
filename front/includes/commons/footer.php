@@ -93,16 +93,17 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
       </div>
       <!-- NEWSLETTER -->
       <div class="newsletter">
-        <label class="newsletter-label">Newsletter</label>
-        <input type="text" name="mail" placeholder="Votre adresse mail ..." required /><a class="submit-button" href="">Je m'inscris</a>
-      </div>
-      <!-- NAVBAR -->
-      <div class="navbar">
-        <a href="">ACCUEIL</a>
-        <a href="">BLOG</a>
-        <a href="">GALERIE</a>
-        <a href="">CONTACT</a>
-      </div>
+            <form>
+              <h3 class="name">Newsletter</h3>
+              <input
+                type="text"
+                name="email"
+                placeholder="Votre adresse mail ..."
+                required
+              /><a class="submit-button" href="">Je m'inscris</a>
+            </form>
+          </div>
+     
     </div>
     <!-- NAVBAR -->
     <div class="navbar">

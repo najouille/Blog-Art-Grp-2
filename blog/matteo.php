@@ -14,20 +14,20 @@
     <?php include('../front/includes/commons/navbar.php') ?>
     <div class="conteneur-principal">
         <h1>Le street art, ses origines et<br>son impact mondial</h1>
-        <p class="paragraph-start">Découvre les origines du street-art, l’impacte de celui-ci dans la ville <br> de Bordeaux, ainsi que les évènements à ne pas manquer </p>
+        <p class="paragraph-start">Découvre les origines du street-art, l’impact de celui-ci dans la ville <br> de Bordeaux, ainsi que les évènements à ne pas manquer.</p>
         <div class="contenant-tag-blog">
             <div class='conteneurblog'>
                 <span class='tag'>
-                    Urbain
+                    urbain
                 </span>
                 <span class='tag'>
-                    Photographie
+                    photographie
                 </span>
                 <span class='tag'>
-                    Évènement
+                    évènement
                 </span>
                 <span class='tag'>
-                    Art
+                    art
                 </span>
             </div>
             <img class="imgstreet" src="../front/assets/image/DSCF3976 (1).jpg" alt="">
@@ -46,21 +46,21 @@
         </div>
         <h2>Les origines du street-art </h2>
         <p class='paragraph'>Le street-art est apparu au Mexique dans les années 1910 suite à la<span class="lien"> Révolution Mexicaine </span>.
-            Ce mouvement artistique contemporain s’est développé au début du siècle dernier dans l’objectif d'exprimer des revendication sociales,
-            politiques et esthétiques. Ces œuvres qualifiées de <span class="lien">muralisme </span> d’artistes de rue sont les débuts du street art. Le Mexique est
+            Ce mouvement artistique contemporain s’est développé au début du siècle dernier dans l’objectif d'exprimer des revendications sociales,
+            politiques et esthétiques. Ces œuvres qualifiées de <span class="lien">muralisme</span> d’artistes de rue sont les débuts du street art. Le Mexique est
             d’ailleurs connu pour ses nombreux artistes et peintures murales présentes dans chaque villes mexicaines. On retrouve aussi des fresques
             de propagande en Russie du<span class="lien"> régime soviétique</span>, souvent de grande envergure. Cependant, c’est à la fin du 20ème siècle que ce mouvement s’affirme.
-            De par la forte influence américaine, de nombreux subway sont recouvert de “tags” signés par leur auteur souvent dans l’objectif de marquer son
+            De par la forte influence américaine, de nombreux subways sont recouvert de “tags” signés par leur auteur souvent dans l’objectif de marquer son
             territoire. On retrouve notamment Taki 183, un artiste précurseur du tag new yorkais, écrivant son pseudo sur de nombreux murs de Manhattan.
             On peut également citer Keith Haring, un avangardiste du domaine.
         </p>
-        <p class='paragraph'>C’est à partir de Mai 1968 que le street art a traversé l’océan Atlantique pour arriver en France. Il fut un moyen de
+        <p class='paragraph'>C’est à partir de Mai 1968 que le street-art a traversé l’océan Atlantique pour arriver en France. Il fut un moyen de
             revendiquer des idées politiques. Entre 1980 et 1990, la municipalité corse la législation et traque les street-artistes. Cette manière
             de s’exprimer à travers les époques, les cultures ainsi que les pays s’est développée, malgré son côté illégal. Ces dernières années,
-            le street art se démocratise et s'ancre de plus en plus dans nos rues.
+            le street-art se démocratise et s'ancre de plus en plus dans nos rues.
         </p>
-        <h2>Le street art bordelais </h2>
-        <p class='paragraph'> Cette tendance mondiale n’échappe pas à Bordeaux, il existe de nombreux recoins cachés dans les multiples quartiers
+        <h2>Le street-art bordelais</h2>
+        <p class='paragraph'>Cette tendance mondiale n’échappe pas à Bordeaux, il existe de nombreux recoins cachés dans les multiples quartiers
             bordelais. Comme vous le savez, les fresques de street-art sont le plus souvent peintes dans l’illégalité, ce qui rend la discipline
             insolite. Depuis 2016, la ville de Bordeaux encourage le secteur de l’art urbain en organisant une saison culturelle annuelle dédiée
             à l’art urbain. Ainsi, une trentaine de fresques ont donc été réalisées, la municipalité a permis à plusieurs artistes d’embellir la
@@ -73,18 +73,18 @@
             abrite le plus grand centre d’art numérique au monde, présentant des œuvres d’art contemporain. Certaines façades de l'intérieur de
             la base sous-marine sont recouvertes de graffitis.</p>
         <h2>Les évènements à Bordeaux </h2>
-        <p class='paragraph'> Si vous souhaitez vous imprégner d’une bonne dose de culture street-art, on peut vous conseiller 3 initiatives
+        <p class='paragraph'>Si vous souhaitez vous imprégner d’une bonne dose de culture street-art, on peut vous conseiller trois initiatives
             bordelaises qui sauront vous séduire. Vous avez le choix entre une balade pour découvrir le street-art à vélo, un festival dédié
             au street-art et une exposition d’art urbain.
             <br>
         </p>
-        <p class='paragraph'> Si vous habitez à Bordeaux, vous avez sûrement remarqué que la bicyclette est un moyen de transport très prisé,
+        <p class='paragraph'>Si vous habitez à Bordeaux, vous avez sûrement remarqué que la bicyclette est un moyen de transport très prisé,
             c'est pourquoi Emmanuel Moulinier à décider de créer des visites street-art à vélo dans les ruelles, places, passages secrets et coins
             insolites de Bordeaux. Le vélo permet ainsi de parcourir plus de distance et donc de voir plus d'œuvres. Cette visite de 2h30, agrémentée
             de gourmandises sera vous convenir à vous et votre famille.
             <br>
         </p>
-        <p class='paragraph'> Vous pouvez également vous rendre au festival Shake Well, qui existe depuis 2016 et accueille plus de 5000 visiteurs chaque
+        <p class='paragraph'>Vous pouvez également vous rendre au festival Shake Well, qui existe depuis 2016 et accueille plus de 5000 visiteurs chaque
             année. Le festival vous propose des démonstrations de graffeurs, des pièces de théâtre et des expositions diverses. Pendant 3 jours, une centaine
             de graffeurs tapisse 6.500 m² de murs en friche du quartier Bassins à flot.
             <br>
