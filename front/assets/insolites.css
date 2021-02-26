@@ -2,7 +2,11 @@ html {
     background-color: #0e0e0e;
     color: white;
   }
-
+#banniere {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 h1 {
     font-family: "Monument Extended";
     font-size: 42px;
@@ -60,10 +64,6 @@ h3 {
     margin-bottom: 146px;
 }
 
-.banner{
-    max-width: 100%;
-}
-
 .photol {
     margin-top: 156px;
     margin-left: 146px;
@@ -113,6 +113,7 @@ h3 {
     opacity: 95%;
     margin-top: 146px;
     margin-left: 50px;
+    margin-right: 11%;
 }
 
 .descriptionr p{
@@ -127,10 +128,9 @@ h3 {
     font-weight: 400;
     color: white;
     opacity: 95%;
-    max-width: 609.83px;
-    max-height: 556.23px;
     margin-top: 146px;
     margin-right: 50px;
+    margin-left: 11%;
 }
 
 .descriptionl p{
