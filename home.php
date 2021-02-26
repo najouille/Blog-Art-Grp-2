@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./front/assets/tilescroll/tilescroll-home.css" />
   <link rel="stylesheet" href="./front/assets/master.css" />
   <link rel="stylesheet" href="./front/assets/navbar.css" />
+  <link rel="stylesheet" href="./front/assets/footer.css" />
   <link rel="stylesheet" href="./front/assets/home.css" />
 
 </head>

@@ -13,20 +13,22 @@
     <?php include('../front/includes/commons/navbar.php') ?>
     <h1> Les galeries Towny'Art </h1>
     <div class="img-gallerie">
-        <div class="gradient">
+        <div class="gradient" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
             <span class="texte-haut">TOUTES </span>
             <span class="texte-bas"> les photos</span>
         </div>
-        <div class="gradient2">
+        <div class="gradient2" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
             <span class="texte-haut">VOS PHOTOS </span>
             <span class="texte-bas"> favorite</span>
         </div>
-        <div class="gradient3">
+        <div class="gradient3" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
             <span class="texte-haut">TENDANCE </span>
             <span class="texte-bas"> du moment</span>
         </div>
 
+
     </div>
+    <script type="text/javascript" src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 </body>
 
 </html>
