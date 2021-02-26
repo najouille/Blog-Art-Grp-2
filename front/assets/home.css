@@ -301,3 +301,12 @@ p {
     height: 50vh;
   }
 }
+.grille :hover {
+  transform: scale(1.03);
+}
+.galerie img {
+  transition: ease 0.15s;
+}
+.decouvrir {
+  transition: ease 0.15s;
+}

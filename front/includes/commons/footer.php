@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+$page = "";
+$pathElm = "";
+
+$here = $_SERVER['PHP_SELF'];
+if (strpos($here, 'blog/') !== false) {
+    $page = "blog";
+    $pathElm = "../";
+} else if (strpos($here, 'home.php') !== false) {
+    $page = "home";
+    $pathElm = "./";
+} else if (strpos($here, 'galerie') !== false) {
+    $page = "galerie";
+    $pathElm = "../";
+} else if (strpos($here, 'blog') !== false) {
+    $page = "blog";
+    $pathElm = "../";
+} else if (strpos($here, 'contact') !== false) {
+    $page = "contact";
+    $pathElm = "./";
+}
+
+?>
+
 <html lang="en">
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
@@ -28,8 +51,8 @@
         <div class="social-network">
           <h4 class="title-network">Suivez nous sur :</h4>
           <div class="social-network-icon">
-            <a href="https://www.facebook.com/TownyArt"
-              ><svg
+            <a href="https://www.facebook.com/TownyArt">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon-network"
                 width="36"
@@ -97,10 +120,10 @@
       </div>
       <!-- NAVBAR -->
       <div class="navbar">
-        <a href="index.php">ACCUEIL</a>
-        <a href="blog.html">BLOG</a>
-        <a href="gallerie.html">GALLERIE</a>
-        <a href="contact.php">CONTACT</a>
+        <a href="<?= $pathElm . "home" ?>" <?= $page == "home" ? 'active' : '' ?>>ACCUEIL</a>
+        <a href="<?= $pathElm . "blog" ?>" <?= $page == "blog" ? 'active' : '' ?>>BLOG</a>
+        <a href="<?= $pathElm . "galerie" ?>" <?= $page == "galerie" ? 'active' : '' ?>>GALERIE</a>
+        <a href="<?= $pathElm . "contact" ?>" <?= $page == "contact" ? 'active' : '' ?>>CONTACT</a>
       </div>
       </div>
       <div class="footer-bottom-section">

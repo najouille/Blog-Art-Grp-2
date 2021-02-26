@@ -30,6 +30,7 @@ h4 {
   border: solid;
   border-color: #9cedff;
   border-width: 2px;
+  transition: ease 0.15s;
 }
 .tailleimg {
   height: 200px;
@@ -61,7 +62,10 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
 }
-.opacity-10 .etiquetteblog {
+.maxiconteneurblog :hover {
+  transform: scale(1.03);
+}
+.opacity-10 .etiquetteblog{
   opacity: 10%;
 }
 .soon-banner-container {
@@ -89,7 +93,7 @@ h4 {
   margin-top: -12px;
 }
 h2 {
-  font-family: Monument Extended;
+  font-family: "Monument Extended";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -99,7 +103,7 @@ h2 {
   padding-bottom: 28px;
 }
 p {
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
