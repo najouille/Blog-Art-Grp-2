@@ -87,20 +87,20 @@ if ($resultMotCle) {
                     <div class="container-input">
                         <label class="control-label" for="numLang">Langue :</label>
                         <select name="numLang" id="numLang">
-                    </div>
 
-                    <?php
-                    $allLang = $lang->get_AllLangues();
-                    foreach ($allLang as $row) {
-                        if ($row["numLang"] === $numLang) {
-                            $selected = "selected";
-                        } else {
-                            $selected = "";
-                        }
-                        echo '<option value="' . $row["numLang"] . '" ' . $selected . '>' . $row["lib2Lang"] . '</option>';
-                    }
-                    ?>
-                    </select>
+                            <?php
+                            $allLang = $lang->get_AllLangues();
+                            foreach ($allLang as $row) {
+                                if ($row["numLang"] === $numLang) {
+                                    $selected = "selected";
+                                } else {
+                                    $selected = "";
+                                }
+                                echo '<option value="' . $row["numLang"] . '" ' . $selected . '>' . $row["lib2Lang"] . '</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
 
                     <div class="controls">
                         <br><br>

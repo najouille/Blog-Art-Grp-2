@@ -13,6 +13,7 @@ include __DIR__ . '/initMembre.php';
 
 if (!isset($_GET['id'])) $_GET['id'] = '';
 
+$article = new MEMBRE;
 $member = new MEMBRE;
 $erreur = '';
 $updated = false;
@@ -26,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   
   if (isset($prenomMemb) && isset($nomMemb) && isset($pseudoMemb) && isset($eMailMemb) && isset($passMemb) && isset($souvenirMemb) && isset($accordMemb) && isset($idStat)) {
-    $member->update($numMemb, $prenomMemb, $nomMemb, $pseudoMemb, $eMailMemb, $passMemb, $idStat, $souvenirMemb, $accordMemb);
+    $article->update($numMemb, $prenomMemb, $nomMemb, $pseudoMemb, $eMailMemb, $passMemb, $idStat, $souvenirMemb, $accordMemb);
     $updated = true;
   } else {
     $updated = false;

@@ -9,11 +9,13 @@
 
 require_once __DIR__ . '/../../util/utilErrOn.php';
 require_once __DIR__ . '/../../CLASS_CRUD/membre.class.php';
+require_once __DIR__ . '/../../CLASS_CRUD/statut.class.php';
 include __DIR__ . '/initMembre.php';
 
 if (!isset($_GET['id'])) $_GET['id'] = '';
 
 $member = new MEMBRE;
+$statut = new STATUT;
 $erreur = '';
 $updated = false;
 
@@ -193,21 +195,15 @@ if ($resultMembre) {
                 </div>
             </fieldset>
         </div>
-        <div class="align-footer">
-            <?php
-
-            require_once __DIR__ . '/footerMembre.php';
-            require_once __DIR__ . '/footer.php';
-            ?>
-        </div>
     </form>
-
     <div class="align-footer">
         <?php
-        //require_once __DIR__ . '/footerMotCle.php';
-        // require_once __DIR__ . '/footer.php';
+
+        require_once __DIR__ . '/footerMembre.php';
+        require_once __DIR__ . '/footer.php';
         ?>
     </div>
+
 </body>
 
 </html>
