@@ -1,11 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-html {
+.portrait-container {
   background-color: #0e0e0e;
 }
-h1 {
+.portrait-container h1 {
   color: white;
   font-family: "Monument Extended";
   font-size: 42px;
@@ -14,7 +10,7 @@ h1 {
   text-align: center;
   padding-top: 90px;
 }
-#intro {
+.portrait-container #intro {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -26,14 +22,14 @@ h1 {
   padding-right: 228px;
   padding-top: 73px;
 }
-.tags {
+.portrait-container .tags {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   padding: 22px;
 }
-h5 {
+.portrait-container h5 {
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -46,7 +42,7 @@ h5 {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-.button a {
+.portrait-container .button a {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -63,18 +59,18 @@ h5 {
   padding-right: 12px;
   transition: ease 0.15s;
 }
-.button :hover {
-    color: black;
-    border: 1px solid #ffee32;
-    background-color: #ffee32;
-    transform: scale(1.03);
+.portrait-container .button :hover {
+  color: black;
+  border: 1px solid #ffee32;
+  background-color: #ffee32;
+  transform: scale(1.03);
 }
-.button {
+.portrait-container .button {
   text-align: right;
   padding-right: 228px;
   margin-top: -25px;
 }
-.bandeau {
+.portrait-container .bandeau {
   background-color: #171717;
   width: 100%;
   height: 322px;
@@ -82,17 +78,17 @@ h5 {
   margin-top: 82px;
   text-align: center;
 }
-#frederic {
+.portrait-container #frederic {
   border-radius: 250px;
 }
-.portrait {
+.portrait-container .portrait {
   padding-top: 0 auto;
   margin-top: 36px;
   padding-bottom: 0 auto;
   padding-left: 16%;
   position: absolute;
 }
-.quote {
+.portrait-container .quote {
   z-index: 1;
   display: flex;
   padding-left: 41%;
@@ -100,7 +96,7 @@ h5 {
   padding-top: 28px;
   padding-bottom: 104px;
 }
-h2 {
+.portrait-container h2 {
   position: absolute;
   color: white;
   opacity: 85%;
@@ -109,13 +105,12 @@ h2 {
   font-style: normal;
   font-weight: 600;
   text-align: center;
-  max-width: 500px;
   padding-left: 48%;
   padding-right: 17%;
   padding-top: 115px;
   padding-bottom: 63px;
 }
-p {
+.portrait-container p {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -128,7 +123,7 @@ p {
   text-indent: 5%;
   padding-bottom: 20px;
 }
-h3 {
+.portrait-container h3 {
   color: white;
   opacity: 85%;
   font-family: "Manrope", sans-serif;
@@ -141,13 +136,13 @@ h3 {
   padding-top: 48px;
   padding-bottom: 25px;
 }
-.introduction a {
+.portrait-container .introduction a {
   color: #ffee32;
 }
-.article a {
+.portrait-container .article a {
   color: #ffee32;
 }
-h6 {
+.portrait-container h6 {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -159,19 +154,17 @@ h6 {
   padding-right: 228px;
   padding-top: 32px;
 }
-.link {
+.portrait-container .link {
   display: flex;
   flex-direction: column;
 }
-
-
-.oeuvres {
+.portrait-container .oeuvres {
   height: 540px;
   width: 100%;
   background-color: #171717;
   margin-top: 40px;
 }
-h4 {
+.portrait-container h4 {
   color: white;
   opacity: 90%;
   font-family: "Monument Extended";
@@ -183,7 +176,7 @@ h4 {
   padding-top: 38px;
   padding-bottom: 52px;
 }
-.button a {
+.portrait-container .button a {
   text-decoration: none;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -191,7 +184,7 @@ h4 {
   color: #ffee32;
   border: 1px solid #ffee32;
 }
-#portfolio {
+.portrait-container #portfolio {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -203,82 +196,77 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: span 2 / span 2;
+  grid-column: span 2/span 2;
   transition: ease 0.15s;
 }
-.galerie {
+.portrait-container .galerie {
   display: grid;
   gap: 1rem;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   grid-template-columns: repeat(6, minmax(0, 1fr));
   margin-left: 150px;
   margin-right: 150px;
- 
 }
-.galerie :hover {
+.portrait-container .galerie :hover {
   transform: scale(1.03);
 }
-.galerie img {
+.portrait-container .galerie img {
   height: 175px;
   width: 100%;
   object-fit: cover;
   transition: ease 0.15s;
 }
-#quais {
-  grid-column: span 3 / span 3;
+.portrait-container #quais {
+  grid-column: span 3/span 3;
 }
-#bourse2 {
-  grid-column: span 3 / span 3;
+.portrait-container #bourse2 {
+  grid-column: span 3/span 3;
 }
-#arene {
-  grid-column: span 2 / span 2;
+.portrait-container #arene {
+  grid-column: span 2/span 2;
 }
-.insta {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.portrait-container .insta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.website {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.portrait-container .website {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.social {
+.portrait-container .social {
   display: flex;
   flex-direction: column;
   justify-content: left;
   margin-left: 228px;
   align-items: flex-start;
 }
-
-.social-button {
+.portrait-container .social-button {
   display: flex;
-align-items: center;
-text-decoration: none;
+  align-items: center;
+  text-decoration: none;
 }
-
-.social-button svg {
-  margin-right: .5rem;
+.portrait-container .social-button svg {
+  margin-right: 0.5rem;
   z-index: 10;
   color: #fff;
   fill: #0f0f0f;
 }
-.social-button:hover svg {
-
+.portrait-container .social-button:hover svg {
   color: #ffee32;
 }
-
-.social-button span {
- background: #393939;
- padding: .25rem;
- border-radius: .5rem;
- padding-left: 1rem;
- padding-right: 8px;
- margin-left: -24px;
- z-index: 0;
- font-family: "Manrope", sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-color: white;
+.portrait-container .social-button span {
+  background: #393939;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 8px;
+  margin-left: -24px;
+  z-index: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
 }

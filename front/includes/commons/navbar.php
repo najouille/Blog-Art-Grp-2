@@ -51,11 +51,11 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
     <pre style="color:white">
       //$page 
     </pre> -->
-    <a href="<?= $pathElm . "home" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
+    <a href="<?= $pathElm . "home.php" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
         <img class="logo-navbar" src="<?= $imageResolver ?>" alt="">
     </a>
     <div class=" navbar-content-right">
-        <a href="<?= $pathElm . "home" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
+        <a href="<?= $pathElm . "home.php" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
             ACCUEIL
         </a>
         <a href="<?= $pathElm . "blog" ?>" class="bouton-space <?= $page == "blog" ? 'active' : '' ?>">

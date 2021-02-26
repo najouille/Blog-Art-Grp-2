@@ -6,58 +6,49 @@
 	padding: 0 42px;
 	position: sticky;
 	height: 42px;
-
 	z-index: 20;
-}
-.bouton-space {
+  }
+  .header .bouton-space {
 	margin-left: 42px;
 	font-family: "Manrope", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	color: #ffffff;
 	transition: 0.3s;
-}
-
-.bouton-space a:hover {
+  }
+  .header .bouton-space a:hover {
 	color: #ffee32;
-}
-
-.bouton-space a::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background:#FFEE32;
-    margin-top: 2px;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-out;
-}
-
-.bouton-space a:hover::after {
-    transform: scaleX(1);
-}
-
-.header-space {
+  }
+  .header .bouton-space a::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #FFEE32;
+	margin-top: 2px;
+	transform: scaleX(0);
+	transition: transform 0.3s ease-out;
+  }
+  .header .bouton-space a:hover::after {
+	transform: scaleX(1);
+  }
+  .header .header-space {
 	margin-left: 42px;
 	margin-right: 42px;
-}
-
-a {
+  }
+  .header a {
 	text-decoration: none;
-}
-
-.logo-navbar {
+  }
+  .header .logo-navbar {
 	width: 105px;
 	height: 25px;
 	margin-left: 42px;
-}
-
-.navbar-content-right {
+  }
+  .header .navbar-content-right {
 	display: flex;
 	align-items: center;
-}
-
-.active 
-{
-  text-decoration: underline;
-}
+  }
+  .header .active {
+	text-decoration: underline;
+	color: #ffee32;
+  }
