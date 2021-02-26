@@ -30,7 +30,6 @@ h4 {
   border: solid;
   border-color: #9cedff;
   border-width: 2px;
-  transition: ease 0.15s;
 }
 .tailleimg {
   height: 200px;
@@ -61,9 +60,6 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.maxiconteneurblog :hover {
-  transform: scale(1.03);
 }
 .opacity-10 .etiquetteblog{
   opacity: 10%;
