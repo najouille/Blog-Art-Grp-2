@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: Monument Extended;
+    font-family: "Monument Extended";
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -61,7 +61,7 @@ h3 {
 .img {
     margin: 146px;
     max-width: 510px;
-    max-height: 655px;
+    height: 655px;
     object-fit: cover;
     z-index: 2;
 }
