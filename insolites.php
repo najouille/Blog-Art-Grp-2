@@ -15,7 +15,7 @@
     include('./front/includes/commons/navbar.php')
     ?>
 
-    <img src="front/assets/image/bordeaux.png" alt="ville" />
+    <img src="front/assets/image/bordeaux.png" alt="ville" id="banniere" />
 
     <h1>TOP 3 </h1>
     <h2> des oeuvres les plus insolites de Bordeaux</h2>
