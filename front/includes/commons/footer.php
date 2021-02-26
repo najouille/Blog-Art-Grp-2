@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+$page = "";
+$pathElm = "";
+
+$here = $_SERVER['PHP_SELF'];
+if (strpos($here, 'blog/') !== false) {
+    $page = "blog";
+    $pathElm = "../";
+} else if (strpos($here, 'home.php') !== false) {
+    $page = "home";
+    $pathElm = "./";
+} else if (strpos($here, 'galerie') !== false) {
+    $page = "galerie";
+    $pathElm = "../";
+} else if (strpos($here, 'blog') !== false) {
+    $page = "blog";
+    $pathElm = "../";
+} else if (strpos($here, 'contact') !== false) {
+    $page = "contact";
+    $pathElm = "./";
+}
+
+?>
+
 <html lang="en">
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
@@ -97,10 +120,10 @@
       </div>
       <!-- NAVBAR -->
       <div class="navbar">
-        <a href="index.php">ACCUEIL</a>
-        <a href="blog.html">BLOG</a>
-        <a href="gallerie.html">GALLERIE</a>
-        <a href="contact.php">CONTACT</a>
+        <a href="<?= $pathElm . "home" ?>ACCUEIL</a>
+        <a href="<?= $pathElm . "blog" ?>BLOG</a>
+        <a href="<?= $pathElm . "galerie" ?>GALLERIE</a>
+        <a href="<?= $pathElm . "contact" ?>CONTACT</a>
       </div>
       </div>
       <div class="footer-bottom-section">
