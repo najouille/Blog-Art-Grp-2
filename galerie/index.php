@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../front/assets/gallerie.css" />
     <link rel="stylesheet" href="../front/assets/master.css" />
     <link rel="stylesheet" href="../front/assets/navbar.css" />
+    <link rel="stylesheet" href="../front/assets/footer.css" />
 </head>
 
 <body class="style">
@@ -29,6 +30,9 @@
 
     </div>
     <script type="text/javascript" src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <?php
+    include('../front/includes/commons/footer.php');
+    ?>
 </body>
 
 </html>
