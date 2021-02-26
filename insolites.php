@@ -15,7 +15,9 @@
     include('./front/includes/commons/navbar.php')
     ?>
 
-    <img src="front/assets/image/bordeaux.png" alt="ville" id="banniere" />
+<div class="banner">
+    <img src="front/assets/image/bordeaux.png" alt="ville" />
+</div>
 
     <h1>TOP 3 </h1>
     <h2> des oeuvres les plus insolites de Bordeaux</h2>
@@ -40,13 +42,13 @@
     </div>
 
     <div class="top1">
-        <div class="img">
+        <div class="photol">
             <img src="front/assets/image/jaguar.png" alt="jaguar" />
         </div>
         <div class="number_left">
             <img src="front/assets/image/icones/number1.svg" alt="number" />
         </div>
-        <div class="description">
+        <div class="descriptionr">
             <h3>La Jaguar du parking Victor-Hugo</h3> <br> <br>
             <p>Si tu es déjà venu à Bordeaux, tu es forcément passé par la <a class="lien" href="https://fr.wikipedia.org/wiki/Rue_Sainte-Catherine_(Bordeaux)"> rue St Catherine </a>, mais tu n'es peut-être jamais sorti des sentiers battus. Pour les aventuriers, ceux qui, poussés par la curiosité décident de s'égarer dans les rues de Bordeaux, le parking Victor Hugo </a> leur est familier. A vrai dire, il n'est pas vraiment caché puisqu'il se situe à 30 mètres de la promenade St Catherine. Mais qu'y a t'il de si spécial pour que l'on te parle de ce parking ? Ne t'en fais pas, on va te l'expliquer. <br> <br>
                 Ce parking a été construit au début des années 60 par les architectes toulousains <a class="lien" href="https://www.pss-archi.eu/architecte/4667"> Jean Dauriac </a>et <a class="lien" href="https://www.pss-archi.eu/architecte/4449"> Pierre Laffitte </a>. Mais en 1993, lors de la rénovation de l’édifice, l’architecte bordelais <a class="lien" href="https://www.darchitectures.com/voir-dosso-parmi-les-architectes-d-interieur,p104501.html"> Jean-François Dosso </a> a eu l’idée de créer un signe distinctif pour ce parking. Il positionne une <a class="lien" href="https://en.wikipedia.org/wiki/Jaguar_Mark_1"> Jaguar MK1 </a> verte encastrée dans la façade. <br> <br>
@@ -57,13 +59,13 @@
             </div>
             
             <div class="top2">
-                <div class="img">
+                <div class="photor">
                     <img src="front/assets/image/statuehome.png" alt="statue" />
                 </div>
                 <div class="number_right">
                     <img src="front/assets/image/icones/number2.svg" alt="number" /></body>
                 </div>
-                <div class="description">
+                <div class="descriptionl">
                     <h3>La sculpture “Un détail”</h3> <br> <br>
                     <p>Alors que nous nous promenons sur les quais de la rive gauche, non loin de la gare Saint Jean, notre œil ne peut qu'être attiré par cette immense structure à l'architecture futuriste. Mais attention ! Si tu veux en voir la totalité, il te faudra lever la tête. <br> <br>
                     Siégeant sur la rive gauche de la Garonne et située à cinq minutes à pied de la gare Saint-Jean, <a class="lien" href="https://www.la-meca.com"> La MÉCA </a> est une arche en béton brute mesurant 37 mètres de haut et 180 mètres de large. <br> <br>
@@ -76,13 +78,13 @@
                 </div>
                 
                 <div class="top3">
-                    <div class="img">
+                    <div class="photol">
                         <img src="front/assets/image/fresque.png" alt="fresque" />
                     </div>
                     <div class="number_left">
                         <img src="front/assets/image/icones/number3.svg" alt="number" /></body>
                     </div>
-                    <div class="description">
+                    <div class="descriptionr">
                         <h3>La fresque géante du CHU Pellegrin </h3> <br> <br>
                         <p>C’est en allant prendre mon repas au restaurant universitaire que je passe pour la première fois devant cet hôpital. Aux premiers abords, rien d'étonnant, jusqu’à ce que je me tourne vers la gauche. Là, j'aperçois une petite fille qui me fixe du regard. Une petite fille… de 15 mètres de hauteur. On est d'accord, c’est impossible… Mais tu vas bientôt comprendre pourquoi ça l'est. <br> <br>
                         Remontons dans le temps jusqu’en 2013, année où l’artiste pochoiriste <a class="lien" href="https://www.jefaerosol.com"> Jef Aerosol </a> est appelé pour la réalisation d’une œuvre de 15m x 6m à l’entrée de l'<a class="lien" href="https://fr.wikipedia.org/wiki/Hôpital_Pellegrin">hôpital Pellegrin</a>. Cette œuvre, réalisée en 4 jours, représente une image forte et symbolique. En effet, cette fresque monumentale permet de casser l’image anxiogène qui règne à l’hôpital. <br> <br>
@@ -98,5 +100,4 @@
     ?>
             
             </html>
-            <link rel="stylesheet" href="./front/assets/mdp.css" />
         </body>
