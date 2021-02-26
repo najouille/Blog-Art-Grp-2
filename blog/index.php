@@ -54,7 +54,7 @@
                 </span>
             </div>
             <h3>Le street-art à Bordeaux, un milieu des plus tendances</h3>
-            <h4>Vous apprendrez ici beaucoup sur l’origine du street-art, son application à Bordeaux ainsi que les nombreux évennements organisés autour de cet art.</h4>
+            <h4>Vous apprendrez ici beaucoup sur l’origine du street-art, son application à Bordeaux ainsi que les nombreux évènements organisés autour de cet art.</h4>
         </a>
 
 
@@ -122,7 +122,7 @@
                 </span>
             </div>
             <h3>Le street-art à Bordeaux, un milieu des plus tendances</h3>
-            <h4>Vous apprendrez ici beaucoup sur l’origine du street-art, son application à Bordeaux ainsi que les nombreux évennements organisés autour de cet art.</h4>
+            <h4>Vous apprendrez ici beaucoup sur l’origine du street-art, son application à Bordeaux ainsi que les nombreux évènements organisés autour de cet art.</h4>
         </div>
 
 
