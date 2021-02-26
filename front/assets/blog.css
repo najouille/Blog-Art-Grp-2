@@ -115,7 +115,7 @@ p {
   object-fit: cover;
 }
 .recherche {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -152,7 +152,7 @@ p {
   flex-direction: row;
 }
 .trier {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
