@@ -42,7 +42,7 @@
     </div>
 
     <div class="top1">
-        <div class="photo">
+        <div class="photol">
             <img src="front/assets/image/jaguar.png" alt="jaguar" />
         </div>
         <div class="number_left">
@@ -59,7 +59,7 @@
             </div>
             
             <div class="top2">
-                <div class="photo">
+                <div class="photor">
                     <img src="front/assets/image/statuehome.png" alt="statue" />
                 </div>
                 <div class="number_right">
@@ -78,7 +78,7 @@
                 </div>
                 
                 <div class="top3">
-                    <div class="photo">
+                    <div class="photol">
                         <img src="front/assets/image/fresque.png" alt="fresque" />
                     </div>
                     <div class="number_left">
