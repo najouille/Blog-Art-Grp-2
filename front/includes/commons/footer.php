@@ -109,14 +109,16 @@ if (strpos($here, 'blog/') !== false) {
         </div>
         <!-- NEWSLETTER -->
         <div class="newsletter">
-          <label class="newsletter-label">Newsletter</label>
-          <input
-            type="text"
-            name="mail"
-            placeholder="Votre adresse mail ..."
-            required
-          /><a class="submit-button" href="">Je m'inscris</a>
-        </div>
+            <form>
+              <h3 class="name">Newsletter</h3>
+              <input
+                type="text"
+                name="email"
+                placeholder="Votre adresse mail ..."
+                required
+              /><a class="submit-button" href="">Je m'inscris</a>
+            </form>
+          </div>
       </div>
       <!-- NAVBAR -->
       <div class="navbar">
