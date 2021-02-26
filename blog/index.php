@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../front/assets/navbar.css">
 </head>
 
-<body class='style' >
+<body class='style'>
     <?php
     include('../front/includes/commons/navbar.php')
     ?>
@@ -23,17 +23,18 @@
             <p class="description">Nous nous sommes particulièrement intéressés à la culture urbaine, et après de multiples recherches personnelles et de magnifiques trouvailles, nous avons décidé de vous les partager. Alors, voici quelques articles, qui, on l’espère, te plairont ! Bonne lecture !</p>
         </div>
         <div class="search">
-        <span class="recherche">
-            Rechercher...
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="10" cy="10" r="7" />
-            <line x1="21" y1="21" x2="15" y2="15" />
-        </svg>
-        <span class="trier">
-            Trier par :
-        </span>
+            <div class= "searchsvg">
+                <textarea class="recherche">
+                Rechercher...</textarea>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            </div>
+            <span class="trier">
+                Trier par :
+            </span>
         </div>
     </div>
     <div class='maxiconteneurblog'>
