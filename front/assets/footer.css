@@ -108,7 +108,8 @@ footer a:link, footer a:visited {
 
 .icon-network {
     color: white;
-    padding: 0% 54%;
+    /* padding: 0% 54%;: */
+    margin-left: 1rem;
     transition: color 0.3s ease-out;
 }
 
