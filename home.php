@@ -197,7 +197,7 @@
       <img src="./front/assets/image/pellegrin.jpg" alt="pellegrin" id="pellegrin" />
       <img src="./front/assets/image/comedie.jpg" alt="comedie" id="comedie" />
       <img src="./front/assets/image/lafayette.jpg" alt="lafayette" id="lafayette" />
-      <a href="./galerie/index.php" id="portfolio">Découvrir notre galerie</a>
+      <a href="./galerie/index.php" id="portfolio" class="decouvrir">Découvrir notre galerie</a>
       <img src="./front/assets/image/meca.png" alt="statue" id="statue" />
       <img src="./front/assets/image/cathedrale.jpg" alt="cathedrale" id="cathedrale" />
       <img src="./front/assets/image/lune.jpg" alt="port de la lune" id="lune" />

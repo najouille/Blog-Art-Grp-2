@@ -51,8 +51,8 @@ if (strpos($here, 'blog/') !== false) {
         <div class="social-network">
           <h4 class="title-network">Suivez nous sur :</h4>
           <div class="social-network-icon">
-            <a href="https://www.facebook.com/TownyArt"
-              ><svg
+            <a href="https://www.facebook.com/TownyArt">
+                <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon-network"
                 width="36"
@@ -120,10 +120,10 @@ if (strpos($here, 'blog/') !== false) {
       </div>
       <!-- NAVBAR -->
       <div class="navbar">
-        <a href="<?= $pathElm . "home" ?>ACCUEIL</a>
-        <a href="<?= $pathElm . "blog" ?>BLOG</a>
-        <a href="<?= $pathElm . "galerie" ?>GALLERIE</a>
-        <a href="<?= $pathElm . "contact" ?>CONTACT</a>
+        <a href="<?= $pathElm . "home" ?>" <?= $page == "home" ? 'active' : '' ?>>ACCUEIL</a>
+        <a href="<?= $pathElm . "blog" ?>" <?= $page == "blog" ? 'active' : '' ?>>BLOG</a>
+        <a href="<?= $pathElm . "galerie" ?>" <?= $page == "galerie" ? 'active' : '' ?>>GALERIE</a>
+        <a href="<?= $pathElm . "contact" ?>" <?= $page == "contact" ? 'active' : '' ?>>CONTACT</a>
       </div>
       </div>
       <div class="footer-bottom-section">
