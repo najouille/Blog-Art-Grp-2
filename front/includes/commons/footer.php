@@ -94,7 +94,8 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
       <!-- NEWSLETTER -->
       <div class="newsletter">
         <label class="newsletter-label">Newsletter</label>
-        <input type="text" name="mail" placeholder="Votre adresse mail ..." required /><a class="submit-button" href="">Je m'inscris</a>
+        <input type="text" name="mail" placeholder="Votre adresse mail ..." required />
+        <a class="submit-button" href="">Je m'inscris</a>
       </div>
      
     </div>
