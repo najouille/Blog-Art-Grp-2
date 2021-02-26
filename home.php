@@ -41,8 +41,8 @@
           <p>La ville offre un paysage en constante évolution, changeant sans cesse au grès des saisons et des modes. A travers la métropôle bordelaise, partez à la rencontre de cet art et découvrez ses trésors cachés. </p>
           <div class="hero-nav">
             <a href="">Accueil</a>
-            <a href="">Blog</a>
-            <a href="">galerie</a>
+            <a href="./blog/index.php">Blog</a>
+            <a href="./galerie/index.php">galerie</a>
           </div>
           <div class="hero-back">
 
@@ -138,7 +138,7 @@
   <section class="blogpreview">
     <h2>Notre blog</h2>
     <div class="blog-preview-container">
-      <a class="streetart">
+      <a href="" class="streetart">
         <img src="./front/assets/image/trumpetist.png" alt="trumpetist" width="160" />
         <div class="tagtxt">
           <span class="tag">
@@ -151,7 +151,7 @@
           </p>
         </div>
       </a>
-      <a class="streetart">
+      <a href="portrait.html" class="streetart">
         <img src="./front/assets/image/portraitfredericducos.png" alt="frederic ducos" width="160" />
         <div class="tagtxt">
           <span class="tag">
@@ -163,7 +163,7 @@
           </p>
         </div>
       </a>
-      <a class="streetart">
+      <a href="./insolites.php" class="streetart">
         <img src="./front/assets/image/meca.png" alt="meca" width="160" />
         <div class="tagtxt">
           <span class="tag">
@@ -197,7 +197,7 @@
       <img src="./front/assets/image/pellegrin.jpg" alt="pellegrin" id="pellegrin" />
       <img src="./front/assets/image/comedie.jpg" alt="comedie" id="comedie" />
       <img src="./front/assets/image/lafayette.jpg" alt="lafayette" id="lafayette" />
-      <a href="" id="portfolio" target="blank">Découvrir notre galerie</a>
+      <a href="./galerie/index.php" id="portfolio">Découvrir notre galerie</a>
       <img src="./front/assets/image/meca.png" alt="statue" id="statue" />
       <img src="./front/assets/image/cathedrale.jpg" alt="cathedrale" id="cathedrale" />
       <img src="./front/assets/image/lune.jpg" alt="port de la lune" id="lune" />

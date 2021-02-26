@@ -3,11 +3,14 @@
 
 <head>
     <?php include('../front/includes/commons/headRequired.php') ?>
-    <link rel="stylesheet" href="./front/assets/matteo.css">
-    <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
+    <link rel="stylesheet" href="../front/assets/matteo.css">
+    <link rel="stylesheet" href="../front/assets/master.css" />
+    <link rel="stylesheet" href="../front/assets/matteo.css"/>
+    <link rel="stylesheet" href="../front/assets/navbar.css"/>
 </head>
 
 <body class='style'>
+<?php include('../front/includes/commons/navbar.php') ?>
     <div class="conteneur-principal">
         <h1>Le street art, ses origines et<br>son impact mondial</h1>
         <p class="paragraph-start">Découvre les origines du street-art, l’impacte de celui-ci dans la ville <br> de Bordeaux, ainsi que les évènements à ne pas manquer </p>

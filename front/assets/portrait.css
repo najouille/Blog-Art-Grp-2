@@ -7,7 +7,7 @@ html {
 }
 h1 {
   color: white;
-  font-family: Monument Extended;
+  font-family: "Monument Extended";
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
@@ -15,7 +15,7 @@ h1 {
   padding-top: 90px;
 }
 #intro {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -47,7 +47,7 @@ h5 {
   padding-bottom: 4px;
 }
 .button a {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +104,7 @@ h2 {
   position: absolute;
   color: white;
   opacity: 85%;
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -116,7 +116,7 @@ h2 {
   padding-bottom: 63px;
 }
 p {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -131,7 +131,7 @@ p {
 h3 {
   color: white;
   opacity: 85%;
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -148,7 +148,7 @@ h3 {
   color: #ffee32;
 }
 h6 {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -174,7 +174,7 @@ h6 {
 h4 {
   color: white;
   opacity: 90%;
-  font-family: Monument Extended;
+  font-family: "Monument Extended";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -192,7 +192,7 @@ h4 {
   border: 1px solid #ffee32;
 }
 #portfolio {
-  font-family: Manrope;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -279,7 +279,7 @@ text-decoration: none;
  padding-right: 8px;
  margin-left: -24px;
  z-index: 0;
- font-family: Manrope;
+ font-family: "Manrope", sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
