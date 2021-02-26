@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="./front/assets/master.css" />
   <link rel="stylesheet" href="./front/assets/navbar.css" />
   <link rel="stylesheet" href="./front/assets/home.css" />
+  <link rel="stylesheet" href="./front/assets/footer.css" />
 
 </head>
 
@@ -209,6 +210,10 @@
     <img src="./front/assets/image/groupe.png" alt="L'équipe" id="groupe" />
   </section>
   <script src="./front/assets/tilescroll/tilescroll-home.js"></script>
+  <?php
+    include('./front/includes/commons/footer.php');
+    ?>
+         
 </body>
 
 </html>

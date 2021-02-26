@@ -3,12 +3,28 @@
 $page = "";
 $pathElm = "";
 
+
 $here = $_SERVER['PHP_SELF'];
 if (strpos($here, 'blog/') !== false) {
     $page = "blog";
     $pathElm = "../";
 } else if (strpos($here, 'home.php') !== false) {
     $page = "home";
+    $pathElm = "./";
+} else if (strpos($here, 'insolites.php') !== false) {
+    $page = "insolites";
+    $pathElm = "./";
+} else if (strpos($here, 'contact.php') !== false) {
+    $page = "contact";
+    $pathElm = "./";
+} else if (strpos($here, 'connexion.php') !== false) {
+    $page = "connexion";
+    $pathElm = "./";
+} else if (strpos($here, 'profile.php') !== false) {
+    $page = "profil";
+    $pathElm = "./";
+} else if (strpos($here, 'mdp.php') !== false) {
+    $page = "mdp";
     $pathElm = "./";
 } else if (strpos($here, 'galerie') !== false) {
     $page = "galerie";
@@ -20,6 +36,11 @@ if (strpos($here, 'blog/') !== false) {
     $page = "contact";
     $pathElm = "./";
 }
+
+$checkMainPage = $page == "home" || $page == "insolites" || $page == "mdp" || $page == "contact" || $page == "connexion" || $page == "profil";
+$imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg"; 
+
+
 ?>
 
 
@@ -31,7 +52,7 @@ if (strpos($here, 'blog/') !== false) {
       //$page 
     </pre> -->
     <a href="../../../Blogart/home.php">
-    <img class="logo-navbar" src="<?= $page == "home" ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg" ?>" alt="">
+    <img class="logo-navbar" src="<?= $imageResolver ?>" alt="">
     </a>
     <div class=" navbar-content-right">
     <a href="<?= $pathElm . "home" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">

@@ -10,11 +10,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../front/assets/blog.css">
     <link rel="stylesheet" href="../front/assets/navbar.css">
+    <link rel="stylesheet" href="../front/assets/footer.css">
 </head>
 
 <body class='style'>
     <?php
-    include('../front/includes/commons/navbar.php')
+    include('../front/includes/commons/navbar.php');
+    
     ?>
     <img src="../front/assets/image/blogbanniere.png" alt="urban banniere" id="banniere" />
     <div class="intro">
@@ -172,6 +174,11 @@
             <h4>Bordeaux regorge de trésors cachés. Nous vous livrons dans cet article trois de ces derniers.</h4>
         </div>
     </div>
+
+
+    <?php
+    include('../front/includes/commons/footer.php');
+    ?>
 </body>
 
 </html>
