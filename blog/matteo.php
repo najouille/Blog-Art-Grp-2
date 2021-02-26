@@ -95,7 +95,7 @@
         <p class="date">Le 11/02/2021</p>
 
 
-        <?php include('../front/includes/commons/footer.html') ?>
+        <?php include('../front/includes/commons/footer.php') ?>
 </body>
 
 </html>

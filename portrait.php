@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  <?php include('./front/includes/commons/headRequired.php') ?> 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,7 @@
 </head>
 
     <body>
+    <?php include('./front/includes/commons/navbar.php')?>
       <section class="introduction">
         <h1>FRÉDERIC DUCOS</h1>
         <p id="intro">
@@ -248,6 +250,7 @@
           />
         </div>
       </div>
+      <?php include('./front/includes/commons/footer.php');?>
     </body>
   </html>
 </html>
