@@ -119,12 +119,13 @@ p {
   height: 300px;
   object-fit: cover;
 }
+.searchsvg{
+
+}
 .recherche {
   font-family: "Manrope", sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  text-align: left;
   color: #a8a8a8;
   border: 1px solid #ffee32;
   border-radius: 28px;
@@ -136,8 +137,29 @@ p {
   margin-top: 105px;
   margin-left: 210px;
   position: relative;
-  z-index: 0;
+  background: none;
+  width: 83%;
 }
+input[type='text']{
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8a8a8;
+  border: 1px solid #ffee32;
+  border-radius: 28px;
+  padding-right: 350px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  height: 35px;
+  margin-top: 105px;
+  margin-left: 210px;
+  position: relative;
+  background: none;
+  width: 83%;
+
+}
+
 .intro {
   display: flex;
   flex-direction: row;
@@ -147,10 +169,8 @@ p {
   border-radius: 200px;
   padding: 5px;
   background-color: #ffee32;
-  z-index: 10;
-  position: relative;
-  margin-left: -34px;
-  margin-top: 105px;
+  position: absolute;
+  right: 0;
 }
 .search {
   display: flex;
