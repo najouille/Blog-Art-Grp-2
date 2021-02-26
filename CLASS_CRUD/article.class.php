@@ -97,25 +97,53 @@ class ARTICLE
         return ($result);
     }
 
-    function create($dtCreArt, $libTitrArt, $libChapoArt, $libAccrochArt, $parag1Art, $libSsTitr1Art, $parag2Art, $libSsTitrArt, $parag3Art, $libConclArt, $urlPhotArt, $numAngl, $numThem)
-    {
+    function create(
+        $dtCreArt,
+        $libTitrArt,
+        $libChapoArt,
+        $libAccrochArt,
+        $parag1Art,
+        $libSsTitr1Art,
+        $parag2Art,
+        $libSsTitr2Art,
+        $parag3Art,
+        $libConclArt,
+        $urlPhotArt,
+        $numAngl,
+        $numThem
+    ) {
         global $db;
+        require_once __DIR__ . '/getNextNumAngl.php';
+        //$numAngl = getNextNumAngl($numLang);
         try {
-            $query = "INSERT INTO article (dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art, libConclArt, urlPhotArt, numAngl, numThem) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
             $db->beginTransaction();
-
-            $request = $db->prepare($query);
-
-            $request->execute(array($dtCreArt, $libTitrArt, $libChapoArt, $libAccrochArt, $parag1Art, $libSsTitr1Art, $parag2Art, $libSsTitrArt, $parag3Art, $libConclArt, $urlPhotArt, $numAngl, $numThem));
-
+            $query = $db->prepare(
+                'INSERT INTO article (dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, 
+				libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art, libConclArt, urlPhotArt, numAngl, numThem)
+				VALUES (:dtCreArt, :libTitrArt, :libChapoArt, :libAccrochArt, :parag1Art, :libSsTitr1Art, 
+				:parag2Art, :libSsTitr2Art, :parag3Art, :libConclArt, :urlPhotArt, :numAngl, :numThem)'
+            );
+            $query->execute([
+                'dtCreArt' => $dtCreArt,
+                'libTitrArt' => $libTitrArt,
+                'libChapoArt' => $libChapoArt,
+                'libAccrochArt' => $libAccrochArt,
+                'parag1Art' => $parag1Art,
+                'libSsTitr1Art' => $libSsTitr1Art,
+                'parag2Art' => $parag2Art,
+                'libSsTitr2Art' => $libSsTitr2Art,
+                'parag3Art' => $parag3Art,
+                'libConclArt' => $libConclArt,
+                'urlPhotArt' => $urlPhotArt,
+                'numAngl' => $numAngl,
+                'numThem' => $numThem
+            ]);
             $db->commit();
-
-            $request->closeCursor();
+            $query->closeCursor();
         } catch (PDOException $e) {
-            die('Erreur insert ARTICLE : ' . $e->getMessage());
             $db->rollBack();
-            $request->closeCursor();
+            $query->closeCursor();
+            die('Erreur insert ARTICLE : ' . $e->getMessage());
         }
     }
 
