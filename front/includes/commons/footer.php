@@ -120,10 +120,10 @@ if (strpos($here, 'blog/') !== false) {
       </div>
       <!-- NAVBAR -->
       <div class="navbar">
-        <a href="<?= $pathElm . "home" ?>" <?= $page == "home" ? 'active' : '' ?>>ACCUEIL</a>
-        <a href="<?= $pathElm . "blog" ?>" <?= $page == "blog" ? 'active' : '' ?>>BLOG</a>
-        <a href="<?= $pathElm . "galerie" ?>" <?= $page == "galerie" ? 'active' : '' ?>>GALERIE</a>
-        <a href="<?= $pathElm . "contact" ?>" <?= $page == "contact" ? 'active' : '' ?>>CONTACT</a>
+        <a href="">ACCUEIL</a>
+        <a href="">BLOG</a>
+        <a href="">GALERIE</a>
+        <a href="">CONTACT</a>
       </div>
       </div>
       <div class="footer-bottom-section">
