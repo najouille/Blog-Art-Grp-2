@@ -12,6 +12,11 @@ h1 {
     margin-top: 2rem;
     
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .img-gallerie {
     max-width: 1180px;
     margin: 0 auto;

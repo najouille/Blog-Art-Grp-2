@@ -26,7 +26,7 @@ $images = $jsonData['collections'][0]['images'];
         <div class="content">
             <div class="gallery">
                 <?php foreach ($images as $item) {
-                ?> <figure class="gallery__item <?= $item['orientation'] == "landscape" ? 'gallery__item_landscape': '' ?>">
+                ?> <figure class="gallery__item <?= $item['orientation'] == "landscape" ? 'gallery__item_landscape' : '' ?>">
                         <div class="gallery__item-img">
                             <div class="gallery__item-imginner" style="background-image: url(<?= '../front/assets/galerie_images' . $item['url'] ?>)"></div>
                         </div>
@@ -36,7 +36,7 @@ $images = $jsonData['collections'][0]['images'];
 
                                 <?php
                                 foreach ($item['tags'] as $tag) {
-                                    echo '<span>'. $tag.'</span>';
+                                    echo '<span>' . $tag . '</span>';
                                 }
                                 ?>
 
@@ -50,9 +50,11 @@ $images = $jsonData['collections'][0]['images'];
                     </figure><?php
 
                             } ?>
-                
+
                 <div class="gallery__text">
-                    <span class="gallery__text-inner" data-scroll data-scroll-speed="4">Thanks for</span><span data-scroll data-scroll-speed="1" class="gallery__text-inner">watching</span>
+                    <span class="gallery__text-inner" data-scroll data-scroll-speed="4">Thanks for</span>
+                    <span data-scroll data-scroll-speed="1" class="gallery__text-inner">watching</span>
+                    <a class="townyart-trademark" data-scroll data-scroll-speed="-4" href="../">TownyArt © 2021</a>
                 </div>
             </div>
         </div>
