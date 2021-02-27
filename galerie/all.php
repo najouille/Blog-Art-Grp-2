@@ -54,7 +54,7 @@ $images = $jsonData['collections'][0]['images'];
                 <div class="gallery__text">
                     <span class="gallery__text-inner" data-scroll data-scroll-speed="4">Thanks for</span>
                     <span data-scroll data-scroll-speed="1" class="gallery__text-inner">watching</span>
-                    <a class="townyart-trademark" data-scroll data-scroll-speed="-4" href="../">TownyArt © 2021</a>
+                    <a class="townyart-trademark" data-scroll data-scroll-direction="vertical" data-scroll-speed="1" href="../">TownyArt © 2021</a>
                 </div>
             </div>
         </div>
