@@ -13,14 +13,14 @@
                 {
                     "id": 1,
                     "name": "Place de la comedie",
-                    "url": "/Place-grand-théâtre.jpg",
+                    "url": "/Place-grand-theatre.jpg",
                     "tags": ["#bordeaux", "#comedie"],
                     "orientation": "landscape"
                 },
                 {
                     "id": 2,
-                    "name": "Opéra",
-                    "url": "/Grand-théâtre-tram.jpg",
+                    "name": "Opera",
+                    "url": "/Grand-theatre-tram.jpg",
                     "tags": ["#bordeaux", "#comedie", "opera","tramway"],
                     "orientation": "landscape"
                 },
@@ -34,7 +34,7 @@
                 {
                     "id": 4,
                     "name": "Cité du vin ",
-                    "url": "/Cité-du-vin.jpg",
+                    "url": "/Cite-du-vin.jpg",
                     "tags": ["#bordeaux", "#citeduvin"],
                     "orientation": "landscape"
                 },
@@ -76,7 +76,7 @@
                 {
                     "id": 10,
                     "name": "St.André",
-                    "url": "/St.andré.jpg",
+                    "url": "/St.andre.jpg",
                     "tags": ["#bordeaux", "#cathédrale"],
                     "orientation": "portrait"
                 },
@@ -114,7 +114,7 @@
                 {
                     "id": 2,
                     "name": "Cité du vin ",
-                    "url": "/Cité-du-vin.jpg",
+                    "url": "/Cite-du-vin.jpg",
                     "tags": ["#bordeaux", "#citeduvin"],
                     "orientation": "landscape"
                 },
@@ -135,7 +135,7 @@
                 {
                     "id": 5,
                     "name": "St.André",
-                    "url": "/St.andré.jpg",
+                    "url": "/St.andre.jpg",
                     "tags": ["#bordeaux", "#cathédrale"],
                     "orientation": "portrait"
                 }
@@ -152,21 +152,21 @@
                 {
                     "id": 1,
                     "name": "Place de la comedie",
-                    "url": "/Place-grand-théâtre.jpg",
+                    "url": "/Place-grand-theatre.jpg",
                     "tags": ["#bordeaux", "#comedie"],
                     "orientation": "landscape"
                 },
                 {
                     "id": 2,
                     "name": "Opéra",
-                    "url": "/Grand-théâtre-tram.jpg",
+                    "url": "/Grand-theatre-tram.jpg",
                     "tags": ["#bordeaux", "#comedie", "opera","tramway"],
                     "orientation": "landscape"
                 },
                 {
                     "id": 3,
                     "name": "Cité du vin ",
-                    "url": "/Cité-du-vin.jpg",
+                    "url": "/Cite-du-vin.jpg",
                     "tags": ["#bordeaux", "#citeduvin"],
                     "orientation": "landscape"
                 },
