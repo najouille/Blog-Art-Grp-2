@@ -1,10 +1,8 @@
 <?php
 
-// Pas fonctionnel lorsque dèja refférencer
-// FIXME
 // Mode DEV
 require_once __DIR__ . '/../../util/utilErrOn.php';
-include __DIR__ . '/initMembre.php';
+include __DIR__ . '/initArticle.php';
 
 $supprImpossible = false;
 $deleted = false;
@@ -38,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $resultArticle = $article->get_1Article($numArt);
 }
 
-if ($resultMember) {
-    $libTitrArt = $resultMember['libTitrArt'];
-    $numArt = $resultMember['numArt'];
+if ($resultArticle) {
+    $libTitrArt = $resultArticle['libTitrArt'];
+    $numArt = $resultArticle['numArt'];
 }
 
 ?>
@@ -86,7 +84,7 @@ if ($resultMember) {
 
 
 
-    <form method="post" action=".\deleteMembre.php?id=<?= $numMemb ?>">
+    <form method="POST" action=".\deleteArticle.php?id=<?= $numArt ?>">
         <div class="fieldset-container">
             <fieldset>
                 <legend class="legend1">Formulaire Mot clé...</legend>
@@ -101,7 +99,7 @@ if ($resultMember) {
 
                     <div class="container-input">
                         <label>Prénom Membre</label>
-                        <input type="text" class="select-especial" name="libTitrArt" id="libTitrArt" value="<?php $arti = $article->get_1Article($libTitrArt);
+                        <input type="text" class="select-especial" name="libTitrArt" id="libTitrArt" value="<?php $arti = $article->get_1Article($numArt);
                                                                                                             echo $arti['libTitrArt'];  ?>" disabled>
                     </div>
 
@@ -110,16 +108,16 @@ if ($resultMember) {
                     </div>
                 </div>
             </fieldset>
-            <div class="align-footer">
-                <?php
-                require_once __DIR__ . '/footerMembre.php';
-                require_once __DIR__ . '/footer.php';
-                ?>
-            </div>
         </div>
 
     </form>
     <br>
+            <div class="align-footer">
+                <?php
+                require_once __DIR__ . '/footerArticle.php';
+                require_once __DIR__ . '/footer.php';
+                ?>
+            </div>
 
 
 </body>
