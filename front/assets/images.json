@@ -97,7 +97,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Vos photos favorites",
             "name_part": ["Vos photos", "favorites"],
             "image_banner": {
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 3,
             "name": "Tendance du moment",
             "name_part": ["Tendances", "du moment"],
             "image_banner": {

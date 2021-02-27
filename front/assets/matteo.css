@@ -12,7 +12,6 @@ h1 {
   line-height: 43px;
 }
 .paragraph-start{
-  margin-top: 1rem;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -20,6 +19,9 @@ h1 {
   line-height: 22px;
   text-align: center;
   color: #f4f4f5;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 .conteneur-principal {
   max-width: 1024px;
