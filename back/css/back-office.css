@@ -50,7 +50,10 @@ a{
 .container-center {
     border-collapse: collapse;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    max-width: 1280px;
+    padding: 2rem 4rem;
+
 }
 
 .twa-table {
@@ -67,7 +70,12 @@ a{
 .twa-table th,
 .twa-table td {
     padding: 10px;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    max-width: 25rem;
+    overflow-x: auto;
+    /* overflow-wrap: break-word; */
+    height: 0rem;
+
 }
 input[type=text],input[type=email],input[type=password], textarea {
     color: white;

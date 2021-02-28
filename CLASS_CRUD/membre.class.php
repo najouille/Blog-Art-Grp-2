@@ -103,6 +103,20 @@ class MEMBRE
             $query->bindParam(':souvenirMemb',  $souvenirMemb);
             $query->bindParam(':accordMemb',  $accordMemb);
 
+            $myfile = fopen("./log.txt", "w") or die("Unable to open file!");
+            $txt = "
+        numMemb: $numMemb\n
+        prenomMemb: $prenomMemb\n
+        nomMemb: $nomMemb\n
+        pseudoMemb: $pseudoMemb\n
+        eMailMemb: $eMailMemb\n
+        passMemb: $passMemb\n
+        souvenirMemb: $souvenirMemb\n
+        accordMemb: $accordMemb\n
+        idStat: $idStat
+            ";
+            fwrite($myfile, $txt);
+
             $query->execute();
             $db->commit();
             $query->closeCursor();

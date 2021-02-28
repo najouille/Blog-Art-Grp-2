@@ -118,44 +118,44 @@ $thematics = $thematique->get_AllThematiques();
 
                     <div class="container-input">
                         <label for="libTitrArt"><b>Titre de l'article :</b></label>
-                        <input class="control-label" type="text" name="libTitrArt" id="libTitrArt" maxlength="100" value="<?= $libTitrArt ?>" placeholder="placeholder" autofocus="autofocus" />
+                        <input class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libTitrArt" id="libTitrArt" maxlength="100" value="<?= $libTitrArt ?>" placeholder="placeholder" autofocus="autofocus" />
                     </div>
                     <div class="container-input">
                         <label for="urlPhotArt"><b>Image :</b></label>
-                        <input type="file" class="control-label" name="urlPhotArt">
+                        <input type="file" class="control-label" onkeyup="charcountupdate(this.value)" name="urlPhotArt">
                     </div>
 
                     <div class="container-input">
                         <label for="libChapoArt"><b>Chapeau :</b></label>
-                        <textarea class="control-label" type="text" name="libChapoArt" id="libChapoArt" cols="30" rows="2" maxlength="500" placeholder="Paragraphe 1"><?= $libChapoArt ?></textarea>
+                        <textarea class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libChapoArt" id="libChapoArt" cols="30" rows="2" maxlength="500" placeholder="Paragraphe 1"><?= $libChapoArt ?></textarea>
                         <span class="pull-right label label-default" id="count_message" style="background-color: smoke; margin-top: -20px; margin-right: 5px;"></span>
                     </div>
 
                     <div class="container-input">
                         <label for="libAccrochArt"><b>Accroche :</b></label>
-                        <input class="control-label" type="text" name="libAccrochArt" id="libAccrochArt" maxlength="100" value="<?= $libAccrochArt ?>" placeholder="placeholder" />
+                        <input class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libAccrochArt" id="libAccrochArt" maxlength="100" value="<?= $libAccrochArt ?>" placeholder="placeholder" />
                     </div>
 
                     <div>
                         <label for="libSsTitr1Art"><b>Paragraphe 1 :</b></label>
-                        <input class="control-label" type="text" name="libSsTitr1Art" id="libSsTitr1Art" maxlength="100" value="<?= $libSsTitr1Art ?>" placeholder="Titre 1er article" />
-                        <textarea class="control-label" type="text" name="parag1Art" id="parag1Art" cols="30" rows="3" maxlength="1200" placeholder="pla"><?= $parag1Art ?></textarea>
+                        <input class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libSsTitr1Art" id="libSsTitr1Art" maxlength="100" value="<?= $libSsTitr1Art ?>" placeholder="Titre 1er article" />
+                        <textarea class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="parag1Art" id="parag1Art" cols="30" rows="3" maxlength="1200" placeholder="pla"><?= $parag1Art ?></textarea>
                     </div>
 
                     <div>
                         <label for="libSsTitr2Art"><b>Paragraphe 2 :</b></label>
-                        <input class="control-label" type="text" name="libSsTitr2Art" id="libSsTitr2Art" maxlength="100" value="<?= $libSsTitr2Art ?>" placeholder="Titre 2eme article" />
-                        <textarea class="control-label" type="text" name="parag2Art" id="parag2Art" cols="30" rows="3" maxlength="1200" placeholder="placeholder"><?= $parag2Art ?></textarea>
+                        <input class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libSsTitr2Art" id="libSsTitr2Art" maxlength="100" value="<?= $libSsTitr2Art ?>" placeholder="Titre 2eme article" />
+                        <textarea class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="parag2Art" id="parag2Art" cols="30" rows="3" maxlength="1200" placeholder="placeholder"><?= $parag2Art ?></textarea>
                     </div>
 
                     <div>
                         <label for="parag3Art"><b>Paragraphe 3 :</b></label>
-                        <textarea class="control-label" type="text" name="parag3Art" id="parag3Art" cols="30" rows="3" maxlength="1200" placeholder="placeholder"><?= $parag3Art ?></textarea>
+                        <textarea class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="parag3Art" id="parag3Art" cols="30" rows="3" maxlength="1200" placeholder="placeholder"><?= $parag3Art ?></textarea>
                     </div>
 
                     <div>
                         <label for="libConclArt"><b>Conclusion :</b></label>
-                        <textarea class="control-label" type="text" name="libConclArt" id="libConclArt" cols="30" rows="2" maxlength="800" placeholder="En conclusion..."><?= $libConclArt ?></textarea>
+                        <textarea class="control-label" type="text" onkeyup="charcountupdate(this.value)" name="libConclArt" id="libConclArt" cols="30" rows="2" maxlength="800" placeholder="En conclusion..."><?= $libConclArt ?></textarea>
                     </div>
 
                     <div class="row">
@@ -220,6 +220,12 @@ $thematics = $thematique->get_AllThematiques();
 
     </form>
 
+    <script>
+        function charcountupdate(str) {
+            var lng = str.length;
+            console.log(lng);
+        }
+    </script>
 </body>
 
 </html>

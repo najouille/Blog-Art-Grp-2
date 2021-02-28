@@ -1,3 +1,21 @@
+<?php
+require_once('../front/assets/vendors/parsedown.php');
+$Parsedown = new Parsedown();
+$numArt = "";
+$dtCreArt = "";
+$libTitrArt = "";
+$libChapoArt = "Découvre les origines du street-art, l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
+$libAccrochArt = "";
+$parag1Art = "";
+$libSsTitr1Art = "";
+$parag2Art = "";
+$libSsTitr2Art = "";
+$parag3Art = "";
+$libConclArt = "";
+$urlPhotArt = "";
+$urlPhotArt = "";
+$numAngl = "";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +32,10 @@
     <?php include('../front/includes/commons/navbar.php') ?>
     <div class="conteneur-principal">
         <h1>Le street art, ses origines et<br>son impact mondial</h1>
-        <p class="paragraph-start">Découvre les origines du street-art, l’impact de celui-ci dans la ville <br> de Bordeaux, ainsi que les évènements à ne pas manquer.</p>
+        <p class="paragraph-start">
+            <?php
+            echo $Parsedown->line($libChapoArt); ?>
+        </p>
         <div class="contenant-tag-blog">
             <div class='conteneurblog'>
                 <span class='tag'>
@@ -76,18 +97,18 @@
         <p class='paragraph'>Si vous souhaitez vous imprégner d’une bonne dose de culture street-art, on peut vous conseiller trois initiatives
             bordelaises qui sauront vous séduire. Vous avez le choix entre une balade pour découvrir le street-art à vélo, un festival dédié
             au street-art et une exposition d’art urbain.
-            <br>
+            
         </p>
         <p class='paragraph'>Si vous habitez à Bordeaux, vous avez sûrement remarqué que la bicyclette est un moyen de transport très prisé,
             c'est pourquoi Emmanuel Moulinier à décider de créer des visites street-art à vélo dans les ruelles, places, passages secrets et coins
             insolites de Bordeaux. Le vélo permet ainsi de parcourir plus de distance et donc de voir plus d'œuvres. Cette visite de 2h30, agrémentée
             de gourmandises sera vous convenir à vous et votre famille.
-            <br>
+            
         </p>
         <p class='paragraph'>Vous pouvez également vous rendre au festival Shake Well, qui existe depuis 2016 et accueille plus de 5000 visiteurs chaque
             année. Le festival vous propose des démonstrations de graffeurs, des pièces de théâtre et des expositions diverses. Pendant 3 jours, une centaine
             de graffeurs tapisse 6.500 m² de murs en friche du quartier Bassins à flot.
-            <br>
+            
         </p>
         <p class='paragraph'> Le dernier événement est “TRANSFERT #6”, un collectif street-art situé au Virgin Mégastore de la place Gambetta. Dans ce lieu
             désaffecté, vous découvrirez un melting pot d'œuvres artistiques de tous genres, aussi bien musicales qu’audiovisuelles. L’ambiance y est underground,
