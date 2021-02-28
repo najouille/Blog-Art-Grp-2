@@ -14,7 +14,7 @@ body {
 
 .fieldset-container{
 	display: flex;
-	justify-content: right;
+	justify-content: center;
 	padding: 0 110px;
 }
 
