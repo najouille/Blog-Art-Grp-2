@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php include('./front/includes/commons/headRequired.php'); ?>
-    <link rel="stylesheet" href="./front/assets/master.css" /><link rel="stylesheet" href="./front/assets/navbar.css" />
-    <link rel="stylesheet" href="./front/assets/commentaire.css">
-</head>
-
-<body class='style'>
+<div class="style">
 
     <div class="conteneur-ajout">
         <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
@@ -18,7 +9,7 @@
         </svg>
         <div class="ask">
             <div class="comment-1">
-                <textarea>ajouter un commentaire</textarea>
+                <textarea placeholder="ajouter un commentaire"></textarea>
                 <div>Envoyer</div>
             </div>
         </div>
@@ -26,7 +17,7 @@
 
     <div class="conteneur-commentaire">
         <div class="conteneur-profil">
-            <img src="./front/assets/image/Ellipse 3.png" alt="">
+            <img src="../front/assets/image/Ellipse 3.png" alt="">
             <span class="nom">Lisa</span>
         </div>
         <div>
@@ -44,7 +35,7 @@
                     <span class="sous-titre-comment">Il y a 30min</span>
                 </div>
                 <div class="interaction">
-                    <span class="sous-titre-comment">Masquer les réponses</span>
+                    
                     <div class="interaction-button">
 
                         <span class="number">3</span>
@@ -80,13 +71,11 @@
         </div>
         <div class="answer">
             <div class="comment-2">
-                <textarea>Répondre au commentaire...</textarea>
+                <textarea placeholder="Répondre au commentaire..."></textarea>
                 <div>repondre</div>
             </div>
 
         </div>
     </div>
 
-</body>
-
-</html>
+</div>

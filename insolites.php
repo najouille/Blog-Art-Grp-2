@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./front/assets/insolites.css" />
     <link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="stylesheet" href="./front/assets/footer.css" />
+    <link rel="stylesheet" href="./front/assets/commentaire.css" />
     <link rel="font" href="./front/assets/fonts/subset-MonumentExtended-Regular.svg" />
 </head>
 
@@ -94,6 +95,7 @@
                 </div>
             </div>
             <?php
+    include('commentaire.php');
     include('./front/includes/commons/footer.php');
     ?>
             

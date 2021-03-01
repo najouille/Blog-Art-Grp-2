@@ -32,6 +32,7 @@ $numAngl = "";
     <link rel="stylesheet" href="../front/assets/matteo.css" />
     <link rel="stylesheet" href="../front/assets/navbar.css" />
     <link rel="stylesheet" href="../front/assets/footer.css" />
+    <link rel="stylesheet" href="../front/assets/commentaire.css" />
 </head>
 
 <body class='style'>
@@ -132,6 +133,9 @@ $numAngl = "";
 
 
 </body>
-<?php include('../front/includes/commons/footer.php') ?>
+<?php 
+include('../commentaire.php');
+include('../front/includes/commons/footer.php');
+?>
 
 </html>
