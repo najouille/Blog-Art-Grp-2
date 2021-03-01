@@ -1,6 +1,15 @@
 <?php
 require_once('../front/assets/vendors/parsedown.php');
-$Parsedown = new Parsedown();
+$Parsedown = new ParsedownExtraPlugin();
+$Parsedown->linkAttributes = function($Text, $Attributes, &$Element, $Internal) {
+    if (!$Internal) {
+        return [
+            'rel' => 'nofollow',
+            'target' => '_blank'
+        ];
+    }
+    return [];
+};
 $numArt = "";
 $dtCreArt = "";
 
@@ -8,8 +17,12 @@ $dtCreArt = "";
 $libTitrArt = "";
 $libChapoArt = "Découvre les origines du street-art,[link](https://google.com) l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
 $libAccrochArt = "";
-$parag1Art = "";
-$libSsTitr1Art = "";
+$parag1Art = "## Les origines du street-art
+Le street-art est apparu au Mexique dans les années 1910 suite à la Révolution Mexicaine . Ce mouvement artistique contemporain s’est développé au début du siècle dernier dans l’objectif d'exprimer des revendications sociales, politiques et esthétiques. Ces œuvres qualifiées de muralisme d’artistes de rue sont les débuts du street art. Le Mexique est d’ailleurs connu pour ses nombreux artistes et peintures murales présentes dans chaque villes mexicaines. On retrouve aussi des fresques de propagande en Russie du régime soviétique, souvent de grande envergure. Cependant, c’est à la fin du 20ème siècle que ce mouvement s’affirme. De par la forte influence américaine, de nombreux subways sont recouvert de “tags” signés par leur auteur souvent dans l’objectif de marquer son territoire. On retrouve notamment Taki 183, un artiste précurseur du tag new yorkais, écrivant son pseudo sur de nombreux murs de Manhattan. On peut également citer Keith Haring, un avangardiste du domaine.
+
+C’est à partir de Mai 1968 que le street-art a traversé l’océan Atlantique pour arriver en France. Il fut un moyen de revendiquer des idées politiques. Entre 1980 et 1990, la municipalité corse la législation et traque les street-artistes. Cette manière de s’exprimer à travers les époques, les cultures ainsi que les pays s’est développée, malgré son côté illégal. Ces dernières années, le street-art se démocratise et s'ancre de plus en plus dans nos rues.
+";
+$libSsTitr1Art = "Le street-art bordelais";
 $parag2Art = "";
 $libSsTitr2Art = "";
 $parag3Art = "";
@@ -24,7 +37,6 @@ $numAngl = "";
 
 <head>
     <?php include('../front/includes/commons/headRequired.php') ?>
-    <link rel="stylesheet" href="../front/assets/matteo.css">
     <link rel="stylesheet" href="../front/assets/master.css" />
     <link rel="stylesheet" href="../front/assets/matteo.css" />
     <link rel="stylesheet" href="../front/assets/navbar.css" />
@@ -37,7 +49,7 @@ $numAngl = "";
         <h1>Le street art, ses origines et<br>son impact mondial</h1>
         <p class="paragraph-start">
             <?php
-            echo $Parsedown->line($libChapoArt); 
+            echo $Parsedown->line($libChapoArt);
             ?>
         </p>
         <div class="contenant-tag-blog">
@@ -69,7 +81,10 @@ $numAngl = "";
             </div>
             <h4>Le street-art est la continuité des premières <span class="lien"> peinture préhistoriques </span>, c’est le support d'une expression moderne prisée par des artistes de tout horizon. Découvrez l’émergence de ce mouvement à travers la ville de Bordeaux.</h4>
         </div>
-        <h2>Les origines du street-art </h2>
+        <?php
+        echo $Parsedown->text($parag1Art);
+        ?>
+        <!-- <h2>Les origines du street-art </h2>
         <p class='paragraph'>Le street-art est apparu au Mexique dans les années 1910 suite à la<span class="lien"> Révolution Mexicaine </span>.
             Ce mouvement artistique contemporain s’est développé au début du siècle dernier dans l’objectif d'exprimer des revendications sociales,
             politiques et esthétiques. Ces œuvres qualifiées de <span class="lien">muralisme</span> d’artistes de rue sont les débuts du street art. Le Mexique est
@@ -83,8 +98,12 @@ $numAngl = "";
             revendiquer des idées politiques. Entre 1980 et 1990, la municipalité corse la législation et traque les street-artistes. Cette manière
             de s’exprimer à travers les époques, les cultures ainsi que les pays s’est développée, malgré son côté illégal. Ces dernières années,
             le street-art se démocratise et s'ancre de plus en plus dans nos rues.
-        </p>
-        <h2>Le street-art bordelais</h2>
+        </p> -->
+        <h2>
+            <?php
+            echo $Parsedown->line($libSsTitr1Art);
+            ?>
+        </h2>
         <p class='paragraph'>Cette tendance mondiale n’échappe pas à Bordeaux, il existe de nombreux recoins cachés dans les multiples quartiers
             bordelais. Comme vous le savez, les fresques de street-art sont le plus souvent peintes dans l’illégalité, ce qui rend la discipline
             insolite. Depuis 2016, la ville de Bordeaux encourage le secteur de l’art urbain en organisant une saison culturelle annuelle dédiée
@@ -101,18 +120,18 @@ $numAngl = "";
         <p class='paragraph'>Si vous souhaitez vous imprégner d’une bonne dose de culture street-art, on peut vous conseiller trois initiatives
             bordelaises qui sauront vous séduire. Vous avez le choix entre une balade pour découvrir le street-art à vélo, un festival dédié
             au street-art et une exposition d’art urbain.
-            
+
         </p>
         <p class='paragraph'>Si vous habitez à Bordeaux, vous avez sûrement remarqué que la bicyclette est un moyen de transport très prisé,
             c'est pourquoi Emmanuel Moulinier à décider de créer des visites street-art à vélo dans les ruelles, places, passages secrets et coins
             insolites de Bordeaux. Le vélo permet ainsi de parcourir plus de distance et donc de voir plus d'œuvres. Cette visite de 2h30, agrémentée
             de gourmandises sera vous convenir à vous et votre famille.
-            
+
         </p>
         <p class='paragraph'>Vous pouvez également vous rendre au festival Shake Well, qui existe depuis 2016 et accueille plus de 5000 visiteurs chaque
             année. Le festival vous propose des démonstrations de graffeurs, des pièces de théâtre et des expositions diverses. Pendant 3 jours, une centaine
             de graffeurs tapisse 6.500 m² de murs en friche du quartier Bassins à flot.
-            
+
         </p>
         <p class='paragraph'> Le dernier événement est “TRANSFERT #6”, un collectif street-art situé au Virgin Mégastore de la place Gambetta. Dans ce lieu
             désaffecté, vous découvrirez un melting pot d'œuvres artistiques de tous genres, aussi bien musicales qu’audiovisuelles. L’ambiance y est underground,
@@ -120,7 +139,8 @@ $numAngl = "";
         <p class="date">Le 11/02/2021</p>
     </div>
 
-        
+
 </body>
-    <?php include('../front/includes/commons/footer.php') ?>
+<?php include('../front/includes/commons/footer.php') ?>
+
 </html>

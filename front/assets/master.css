@@ -6,7 +6,7 @@
 @import 'navbar.css';
 
 @font-face {
-    font-family: 'Monument Extended';
+    font-family: 'Monument';
     src: local('Monument Extended Bold'), local('MonumentExtended-Bold'),
         url('./fonts/subset-MonumentExtended-Bold.woff2') format('woff2'),
         url('./fonts/subset-MonumentExtended-Bold.woff') format('woff'),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Monument Extended';
+    font-family: 'Monument';
     src: local('Monument Extended Ultralight'), local('MonumentExtended-Ultralight'),
         url('./fonts/subset-MonumentExtended-Ultralight.woff2') format('woff2'),
         url('./fonts/subset-MonumentExtended-Ultralight.woff') format('woff'),
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-    font-family: 'Monument Extended';
+    font-family: 'Monument';
     src: local('Monument Extended Regular'), local('MonumentExtended-Regular'),
         url('./fonts/subset-MonumentExtended-Regular.woff2') format('woff2'),
         url('./fonts/subset-MonumentExtended-Regular.woff') format('woff'),

@@ -25,6 +25,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-top: 62px;
+  margin-bottom: 40px;
 }
 .right-profile {
   width: 416px;
@@ -83,8 +84,15 @@ font-family: Manrope;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-
+transition: 0.3s;
+text-decoration: none;
 }
+
+.button1:hover {
+  background: #ffee32;
+  color: #0e0e0e;
+}
+
 .left-right hr {
     margin-top: 48px;
     border-width: .5px;
@@ -115,4 +123,10 @@ font-weight: 600;
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+}
+
+h2 {
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 2rem;
 }
