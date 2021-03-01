@@ -29,7 +29,7 @@
 
 
     </div>
-    <script type="text/javascript" src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="../front/assets/vendors/vanilla-tilt.min.js"></script>
     <?php
     include('../front/includes/commons/footer.php');
     ?>
