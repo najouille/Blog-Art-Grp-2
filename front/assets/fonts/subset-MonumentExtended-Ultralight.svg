@@ -9,7 +9,7 @@ Pangram Pangram
 <defs>
 <font id="MonumentExtended-Ultralight" horiz-adv-x="491" >
   <font-face 
-    font-family="Monument Extended Ultralight"
+    font-family="'Monument', Monument-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Ultralight"
     font-weight="250"
     font-stretch="normal"
     units-per-em="2048"

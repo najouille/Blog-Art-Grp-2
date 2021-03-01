@@ -101,9 +101,9 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
   </div>
   <div class="footer-bottom-section">
     <div class="footer-flex">
-      <a href="mentionlegales.html">Mentions légales</a>
+      <a href="mentionslegales.php">Mentions légales</a>
       <span class="vertical-line"></span>
-      <a href="C.G.U.html">Conditions Générales d'Utilisation</a>
+      <a href="C.G.U.php">Conditions Générales d'Utilisation</a>
     </div>
   </div>
 </footer>
