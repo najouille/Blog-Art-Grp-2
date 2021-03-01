@@ -1,3 +1,25 @@
+<?php
+require_once('../front/assets/vendors/parsedown.php');
+$Parsedown = new Parsedown();
+$numArt = "";
+$dtCreArt = "";
+
+///
+$libTitrArt = "";
+$libChapoArt = "Découvre les origines du street-art,[link](https://google.com) l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
+$libAccrochArt = "";
+$parag1Art = "";
+$libSsTitr1Art = "";
+$parag2Art = "";
+$libSsTitr2Art = "";
+$parag3Art = "";
+$libConclArt = "";
+///
+$urlPhotArt = "";
+$urlPhotArt = "";
+$numAngl = "x";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

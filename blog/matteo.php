@@ -1,6 +1,15 @@
 <?php
 require_once('../front/assets/vendors/parsedown.php');
-$Parsedown = new Parsedown();
+$Parsedown = new ParsedownExtraPlugin();
+$Parsedown->linkAttributes = function($Text, $Attributes, &$Element, $Internal) {
+    if (!$Internal) {
+        return [
+            'rel' => 'nofollow',
+            'target' => '_blank'
+        ];
+    }
+    return [];
+};
 $numArt = "";
 $dtCreArt = "";
 
