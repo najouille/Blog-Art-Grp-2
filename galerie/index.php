@@ -18,14 +18,14 @@
             <span class="texte-haut">TOUTES </span>
             <span class="texte-bas"> les photos</span>
         </a>
-        <div class="gradient2" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
+        <a class="gradient2" href="./favorite.php" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
             <span class="texte-haut">VOS PHOTOS </span>
             <span class="texte-bas"> favorite</span>
-        </div>
-        <div class="gradient3" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
+        </a>
+        <a class="gradient3" href="./tendance.php" data-tilt data-tilt-speed="3000" data-tilt-max="20" data-tilt-glare="true" data-tilt-perspective="1200" data-tilt-max-glare="0.2">
             <span class="texte-haut">TENDANCE </span>
             <span class="texte-bas"> du moment</span>
-        </div>
+        </a>
 
 
     </div>
