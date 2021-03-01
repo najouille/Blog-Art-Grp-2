@@ -3,8 +3,10 @@ require_once('../front/assets/vendors/parsedown.php');
 $Parsedown = new Parsedown();
 $numArt = "";
 $dtCreArt = "";
+
+///
 $libTitrArt = "";
-$libChapoArt = "Découvre les origines du street-art, l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
+$libChapoArt = "Découvre les origines du street-art,[link](https://google.com) l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
 $libAccrochArt = "";
 $parag1Art = "";
 $libSsTitr1Art = "";
@@ -12,6 +14,7 @@ $parag2Art = "";
 $libSsTitr2Art = "";
 $parag3Art = "";
 $libConclArt = "";
+///
 $urlPhotArt = "";
 $urlPhotArt = "";
 $numAngl = "";
@@ -34,7 +37,8 @@ $numAngl = "";
         <h1>Le street art, ses origines et<br>son impact mondial</h1>
         <p class="paragraph-start">
             <?php
-            echo $Parsedown->line($libChapoArt); ?>
+            echo $Parsedown->line($libChapoArt); 
+            ?>
         </p>
         <div class="contenant-tag-blog">
             <div class='conteneurblog'>
