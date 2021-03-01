@@ -121,6 +121,7 @@ $numAngl = "";
   <link rel="stylesheet" href="../front/assets/navbar.css" />
   <link rel="stylesheet" href="../front/assets/portrait.css" />
   <link rel="stylesheet" href="../front/assets/footer.css" />
+  <link rel="stylesheet" href="../front/assets/commentaire.css" />
 </head>
 
 <body>
@@ -214,7 +215,11 @@ $numAngl = "";
       </div>
     </div>
   </main>
-  <?php include('../front/includes/commons/footer.php'); ?>
+  <?php
+    include('../commentaire.php');
+    
+  include('../front/includes/commons/footer.php'); 
+  ?>
 </body>
 
 </html>

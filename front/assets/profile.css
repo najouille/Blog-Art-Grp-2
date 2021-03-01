@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.h2 {
+  margin-top: 3rem;
+  font-size: 25px;
+}
+
 body {
   background: #0e0e0e;
   color: #fff;

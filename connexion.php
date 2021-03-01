@@ -27,7 +27,11 @@
 
                         <button name="button">Se connecter</button>
                     </div>
+                    
+                    <a class="lien" href="./mdp.php">
                     <p>Mot de passe oublié ?</p>
+                    </a>
+
                 </form>
             </div>
 
