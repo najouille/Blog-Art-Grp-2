@@ -77,16 +77,14 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
       </div>
       <!-- NEWSLETTER -->
       <div class="newsletter">
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form target="_blank" action="https://formsubmit.co/clement.calles@mmibordeaux.com" method="post">
               <h3 class="name">Newsletter</h3>
               <input
                 type="text"
                 name="email"
                 placeholder="Votre adresse mail ..."
                 required
-              /><a class="submit-button" href="">Je m'inscris</a>
-              <input type="hidden" name="accessKey" value="63aeb3a6-ce80-474f-851a-e5fd3beb82ea">
-              <input type="hidden" name="subject" value="newsletter" required>
+              /><button type="submit" class="submit-button">Je m'inscris</button>
             </form>
           </div>
      

@@ -28,7 +28,7 @@
 }
 
 @font-face {
-    font-family: 'Monument Extended';
+    font-family: 'Monument';
     src: local('Monument Extended Regular'), local('MonumentExtended-Regular'),
         url('./fonts/subset-MonumentExtended-Regular.woff2') format('woff2'),
         url('./fonts/subset-MonumentExtended-Regular.woff') format('woff'),
