@@ -114,9 +114,9 @@ $numAngl = "";
             désaffecté, vous découvrirez un melting pot d'œuvres artistiques de tous genres, aussi bien musicales qu’audiovisuelles. L’ambiance y est underground,
             l’entrée est comme dans une boite de nuit, mais vous y trouverez des œuvres grandeur nature.</p>
         <p class="date">Le 11/02/2021</p>
+    </div>
 
-
-        <?php include('../front/includes/commons/footer.php') ?>
+        
 </body>
-
+    <?php include('../front/includes/commons/footer.php') ?>
 </html>

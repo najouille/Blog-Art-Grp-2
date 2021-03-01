@@ -90,11 +90,11 @@ $statut = new STATUT;
                 </tbody>
             </table>
         </div>
-        <div class="align-footer">
-            <?php
-            require_once __DIR__ . '/footer.php';
+        
+    </body>
+    <div class="align-footer">
+            <?php 
+            require_once __DIR__ . './footer.php';
             ?>
         </div>
-    </body>
-
 </html>
