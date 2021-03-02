@@ -1,3 +1,25 @@
+<?php
+require_once('../front/assets/vendors/parsedown.php');
+$Parsedown = new Parsedown();
+$numArt = "";
+$dtCreArt = "";
+
+///
+$libTitrArt = "";
+$libChapoArt = "Découvre les origines du street-art,[link](https://google.com) l’impact de celui-ci dans la ville de Bordeaux, ainsi que les évènements à ne pas manquer.";
+$libAccrochArt = "";
+$parag1Art = "";
+$libSsTitr1Art = "";
+$parag2Art = "";
+$libSsTitr2Art = "";
+$parag3Art = "";
+$libConclArt = "";
+///
+$urlPhotArt = "";
+$urlPhotArt = "";
+$numAngl = "x";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,6 +29,7 @@
     <link rel="stylesheet" href="./front/assets/insolites.css" />
     <link rel="stylesheet" href="./front/assets/navbar.css" />
     <link rel="stylesheet" href="./front/assets/footer.css" />
+    <link rel="stylesheet" href="./front/assets/commentaire.css" />
     <link rel="font" href="./front/assets/fonts/subset-MonumentExtended-Regular.svg" />
 </head>
 
@@ -94,6 +117,7 @@
                 </div>
             </div>
             <?php
+    include('commentaire.php');
     include('./front/includes/commons/footer.php');
     ?>
             

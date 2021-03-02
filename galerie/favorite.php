@@ -18,6 +18,7 @@ $images = $jsonData['collections'][1]['images'];
     <link rel="stylesheet" href="../front/assets/hzgallery/hzgallery.css" />
     <link rel="stylesheet" href="../front/assets/navbar.css" />
     <link rel="stylesheet" href="../front/assets/footer.css" />
+    <link rel="stylesheet" href="../front/assets/master.css" />
 </head>
 
 <body>
