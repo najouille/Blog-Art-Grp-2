@@ -5,7 +5,7 @@ $numArt = "";
 $dtCreArt = "";
 
 ///
-$libTitrArt = "FRÉDERIC DUCOS";
+$libTitrArt = "Portrait de Frédéric Ducos, photographe bordelais";
 $libChapoArt = "En 2014, [Frédéric Ducos](https://fredericducos.com) a choisi de quitter le milieu du vin pour rejoindre celui de la
 photographie. Une reconversion, on peut le dire, réussie ! En effet,
 quelques années plus tard, il remporte le [Umbra International Photography Awards](https://www.umbrawards.com/), un concours de renommée mondiale. Pourtant, à première vue, le pari
@@ -129,14 +129,14 @@ $numAngl = "";
   <main class="portrait-container">
     <section class="introduction">
       <h1 class="portrait-container">
-          <?php
-            echo $Parsedown->line($libTitrArt); 
-          ?>
+        <?php
+        echo $Parsedown->line($libTitrArt);
+        ?>
       </h1>
       <p id="intro">
-          <?php
-            echo $Parsedown->text($libChapoArt); 
-          ?>
+        <?php
+        echo $Parsedown->text($libChapoArt);
+        ?>
       <div class="tags">
         <h5>architecture</h5>
         <h5>photographie</h5>
@@ -151,27 +151,27 @@ $numAngl = "";
       <div class="portrait">
         <img src="../front/assets/image/portraitfredericducos.png" alt="frederic ducos" width="250" id="frederic" />
       </div>
-          <?php
-            echo $Parsedown->text($libAccrochArt); 
-          ?>
+      <?php
+      echo $Parsedown->text($libAccrochArt);
+      ?>
       <div class="quote">
         <img src="../front/assets/image/quote.svg" alt="" width="190" />
       </div>
     </div>
     <section class="article">
-          <?php
-            echo $Parsedown->text($parag1Art);
-            echo $Parsedown->text($libSsTitr1Art);
-            echo $Parsedown->text($parag2Art);
-            echo $Parsedown->text($libSsTitr2Art);
-            echo $Parsedown->text($parag3Art);
-            ?>
-            <br>
-            <br>
-            <?php
-            echo $Parsedown->text($libConclArt);
-            ?>
-          
+      <?php
+      echo $Parsedown->text($parag1Art);
+      echo $Parsedown->text($libSsTitr1Art);
+      echo $Parsedown->text($parag2Art);
+      echo $Parsedown->text($libSsTitr2Art);
+      echo $Parsedown->text($parag3Art);
+      ?>
+      <br>
+      <br>
+      <?php
+      echo $Parsedown->text($libConclArt);
+      ?>
+
       <h6>Le 27/01/2021, Bordeaux</h6>
       <div class="social">
         <a class="social-button" href="https://www.instagram.com/fredericducosphotographer/" target="blank">
@@ -216,9 +216,9 @@ $numAngl = "";
     </div>
   </main>
   <?php
-    include('../commentaire.php');
-    
-  include('../front/includes/commons/footer.php'); 
+  include('../commentaire.php');
+
+  include('../front/includes/commons/footer.php');
   ?>
 </body>
 
