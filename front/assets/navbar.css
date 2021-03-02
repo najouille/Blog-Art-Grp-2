@@ -16,10 +16,10 @@
 	color: #ffffff;
 	transition: 0.3s;
   }
-  .header .bouton-space a:hover {
+  .navbar-content-right a:hover {
 	color: #ffee32;
   }
-  .header .bouton-space a::after {
+  .navbar-content-right a::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -29,26 +29,36 @@
 	transform: scaleX(0);
 	transition: transform 0.3s ease-out;
   }
-  .header .bouton-space a:hover::after {
+  .navbar-content-right a:hover::after {
 	transform: scaleX(1);
   }
-  .header .header-space {
+  .navbar-content-right {
 	margin-left: 42px;
 	margin-right: 42px;
   }
-  .header a {
+  .navbar-content-right a {
 	text-decoration: none;
   }
+
   .header .logo-navbar {
 	width: 105px;
 	height: 25px;
 	margin-left: 42px;
+	margin-top: 6px;
   }
   .header .navbar-content-right {
 	display: flex;
 	align-items: center;
   }
+  
+
   .header .active {
-	text-decoration: underline;
 	color: #ffee32;
   }
+
+  .icon-right {
+	  margin-top: 5px;
+  }
+
+  
+  

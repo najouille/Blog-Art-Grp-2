@@ -51,7 +51,7 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
     <pre style="color:white">
       //$page 
     </pre> -->
-    <a href="<?= $pathElm . "home.php" ?>" class="bouton-space <?= $page == "home" ? 'active' : '' ?>">
+    <a href="<?= $pathElm . "home.php" ?>" class="bouton-space">
         <img class="logo-navbar" src="<?= $imageResolver ?>" alt="">
     </a>
     <div class=" navbar-content-right">
@@ -64,10 +64,10 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
         <a href="<?= $pathElm . "galerie" ?>" class="bouton-space <?= $page == "galerie" ? 'active' : '' ?>">
             GALERIE
         </a>
-        <a href="<?= $pathElm . "contact" ?>" class="bouton-space <?= $page == "contact" ? 'active' : '' ?>"">
+        <a href="<?= $pathElm . "contact" ?>" class="bouton-space <?= $page == "contact" ? 'active' : '' ?>">
             CONTACT
         </a>
-        <a href=" ../../../BlogArt/connexion.php" class="icon-right bouton-space">
+        <a href="<?= $pathElm . "connexion.php" ?>" class="icon-right bouton-space <?= $page == "connexion" ? 'active' : '' ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
