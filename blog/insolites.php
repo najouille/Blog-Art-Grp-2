@@ -128,7 +128,6 @@ $numAngl = "";
             echo $Parsedown->text($libSsTitr3Art);
             echo $Parsedown->text($parag3Art);
             ?>
-                    </p>
                 </div>
             </div>
             <?php
