@@ -54,7 +54,7 @@ body {
     background: #FFEE32;
     color: #0E0E0E;
     border-radius: 6px;
-    padding: 8px 40px;
+    padding: 16px 40px;
     max-height: 45px;
     transition: 0.3s;
     text-decoration: none;
@@ -137,10 +137,7 @@ h3 {
       height: 42px;
       width: 42px;
   }
-  .titre-bas {
-    margin-top: 2rem;
-  }
-  
+ 
   .button1 svg {
       margin-right: 16px;
   }

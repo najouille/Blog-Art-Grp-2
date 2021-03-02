@@ -21,9 +21,9 @@
     <div id="formco">
         <form>
             <div class="e-mail">
-                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required />
+                <input class="emailbox" type="email" name="e-mail" id="e-mail" placeholder="E-mail" required />
             </div>
-            <button name="button">Valider</button>
+            <button class="mdpoublie" name="button">Valider</button>
 
             <p>Nous avons bien pris en compte votre demande de réinitialisation de mot de passe. <br>
                 Rendez-vous sur votre boîte mail afin poursuivre la démarche. </p>
