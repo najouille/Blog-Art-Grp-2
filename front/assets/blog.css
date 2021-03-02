@@ -57,9 +57,13 @@ h4 {
 .maxiconteneurblog {
   margin: 0 auto;
   max-width: 1280px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 18px;
 }
 
 .maxiconteneurblog a {

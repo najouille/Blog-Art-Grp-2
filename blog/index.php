@@ -1,3 +1,17 @@
+<?php
+
+require_once __DIR__ . '/../util/utilErrOn.php';
+require_once __DIR__ . '/../CLASS_CRUD/article.class.php';
+require_once __DIR__ . '/../CLASS_CRUD/motclearticle.class.php';
+global $db;
+$article = new ARTICLE;
+$motcle = new MOTCLEARTICLE;
+$allArticles = $article->get_AllArticles();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -43,25 +57,36 @@
         </div>
     </div>
     <div class='maxiconteneurblog'>
-        <a href="./matteo.php" class='etiquetteblog'>
-            <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
-            <div class='conteneurblog'>
-                <span class='tag'>
-                    Street-Art
-                </span>
-                <span class='tag'>
-                    Photographie
-                </span>
-                <span class='tag'>
-                    Evènement
-                </span>
-                <span class='tag'>
-                    Art
-                </span>
-            </div>
-            <h3>Le street-art à Bordeaux, un milieu des plus tendances</h3>
-            <h4>Vous apprendrez ici beaucoup sur l’origine du street-art, son application à Bordeaux ainsi que les nombreux évennements organisés autour de cet art.</h4>
-        </a>
+
+        <?php
+
+        foreach ($allArticles as $value) {
+
+        ?>
+
+            <a href="./matteo.php" class='etiquetteblog'>
+                <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
+                <div class='conteneurblog'>
+
+                    <?php
+                    $resultOfAllMotcles = $motcle->get_AllMotClesByArticle($value['numArt']);
+                    $allMotcle = array_splice($resultOfAllMotcles, 0, 3);
+                    foreach ($allMotcle as $motcleElm) {
+                        echo '<span class="tag">' . $motcleElm['libMotCle'] . '</span>';
+                    }
+
+                    ?>
+
+                </div>
+                <h3><?= $value['libTitrArt'] ?>
+                    <h4><?= $value['libChapoArt'] ?></h4>
+            </a>
+
+        <?php
+        }
+
+        ?>
+
 
 
         <a href="./portrait.php" class='etiquetteblog'>

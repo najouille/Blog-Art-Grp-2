@@ -8,23 +8,40 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.container-profile {
+.left-right {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
-    padding: 80px;
-    max-width: 800px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 62px;
+    margin-bottom: 40px;
+}
+
+.premier-logo {
+    width: 41px;
+    height: 41px;
 }
 
 .top-container {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+    justify-content: space-between;
 }
 
 .left-profile {
-    padding: 80px;
+    max-width: 775px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-hr {
+.trait {
     border-color: #FFEE32;
     max-width: 1280px;
     margin: 50px 0;
@@ -37,7 +54,7 @@ hr {
     background: #FFEE32;
     color: #0E0E0E;
     border-radius: 6px;
-    padding: 0 40px;
+    padding: 8px 40px;
     max-height: 45px;
     transition: 0.3s;
     text-decoration: none;
@@ -57,14 +74,23 @@ h3 {
     display: flex;
 }
 
-.bottom-container {
+.email-profile {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     white-space: nowrap;
 }
 
-.profile-img {
-    max-width: 510px;
-    padding: 90px;
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.right-profile {
+    width: 416px;
+    height: 431px;
 }
 
 .logo-before svg {
@@ -72,26 +98,21 @@ h3 {
     height: 48px;
 }
 
-.logo-email {
-    
-}
-
-h2 {
-    font-size: 2rem;
-}
-
 .top-text {
-    margin: 80px;
-    padding: 80px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-input {
+.input-profil {
     color: #fff;
     border: 1px solid #FFEE32;
     background: #0E0E0E ;
     border-radius: 6px;
     padding: 5px;
     min-width: 200px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 20px;
 }
 
 .placeholder {
@@ -107,3 +128,41 @@ input {
 .mdpoublié:hover {
     color: #FFEE32;
 }
+
+  
+  .icon-data {
+      width: 106px;
+  }
+  .icon-data svg {
+      height: 42px;
+      width: 42px;
+  }
+  .titre-bas {
+    margin-top: 2rem;
+  }
+  
+  .button1 svg {
+      margin-right: 16px;
+  }
+  
+  .block-user {
+      display: flex;
+      align-items: flex-start;
+  }
+  .block-data-user {
+      display: flex;
+      flex-direction: column;
+  }
+  .part1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 2rem;
+  }

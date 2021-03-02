@@ -1,7 +1,6 @@
 .style {
   background-color: #0e0e0e;
 }
-
 h1 {
   margin-top: 3rem;
   font-size: 36px;
@@ -139,4 +138,8 @@ letter-spacing: 0em;
 text-align: left;
 color: #ffffff75;
 margin-top: 3rem;
+}
+.conteneur-principal a{
+  color: #ffee32;
+  text-decoration: underline;
 }

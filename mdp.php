@@ -21,7 +21,7 @@
     <div id="formco">
         <form>
             <div class="e-mail">
-                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required />
             </div>
             <button name="button">Valider</button>
 
