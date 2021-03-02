@@ -23,31 +23,31 @@
 
 			<div id="formulaire">
 				<form>
-					<div class="name">
+					<div>
 						<h3>Nom</h3>
 					</div>
-					<input type="text" name="name" id="name" placeholder="Insérez votre Nom ..." />
+					<input class="contact-input" type="text" name="name" id="name" placeholder="Insérez votre Nom ..." required/>
 					<br>
 
 					<div>
 						<h3>Prénom</h3>
 					</div>
-					<input type="text" name="firstname" id="firstname" placeholder="Insérez votre Prénom ..." />
+					<input class="contact-input" type="text" name="firstname" id="firstname" placeholder="Insérez votre Prénom ..." required/>
 					<br>
 
 					<div>
 						<h3>E-mail</h3>
 					</div>
-					<input type="email" name="email" id="email" placeholder="Insérez votre adresse mail ..." />
+					<input class="contact-input" type="email" name="email" id="email" placeholder="Insérez votre adresse mail ..." required/>
 					<br>
 
 					<div>
 						<h3>Message</h3>
 					</div>
-					<textarea name="body" id="body" cols="30" rows="10" placeholder="Insérez votre message ..."></textarea>
+					<textarea class="contact-input-message" type="text" name="body" id="body" cols="30" rows="10" minlength="15" placeholder="Insérez votre message ..." required></textarea>
 					<br>
 
-					<button name="button">Envoyer</button>
+					<button class="contact-button" type="submit" name="button">Envoyer</button>
 				</form>
 			</div>
 			<div id="img">

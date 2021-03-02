@@ -15,7 +15,7 @@ Ce fut un réel déclic qui lui a donné envie de se lancer pleinement
 dans le domaine. Un an et demi après, il s’installe en tant
 qu’artiste-photographe. Aujourd’hui, âgé de 44 ans, il vit de sa
 passion.";
-$libAccrochArt = "##“La photographie est l’expression d’émotions par la recherche d’un certain minimalisme”";
+$libAccrochArt = "## “La photographie est l’expression d’émotions par la recherche d’un certain minimalisme”";
 $parag1Art = "### Le désir de créer et de partager
 
   Les périodes creuses de la vie ont parfois leurs avantages. Celle de
@@ -44,7 +44,7 @@ $parag1Art = "### Le désir de créer et de partager
   prédilection : la place de la Bourse et les anciens bâtiments classés
   à l’[UNESCO](https://whc.unesco.org/fr/list/1256/) qui l’entourent. Le tramway offre également l’occasion de mêler
   l’architecture à la vie quotidienne bordelaise.";
-$libSsTitr1Art = "###La démarche artistique : capturer l’instant présent";
+$libSsTitr1Art = "### La démarche artistique : capturer l’instant présent";
 $parag2Art = "Marcher. Découvrir. Ne rien prévoir. Telle est la philosophie qui
 guide Frédéric Ducos. Ce photographe spécialisé dans la photographie
 urbaine ne se pose pas de questions. Il part à la découverte de villes
@@ -67,7 +67,7 @@ polyvalence, ce n’est pas l’idéal en termes de qualité nous a-t-il
 confié, mais cela augmente grandement les possibilités de prises de
 vue. De plus, l’utilisation d’un tel objectif diminue son encombrement
 et augmente sa mobilité à travers les villes.";
-$libSsTitr2Art = "###Un minimalisme au service de l’émotion";
+$libSsTitr2Art = "### Un minimalisme au service de l’émotion";
 $parag3Art = "Frédéric Ducos est continuellement à la recherche d’une identité
 forte. Selon lui, l’un des buts de la photographie est d'arriver à se
 démarquer pour ne pas tomber dans le traditionnel. Sa ligne de
