@@ -79,8 +79,8 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
       <div class="newsletter">
             <form target="_blank" action="https://formsubmit.co/clement.calles@mmibordeaux.com" method="post">
               <h3 class="name">Newsletter</h3>
-              <input
-                type="text"
+              <input class="footer-input"
+                type="email"
                 name="email"
                 placeholder="Votre adresse mail ..."
                 required

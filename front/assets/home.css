@@ -274,7 +274,7 @@ p {
   grid-column: span 2 / span 2;
 }
 #portfolio {
-  font-family: Manrope;
+  font-family: "Manrope";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -304,6 +304,7 @@ p {
 @media (min-width: 1440px) {
   #groupe {
     height: 50vh;
+    object-position: center -250px;
   }
 }
 .grille :hover {

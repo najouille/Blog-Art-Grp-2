@@ -35,62 +35,68 @@
                             <path d="M63.79905,199.37405a72.02812,72.02812,0,0,1,128.40177-.00026" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
                         </svg>
                     </div>
+                    <form>
                     <div class="block1-left block-data-user">
                         <h3>Nom</h3>
                         <input class="input-profil" type="text" placeholder="Votre Nom ..." required />
                         <h3 class="titre-bas">Pseudo</h3>
-                        <input class="input-profil" type="text" placeholder="Votre Pseudo ..." required />
+                        <input class="input-profil" type="text" minlength="3" placeholder="Votre Pseudo ..." required />
                     </div>
                     <div class="block2-droite block-data-user">
                         <h3>Prénom</h3>
                         <input class="input-profil" type="text" placeholder="Votre Prénom ..." required />
                         <h3 class="titre-bas">Date de naissance</h3>
-                        <input class="input-profil" type="text" placeholder="JJ/MM/AAAA" required />
+                        <input class="input-profil" type="date" placeholder="JJ/MM/AAAA" required />
                     </div>
-                </div>
-                <a class="valider-profile" href="profile.php">
-                    <span>
-                        Valider
-                    </span>
-                </a>
-            </div>
+                    </div>
+                        <button type="submit" class="valider-profile" href="profile.php">
+                            <span>
+                                Valider
+                            </span>
+                        </button>
+                    </div>
+                    </form>
             <hr class="trait">
             <div class="left-profile email-elm">
                 <div class="block-user">
                     <div class="icon-data">
                         <?php include('./front/assets/image/icones/email.svg') ?>
                     </div>
+                    <form>
                     <div class="block1-left block-data-user">
                         <h3>Votre adresse email</h3>
-                        <input class="input-profil" type="text" placeholder="Votre adresse mail ..." required />
+                        <input class="input-profil" type="email" placeholder="Votre adresse mail ..." required />
                     </div>
                 </div>
-                <a class="valider-profile" href="profile.php">
+                <button type="submit" class="valider-profile" href="profile.php">
                     <span>
                         Valider
                     </span>
-                </a>
+                </button>
             </div>
+            </form>
             <hr class="trait">
             <div class="left-profile email-elm">
                 <div class="block-user">
                     <div class="icon-data">
                         <?php include('./front/assets/image/icones/password.svg') ?>
                     </div>
+                    <form>
                     <div class="block1-left block-data-user">
                         <h3>Votre mot de passe</h3>
-                        <input class="input-profil" type="text" placeholder="Votre mot de passe actuel ..." required />
-                        <input class="input-profil" type="text" placeholder="Votre nouveau mot de passe ..." required />
+                        <input class="input-profil" type="password" placeholder="Votre mot de passe actuel ..." required />
+                        <input class="input-profil" type="password" minlength="8" placeholder="Votre nouveau mot de passe ..." required />
                         <a class ="mdpoublié" href="mdp.php">Mot de passe oublié ?</a>
                     </div>
                     
                 </div>
-                <a class="valider-profile" href="profile.php">
+                <button type="submit" class="valider-profile" href="profile.php">
                     <span>
                         Valider
                     </span>
-                </a>
+                </button>
             </div>
+            </form>
         </div>
         <div><img class="right-profile" src="front/assets/image/profil-picture.jpg"></div>
     </div>
