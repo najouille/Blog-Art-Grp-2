@@ -20,6 +20,7 @@ h3 {
 p {
     margin-top: 4rem;
     font-weight: thin;
+    margin-bottom: 150px;
 }
 
 input[type="email"],

@@ -107,3 +107,4 @@
     include('./front/includes/commons/footer.php');
     ?>
 </body>
+</html>
