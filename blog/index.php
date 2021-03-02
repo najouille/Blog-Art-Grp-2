@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/../util/utilErrOn.php';
 require_once __DIR__ . '/../CLASS_CRUD/article.class.php';
 require_once __DIR__ . '/../CLASS_CRUD/motclearticle.class.php';
@@ -8,6 +7,25 @@ $article = new ARTICLE;
 $motcle = new MOTCLEARTICLE;
 $allArticles = $article->get_AllArticles();
 
+$jsonDataFile = file_get_contents("../front/assets/articles.json");
+if ($jsonDataFile === false) {
+    // deal with error...
+    echo 'error with json';
+}
+$articles = json_decode($jsonDataFile, true);
+
+function getDescription($articleName, $arts)
+{
+
+
+
+    $result = array_filter($arts, function ($k)  use ($articleName) {
+
+        return $k['name'] == $articleName;
+    }, ARRAY_FILTER_USE_BOTH);
+
+    return array_values($result)[0]['description'];
+};
 
 
 ?>
@@ -61,16 +79,20 @@ $allArticles = $article->get_AllArticles();
         <?php
 
         foreach ($allArticles as $value) {
+            $libTitrArt = $value['libTitrArt'];
+            echo '<!--';
+            print_r($value);
+            echo '-->';
 
         ?>
 
             <a href="./matteo.php" class='etiquetteblog'>
-                <img class='tailleimg' src="<?= '../front/assets/image/jon-tyson-HuRTqaEMD4I-unsplash 1.png' ?>" alt="street art jazz">
+                <img class='tailleimg' src="<?= '../' . $value['urlPhotArt'] ?>" alt="street art jazz">
                 <div class='conteneurblog'>
 
                     <?php
                     $resultOfAllMotcles = $motcle->get_AllMotClesByArticle($value['numArt']);
-                    $allMotcle = array_splice($resultOfAllMotcles, 0, 3);
+                    $allMotcle = array_splice($resultOfAllMotcles, 0, 4);
                     foreach ($allMotcle as $motcleElm) {
                         echo '<span class="tag">' . $motcleElm['libMotCle'] . '</span>';
                     }
@@ -78,8 +100,8 @@ $allArticles = $article->get_AllArticles();
                     ?>
 
                 </div>
-                <h3><?= $value['libTitrArt'] ?>
-                    <h4><?= $value['libChapoArt'] ?></h4>
+                <h3><?= $value['libTitrArt'] ?></h3>
+                <h4><?= getDescription($libTitrArt, $articles) ?></h4>
             </a>
 
         <?php
@@ -88,48 +110,6 @@ $allArticles = $article->get_AllArticles();
         ?>
 
 
-
-        <a href="./portrait.php" class='etiquetteblog'>
-            <img class='tailleimg' src="<?= '../front/assets/image/portaitphotographe.png' ?>" alt="portrait">
-            <div class='conteneurblog'>
-                <span class='tag'>
-                    Urbain
-                </span>
-                <span class='tag'>
-                    Photographie
-                </span>
-                <span class='tag'>
-                    Architecture
-                </span>
-                <span class='tag'>
-                    Art
-                </span>
-            </div>
-            <h3>Portrait de Frédéric Ducos, photographe bordelais</h3>
-            <h4>Vous découvrirez, dans cet article, le parcours d’un photographe parti de rien qui, aujourd’hui, cotoie les plus grands.</h4>
-        </a>
-
-
-
-        <a href="../insolites.php" class='etiquetteblog'>
-            <img class='tailleimg' src="<?= '../front/assets/image/Statue.png' ?>" alt="Statue">
-            <div class='conteneurblog'>
-                <span class='tag'>
-                    Street-Art
-                </span>
-                <span class='tag'>
-                    Photographie
-                </span>
-                <span class='tag'>
-                    Insolite
-                </span>
-                <span class='tag'>
-                    Art
-                </span>
-            </div>
-            <h3>3 lieux insolites à découvrir absolument</h3>
-            <h4>Bordeaux regorge de trésors cachés. Nous vous livrons dans cet article trois de ces derniers.</h4>
-        </a>
     </div>
     <div class='maxiconteneurblog opacity-10 soon-banner-container'>
         <div class="soon-banner">
