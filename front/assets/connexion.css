@@ -15,48 +15,49 @@ h3 {
   font-weight: 700;
   text-align: center;
 }
-h4 {
+
+.inscription {
   margin-left: 1rem;
   font-size: 18;
   font-weight: 300;
 }
-p {
+
+.lien {
   font-size: 12px;
   font-weight: thin;
   margin-top: 0.5rem;
+  max-width: 200px;
 }
+
 .forming {
   max-width: 590px;
   width: 100%;
   margin: 0 auto;
 }
+
 .parallele {
   display: flex;
   flex-direction: row;
 }
+
 .connection {
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-#amdp {
-  margin: 0 1rem;
-
+  max-height:40px;
 }
 
 .champ {
   margin-top: 2rem;
 }
+
 .check {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.input-profil {
   color: white;
   background-color: #0e0e0e;
   border-radius: 6px;
@@ -64,10 +65,24 @@ textarea {
   width: 110%;
   border: 1px solid #ffee32;
 }
-.inscription input[type="text"],
-.inscription input[type="email"],
-.inscription textarea {
+
+.input-profil1 {
+  color: white;
+  background-color: #0e0e0e;
+  border-radius: 6px;
+  padding: 8px;
+  width: 110%;
+  border: 1px solid #ffee32;
+}
+
+.input-profil1 {
+  margin-top: 0rem;
+  margin-right: 1rem;
+}
+
+.input-profil {
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 button {
@@ -80,6 +95,7 @@ button {
   border: 1px solid #ffee32;
   transition: 0.3s;
   width: 100%;
+  text-decoration: none;
 }
 
 button:hover {
@@ -101,10 +117,26 @@ button:hover {
 }
 
 .lien {
-  color: #fff;
+  color: #A8A8A8;
   transition: 0.3s;
 }
 
+
+
 .lien:hover {
   color: #ffee32;
+}
+
+.cgulink {
+  color: #A8A8A8;
+  transition: 0.3s;
+}
+
+.cgulink:hover {
+  color: #ffee32;
+}
+
+.button-inscription {
+  min-width: 180px;
+  min-height: 40px;
 }
