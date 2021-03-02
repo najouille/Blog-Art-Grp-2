@@ -67,10 +67,10 @@
                     <br>
 
                     <div class="check">
-                        <input type="checkbox" id="CGU" name="CGU" checked="">
+                        <input type="checkbox" id="CGU" name="CGU" required>
                         <label for="CGU">J’ai lu et accepte les C.G.U.</label>
                     </div>
-                    <button name="button">S'inscrire</button>
+                    <button name="button" type="submit">S'inscrire</button>
                 </div>
                 <div>
                     <div class="allignement">
