@@ -225,7 +225,7 @@
   </section>
   <section class="nous">
     <h2>Qui sommes-nous ?</h2>
-    <img src="./front/assets/image/groupe.png" alt="L'équipe" id="groupe" />
+    <img src="./front/assets/image/groupe.jpg" alt="L'équipe" id="groupe" />
   </section>
   <?php
     include('./front/includes/commons/footer.php');
