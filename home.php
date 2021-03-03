@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './util/utilErrOn.php';
+require_once __DIR__ . '/./util/utilErrOn.php';
 require_once __DIR__ . './CLASS_CRUD/article.class.php';
 require_once __DIR__ . './CLASS_CRUD/motclearticle.class.php';
 global $db;
