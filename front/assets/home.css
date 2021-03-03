@@ -158,7 +158,7 @@ h3 {
 .streetart:hover:not(.more) {
   transform: scale(1.03);
 }
-img {
+.blogpreview img {
   width: 160px;
   object-fit: cover;
   height: 100%;
