@@ -161,6 +161,7 @@ h3 {
 .blogpreview img {
   width: 160px;
   object-fit: cover;
+  min-height: 160px;
   height: 100%;
 }
 .tagtxt {
