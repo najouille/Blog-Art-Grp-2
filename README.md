@@ -8,7 +8,7 @@ Cloner le repository
 git clone https://github.com/MatteoGauthier/townyart-v1
 ```
 
-Insérer la base de donnée `BDD:CreateDatabaseTownyArt.sql` dans phpmyadmin.
+Insérer la base de donnée `BDD/CreateDatabaseTownyArt.sql` dans phpmyadmin.
 
 ---
 ---
