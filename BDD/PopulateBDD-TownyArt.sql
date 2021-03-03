@@ -1,3 +1,10 @@
+TRUNCATE TABLE comment;
+TRUNCATE TABLE commentplus;
+TRUNCATE TABLE motclearticle;
+TRUNCATE TABLE motcle;
+TRUNCATE TABLE article;
+TRUNCATE TABLE angle;
+
 REPLACE INTO `angle` (`numAngl`, `libAngl`, `numLang`)
 VALUES
     ('ANGL0001', 'Street-Art', 'FRAN01');

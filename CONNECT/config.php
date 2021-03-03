@@ -3,7 +3,7 @@
 // nom de votre serveur (ou 127.0.0.1)
 $hostBD = "localhost";
 // nom BD
-$nomBD = "BLOGART21";
+$nomBD = "townyartdb";
 // Serveur
 // Avec encodage UTF8
 $serverBD = "mysql:dbname=$nomBD;host=$hostBD;charset=utf8";
