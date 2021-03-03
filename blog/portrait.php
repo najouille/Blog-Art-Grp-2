@@ -1,107 +1,40 @@
 <?php
 require_once('../front/assets/vendors/parsedown.php');
-$Parsedown = new Parsedown();
+require_once('../CLASS_CRUD/article.class.php');
+require_once('../CLASS_CRUD/motclearticle.class.php');
+
+if (!isset($_GET['id'])) $_GET['id'] = '16';
+$article = new ARTICLE;
+$motcle = new MOTCLEARTICLE;
+$articleData = $article->get_1Article($_GET['id']);
+
+$Parsedown = new ParsedownExtraPlugin();
+$Parsedown->linkAttributes = function($Text, $Attributes, &$Element, $Internal) {
+    if (!$Internal) {
+        return [
+            'rel' => 'nofollow',
+            'target' => '_blank'
+        ];
+    }
+    return [];
+};
 $numArt = "";
 $dtCreArt = "";
 
 ///
-$libTitrArt = "Portrait de Frédéric Ducos, photographe bordelais";
-$libChapoArt = "En 2014, [Frédéric Ducos](https://fredericducos.com) a choisi de quitter le milieu du vin pour rejoindre celui de la
-photographie. Une reconversion, on peut le dire, réussie ! En effet,
-quelques années plus tard, il remporte le [Umbra International Photography Awards](https://www.umbrawards.com/), un concours de renommée mondiale. Pourtant, à première vue, le pari
-était risqué. N’ayant jamais touché à un appareil, Frédéric a pris ses
-premiers cours de photographie sur la place de la Bourse à Bordeaux.
-Ce fut un réel déclic qui lui a donné envie de se lancer pleinement
-dans le domaine. Un an et demi après, il s’installe en tant
-qu’artiste-photographe. Aujourd’hui, âgé de 44 ans, il vit de sa
-passion.";
-$libAccrochArt = "## “La photographie est l’expression d’émotions par la recherche d’un certain minimalisme”";
-$parag1Art = "### Le désir de créer et de partager
+$libTitrArt = "FREDERIC DUCOS";
 
-  Les périodes creuses de la vie ont parfois leurs avantages. Celle de
-  Frédéric Ducos lui aura permis de se rendre compte d’une chose :
-  l’importance de créer. C’est un véritable tremplin de motivation qui
-  va le pousser à se lancer dans la photographie à plein temps. Un
-  milieu qu’il nous décrit comme emprunt de diversité et de possibilités
-  artistiques. En effet, on peut divaguer entre la photo d’art, la
-  publicité et bien d’autres domaines. Ce moyen d’expression offre
-  également la possibilité de rencontrer du monde et ainsi de partager
-  sa passion, de la pluraliser.
+$libChapoArt = $articleData['libChapoArt'];
 
-  Très vite, la photographie urbaine a pris une grande place dans sa vie
-  artistique. C’est à la suite de plusieurs voyages (en Espagne
-  notamment) qu’il se rend compte de la beauté de l’architecture. Ces
-  éléments géométriques, omniprésents dans nos villes, sont ainsi
-  devenus une obsession pour le photographe. Il nous confie d’ailleurs
-  passer beaucoup de temps à étudier les angles, les lignes ou encore
-  les perspectives. Capturer l’aspect géométrique pour en retirer une
-  émotion lui parle beaucoup.
+$libAccrochArt = $articleData['libAccrochArt'];
+$libSsTitr1Art = $articleData['libSsTitr2Art'];
+$parag1Art = $articleData['parag1Art'];
 
-  Bordeaux devient le terrain d’entraînement du photographe même si,
-  dit-il, cette ville est assez difficile à photographier. La fusion
-  entre l’ancien et le moderne mêle beaucoup de formes différentes et
-  complexes. Il finira tout de même par choisir son quartier de
-  prédilection : la place de la Bourse et les anciens bâtiments classés
-  à l’[UNESCO](https://whc.unesco.org/fr/list/1256/) qui l’entourent. Le tramway offre également l’occasion de mêler
-  l’architecture à la vie quotidienne bordelaise.";
-$libSsTitr1Art = "### La démarche artistique : capturer l’instant présent";
-$parag2Art = "Marcher. Découvrir. Ne rien prévoir. Telle est la philosophie qui
-guide Frédéric Ducos. Ce photographe spécialisé dans la photographie
-urbaine ne se pose pas de questions. Il part à la découverte de villes
-toujours plus intéressantes d’un point de vue artistique et “parfois
-les villes qui intéressent ne sont pas celles que l’on croit’’.
-Explorer la vie telle qu’elle l’est, observer le monde changer et
-capturer les instants d’exception… C’est le processus de réflexion
-adopté par le photographe. En effet, Frédéric cherche à se rapprocher
-de l'œil du visiteur lambda et soutient que l’inspiration vient
-souvent lors d’une première rencontre avec l’endroit dans lequel il se
-trouve. Peu importe la météo, ce photographe trouve toujours de
-nouvelles inspirations notamment en jouant avec les motifs qui forment
-le ciel en constante évolution.
+$libSsTitr2Art = $articleData['libSsTitr2Art'];
+$parag2Art = $articleData['parag2Art'];
 
-‘’Dans la photo, mon état d’esprit est de ne rien forcer, je suis
-observateur, je me balade et je vois ce qui sort.’’
-
-L’utilisation d’un seul objectif (28-300 mm) lui permet une grande
-polyvalence, ce n’est pas l’idéal en termes de qualité nous a-t-il
-confié, mais cela augmente grandement les possibilités de prises de
-vue. De plus, l’utilisation d’un tel objectif diminue son encombrement
-et augmente sa mobilité à travers les villes.";
-$libSsTitr2Art = "### Un minimalisme au service de l’émotion";
-$parag3Art = "Frédéric Ducos est continuellement à la recherche d’une identité
-forte. Selon lui, l’un des buts de la photographie est d'arriver à se
-démarquer pour ne pas tomber dans le traditionnel. Sa ligne de
-conduite est ainsi d’exprimer une vision conceptuelle et poétique du
-monde à travers un style unique et reconnaissable. Pour cela,
-l’artiste nous confie ses secrets dans une interview qu’il nous a
-accordé.
-
-“Selon moi, la photographie est l’expression d’émotions par la
-recherche d’un certain minimalisme. Moins il y a d’informations et
-plus la photo est forte.”
-
-Il suffit de contempler les clichés du photographe pour s’apercevoir
-de l’importance du noir et blanc dans son identité visuelle. Alors
-pourquoi utiliser ce procédé ? Cela lui permet de rajouter du grain,
-du flou ou encore de travailler la texture sans pour autant surcharger
-la photo. L’allègement de l’image est donc à privilégier. Dans la
-photo d’art, laisser place à l’imagination est primordial. Le noir et
-blanc pousse à réfléchir à cette problématique et améliore la
-lisibilité tout en apportant un apportant une touche artistique. On se
-positionne sur un élément simple pour exprimer un maximum
-d’informations. La couleur n’a de l’importance que si elle apporte
-quelque chose. Cet état d’esprit conforte ce qui est mentionné plus
-haut. Par ce minimalisme au service de l’émotion, Frédéric Ducos
-retranscrit à merveille l’instant présent. Il pousse à l’imagination
-et à la réflexion.";
-$libConclArt = "En constante recherche d’équilibre artistique, Frédéric Ducos manipule
-à la perfection nos sens. Entre beauté visuelle, conceptualisme et
-imagination, ses photographies expriment les émotions de l’instant
-présent. Parti de rien, l’artiste est aujourd’hui reconnu mondialement
-pour son talent et sa personnalité. Cependant, il ne compte pas en
-rester là : son objectif est de collaborer plus grandement avec les
-marques et ainsi d’adapter ses connaissances de la photographie au
-monde du commerce.";
+$parag3Art = $articleData['parag3Art'];
+$libConclArt = $articleData['libConclArt'];
 ///
 $urlPhotArt = "";
 $urlPhotArt = "";
@@ -160,10 +93,10 @@ $numAngl = "";
     </div>
     <section class="article">
       <?php
-      echo $Parsedown->text($parag1Art);
       echo $Parsedown->text($libSsTitr1Art);
-      echo $Parsedown->text($parag2Art);
+      echo $Parsedown->text($parag1Art);
       echo $Parsedown->text($libSsTitr2Art);
+      echo $Parsedown->text($parag2Art);
       echo $Parsedown->text($parag3Art);
       ?>
       <br>

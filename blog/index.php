@@ -16,17 +16,32 @@ $articles = json_decode($jsonDataFile, true);
 
 function getDescription($articleName, $arts)
 {
-
-
-
     $result = array_filter($arts, function ($k)  use ($articleName) {
-
         return $k['name'] == $articleName;
     }, ARRAY_FILTER_USE_BOTH);
-
     return array_values($result)[0]['description'];
 };
 
+function getPath($thematique, $id)
+{
+    switch ($thematique) {
+        case 'THE0101':
+            return './evenement?id=' . $id ;
+            break;
+        case 'THE0102':
+            # code...
+            return './portrait?id=' . $id ;
+            break;
+        case 'THE0104':
+            # code...
+            return './insolites?id=' . $id ;
+            break;
+
+        default:
+            # code...
+            break;
+    }
+}
 
 ?>
 
@@ -86,7 +101,7 @@ function getDescription($articleName, $arts)
 
         ?>
 
-            <a href="./matteo.php" class='etiquetteblog'>
+            <a href="<?= getPath($value['numThem'],$value['numArt']) ?>" class='etiquetteblog'>
                 <img class='tailleimg' src="<?= '../' . $value['urlPhotArt'] ?>" alt="street art jazz">
                 <div class='conteneurblog'>
 

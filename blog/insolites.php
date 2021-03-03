@@ -1,37 +1,49 @@
 <?php
 require_once('../front/assets/vendors/parsedown.php');
-$Parsedown = new Parsedown();
+require_once('../CLASS_CRUD/article.class.php');
+require_once('../CLASS_CRUD/motclearticle.class.php');
+
+if (!isset($_GET['id'])) $_GET['id'] = '17';
+$article = new ARTICLE;
+$motcle = new MOTCLEARTICLE;
+$articleData = $article->get_1Article($_GET['id']);
+
+$Parsedown = new ParsedownExtraPlugin();
+$Parsedown->linkAttributes = function ($Text, $Attributes, &$Element, $Internal) {
+    if (!$Internal) {
+        return [
+            'rel' => 'nofollow',
+            'target' => '_blank'
+        ];
+    }
+    return [];
+};
+
+
+$jsonDataFile = file_get_contents("../front/assets/articles.json");
+if ($jsonDataFile === false) {
+    // deal with error...
+    echo 'error with json';
+}
+$insolite = json_decode($jsonDataFile, true);
+
 $numArt = "";
 $dtCreArt = "";
 
 ///
-$libTitrArt = "**TOP 3 des oeuvres les plus insolites de Bordeaux**";
+$libTitrArt = $articleData['libTitrArt'];
 
-$libChapoArt = "Bordeaux, de son surnom “La Belle endormie” du fait de sa quiétude, est en réalité un paradis pour les fans de street art. Du panneau de signalisation modifié aux magnifiques fresques murales en passant par des sculptures originales, Bordeaux regorge de street art à chaque coin de rue. On te propose dans cet article un top 3 des lieux insolites que tu dois absolument connaitre.";
+$libChapoArt = $articleData['libChapoArt'];
 
-$libAccroch1Art = "### La Jaguar du parking Victor-Hugo <br> <br>" ;
-$parag1Art = "Si tu es déjà venu à Bordeaux, tu es forcément passé par la [rue St Catherine](https://fr.wikipedia.org/wiki/Rue_Sainte-Catherine_(Bordeaux)), mais tu n'es peut-être jamais sorti des sentiers battus. Pour les aventuriers, ceux qui, poussés par la curiosité décident de s'égarer dans les rues de Bordeaux, le parking Victor Hugo </a> leur est familier. A vrai dire, il n'est pas vraiment caché puisqu'il se situe à 30 mètres de la promenade St Catherine. Mais qu'y a t'il de si spécial pour que l'on te parle de ce parking ? Ne t'en fais pas, on va te l'expliquer. <br> <br>
-Ce parking a été construit au début des années 60 par les architectes toulousains [Jean Dauriac](https://www.pss-archi.eu/architecte/4667) et [Pierre Laffitte](https://www.pss-archi.eu/architecte/4449). Mais en 1993, lors de la rénovation de l’édifice, l’architecte bordelais [Jean-François Dosso](https://www.darchitectures.com/voir-dosso-parmi-les-architectes-d-interieur,p104501.html) a eu l’idée de créer un signe distinctif pour ce parking. Il positionne une [Jaguar MK1](https://en.wikipedia.org/wiki/Jaguar_Mark_1) verte encastrée dans la façade. <br> <br>
-A l’œil nu, le véhicule paraît suspendu au-dessus de nos têtes et ne tenant qu’à un fil de subir les lois de la gravité. Au premier regard, l'impression qu'un accident vient de se produire nous rend inquiet. C'est en se rapprochant de la scène et en réfléchissant quelques instants que l'on comprend la supercherie. En effet, la Jaguar est, en réalité, posée sur la structure même du parking. <br> <br>
-En regardant depuis le sol, tu pourras constater que le moteur a été retiré de la carrosserie afin d’éviter de l’alourdir et pour conforter sa dimension artistique. <br> <br>
-Une œuvre insolite aux airs de films hollywoodiens qui ravira les passionnés d'automobiles comme les passants. Effet de surprise garanti à la [place de la Ferme Richemont, 33000 Bordeaux](https://www.google.fr/maps/place/Parking+Victor+Hugo/@44.8356518,-0.5727747,17z/data=!4m5!3m4!1s0xd5527cf467c845b:0xa3373b532c1611dd!8m2!3d44.8356518!4d-0.572775). <br> <br>";
+$libAccrochArt = $articleData['libAccrochArt'];
+$parag1Art = $articleData['parag1Art'];
 
-$libSsTitr2Art = "### La sculpture “Un détail” <br> <br>";
-$parag2Art = "Alors que nous nous promenons sur les quais de la rive gauche, non loin de la gare Saint Jean, notre œil ne peut qu'être attiré par cette immense structure à l'architecture futuriste. Mais attention ! Si tu veux en voir la totalité, il te faudra lever la tête. <br> <br>
-Siégeant sur la rive gauche de la Garonne et située à cinq minutes à pied de la gare Saint-Jean, [La MÉCA](https://www.la-meca.com) est une arche en béton brute mesurant 37 mètres de haut et 180 mètres de large. <br> <br>
-Conçu par l'architecte [BIG](https://fr.wikipedia.org/wiki/Bjarke_Ingels) (Bjarke Ingels Group) et conçu en septembre 2018, ce bâtiment est caractérisé par ses formes futuristes et ses dimensions gigantesques, comme si cette arche venait tout droit du futur. <br> <br>
-Derrière cet édifice se cache une statue étrangement perturbante reposant sur les gradins extérieurs. Cette œuvre, qui s’intitule [“Un détail”](http://www.aquitaineonline.com/actualites-en-aquitaine/sud-ouest/7222-sculpture-un-detail-de-benoit-maire.html) est celle de [Benoît Maire](https://www.franceculture.fr/personne-benoit-maire), artiste Pessacais de 43 ans. <br> <br>
-Faite de bronze, elle représente une demi-tête d'Hermès. Cette sculpture de 3 mètres de hauteur, à été réalisée par l’atelier de fonderie artisanale “Fonderie des cyclopes” à Mérignac. <br> <br>
-Selon l'artiste : « La moitié absente de la sculpture est à compléter par le spectateur dans l'intérieur vidé de la chambre urbaine. Ce travail de l'imagination est renforcé par le fini poli-miroir de la tranche coupée qui permet de faire l'expérience de la réflexion dans son sens littéral. » <br> <br>
-Une œuvre qui vaut le détour si tu aimes les illusions d’optiques et la sculpture, mais aussi la démesure. La MÉCA est situé au [PARVIS CORTO MALTESE, Quai de Paludate, 33800 Bordeaux](https://www.google.fr/maps/place/La+Méca/@44.8283478,-0.5529029,17.95z/data=!4m8!1m2!2m1!1zbcOpY2E!3m4!1s0xd552647aaf3f8c9:0xa1e23388c8395821!8m2!3d44.828803!4d-0.5525432).";
+$libSsTitr2Art = $articleData['libSsTitr2Art'];
+$parag2Art = $articleData['parag2Art'];
 
-$libSsTitr3Art = "### La fresque géante du CHU Pellegrin <br> <br>";
-$parag3Art = "C’est en allant prendre mon repas au restaurant universitaire que je passe pour la première fois devant cet hôpital. Aux premiers abords, rien d'étonnant, jusqu’à ce que je me tourne vers la gauche. Là, j'aperçois une petite fille qui me fixe du regard. Une petite fille… de 15 mètres de hauteur. On est d'accord, c’est impossible… Mais tu vas bientôt comprendre pourquoi ça l'est. <br> <br>
-Remontons dans le temps jusqu’en 2013, année où l’artiste pochoiriste [Jef Aerosol](https://www.jefaerosol.com) est appelé pour la réalisation d’une œuvre de 15m x 6m à l’entrée de l'[hôpital Pellegrin](https://fr.wikipedia.org/wiki/Hôpital_Pellegrin). Cette œuvre, réalisée en 4 jours, représente une image forte et symbolique. En effet, cette fresque monumentale permet de casser l’image anxiogène qui règne à l’hôpital. <br> <br>
-[Philippe Vigouroux](https://www.chu-bordeaux.fr/Espace-média/Archives/Philippe-Vigouroux-nommé-directeur-général-du-CHU-de-Bordeaux/), directeur général du CHU de Bordeaux en parle : <br>
-“La petite fille tient avec précaution un globe terrestre, porteur de toute une humanité. Son sourire est celui de l’hospitalité, sa gravité est celle de la responsabilité de qui tient des vies entre ses mains. » <br> <br>
-Mais pourquoi une petite fille ? L’artiste nous confie que l'enfance, c'est l'innocence, l'avenir, l'espoir. La jeunesse, c'est à la fois le futur et aussi ce que nous laissons derrière nous. A travers cette fresque, cette petite fille nous dit que ce monde nous appartient et c’est à nous de savoir ce que nous voulons en faire. <br> <br>
-On te conseille vivement d’aller à l'hôpital Pellegrin… Non pas pour des soucis de santé on l’espère, mais pour admirer ce chef d'œuvre visible [link](https://www.google.fr/maps/place/Groupe+Hospitalier+Pellegrin/@44.827611,-0.6087224,16z/data=!4m8!1m2!2m1!1spellegrin!3m4!1s0xd54d875aca3b753:0x57ed7f829e557bc8!8m2!3d44.827611!4d-0.604345) Place Amélie Raba Léon à Bordeaux";
+$parag3Art = $articleData['parag3Art'];
+
+
 $libConclArt = "";
 ///
 $urlPhotArt1 = "![Ville](blogart/front/assets/image/bordeaux2.jpg)";
@@ -62,78 +74,73 @@ $numAngl = "";
     include('../front/includes/commons/navbar.php')
     ?>
 
-    <img src="front/assets/image/bordeaux2.jpg" alt="ville" id="banniere"/>
+    <img src="../front/assets/image/bordeaux2.jpg" alt="ville" id="banniere" />
 
     <h1>TOP 3 </h1>
     <h2> des oeuvres les plus insolites de Bordeaux</h2>
 
     <section class="intro">
-        <p>Bordeaux, de son surnom “La Belle endormie” du fait de sa quiétude, est en réalité un paradis pour les fans de street art. Du panneau de signalisation modifié aux magnifiques fresques murales en passant par des sculptures originales, Bordeaux regorge de street art à chaque coin de rue. On te propose dans cet article un top 3 des lieux insolites que tu dois absolument connaitre.</p>
+        <?php echo $Parsedown->text($libChapoArt) ?>
     </section>
 
     <div class="tags">
-        <div class="etiquette">
-            <h5>Insolite</h5>
-        </div>
-        <div class="etiquette">
-            <h5>Photographie</h5>
-        </div>
-        <div class="etiquette">
-            <h5>Street-art</h5>
-        </div>
-        <div class="etiquette">
-            <h5>Art</h5>
-        </div>
+        <?php
+        $resultOfAllMotcles = $motcle->get_AllMotClesByArticle($_GET['id']);
+        $allMotcle = array_splice($resultOfAllMotcles, 0, 4);
+        foreach ($allMotcle as $motcleElm) {
+            echo '<div class="etiquette"><h5>' . $motcleElm['libMotCle'] . '</h5></div>';
+        }
+
+        ?>
     </div>
 
     <div class="top1">
         <div class="photol">
-            <img src="front/assets/image/Jaguar.png" alt="jaguar" />
+            <img src="../front/assets/image/Jaguar.png" alt="jaguar" />
         </div>
         <div class="number_left">
-            <img src="front/assets/image/icones/number1.svg" alt="number" />
+            <img src="../front/assets/image/icones/number1.svg" alt="number" />
         </div>
         <div class="descriptionr">
             <?php
-            echo $Parsedown->text($libAccroch1Art);
+            echo $Parsedown->text($libAccrochArt);
             echo $Parsedown->text($parag1Art);
             ?>
-                </div>
-            </div>
-            
-            <div class="top2">
-                <div class="photor">
-                    <img src="front/assets/image/statuehome.png" alt="statue" />
-                </div>
-                <div class="number_right">
-                    <img src=".front/assets/image/icones/number2.svg" alt="number" /></body>
-                </div>
-                <div class="descriptionl">
-                <?php
+        </div>
+    </div>
+
+    <div class="top2">
+        <div class="photor">
+            <img src="../front/assets/image/statuehome.png" alt="statue" />
+        </div>
+        <div class="number_right">
+            <img src="../front/assets/image/icones/number2.svg" alt="number" />
+        </div>
+        <div class="descriptionl">
+            <?php
             echo $Parsedown->text($libSsTitr2Art);
             echo $Parsedown->text($parag2Art);
             ?>
-                    </div>
-                </div>
-                
-                <div class="top3">
-                    <div class="photol">
-                        <img src="front/assets/image/fresque.png" alt="fresque" />
-                    </div>
-                    <div class="number_left">
-                        <img src="front/assets/image/icones/number3.svg" alt="number" /></body>
-                    </div>
-                    <div class="descriptionr">
-                    <?php
-            echo $Parsedown->text($libSsTitr3Art);
+        </div>
+    </div>
+
+    <div class="top3">
+        <div class="photol">
+            <img src="../front/assets/image/fresque.png" alt="fresque" />
+        </div>
+        <div class="number_left">
+            <img src="../front/assets/image/icones/number3.svg" alt="number" />
+        </div>
+        <div class="descriptionr">
+            <?php
             echo $Parsedown->text($parag3Art);
             ?>
-                    </p>
-                </div>
-            </div>
-            <?php
+        </div>
+    </div>
+    <?php
     include('../front/includes/commons/footer.php');
     ?>
-            
-            </html>
-        </body>
+
+</body>
+
+</html>

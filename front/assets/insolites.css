@@ -1,167 +1,173 @@
 html {
-    background-color: #0e0e0e;
-    color: white;
-  }
+	background-color: #0e0e0e;
+	color: white;
+}
 #banniere {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
 }
 h1 {
-    font-family: 'Monument', Monument, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 42px;
-    font-style:normal;
-    font-weight: 600;
-    text-align: left;
-    color: #ffffff;
-    margin-left: 176px;
-    margin-top: 4rem;
+	font-family: "Monument", Monument, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	text-align: left;
+	color: #ffffff;
+	margin-left: 176px;
+	margin-top: 4rem;
 }
 
 h2 {
-    font-family: 'Monument', Monument, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    color: #ffffff;
-    margin-left: 146px;
+	font-family: "Monument", Monument, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	color: #ffffff;
+	margin-left: 146px;
 }
 
 h3 {
-    font-family: "Manrope", sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    color: #ffffff;
+	font-family: "Manrope", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	color: #ffffff;
 }
 
 .intro {
-    font-family: "Manrope", sans-serif;
-    margin-top: 30px;
-    margin-left: 146px;
-    text-align: left;
-    width: 80%;
-    font-size: 18px;
-    text-indent: 5%;
+	font-family: "Manrope", sans-serif;
+	margin-top: 30px;
+	margin-left: 146px;
+	text-align: left;
+	width: 80%;
+	font-size: 18px;
+	text-indent: 5%;
 }
 
 .top1 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
 }
 
 .top2 {
-    display: flex;
-    flex-direction:row-reverse;
-    margin-top: 50px;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 50px;
 }
 
 .top3 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 4rem;
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: 4rem;
 }
 
 .photol {
-    margin-top: 156px;
-    margin-left: 146px;
-    z-index: 2;
+	margin-top: 156px;
+	margin-left: 146px;
+	z-index: 2;
 }
 
 .photor {
-    margin-top: 156px;
-    margin-right: 146px;
-    z-index: 2;
+	margin-top: 156px;
+	margin-right: 146px;
+	z-index: 2;
 }
 
-.photol img{
-    max-width: 515px;
-    height: 687px;
-    object-fit: cover;
+.photol img {
+	max-width: 515px;
+	height: 687px;
+	object-fit: cover;
 }
 
-.photor img{
-    max-width: 515px;
-    height: 687px;
-    object-fit: cover;
+.photor img {
+	max-width: 515px;
+	height: 687px;
+	object-fit: cover;
 }
 
 .number_left {
-    margin-top: 4rem;
-    left: 6rem;
-    z-index: 1;
-    position: absolute;
-    opacity: 95%;
+	margin-top: 4rem;
+	left: 6rem;
+	z-index: 1;
+	position: absolute;
+	opacity: 95%;
 }
 
 .number_right {
-    margin-top: 4rem;
-    right: 6rem;
-    z-index: 1;
-    position: absolute;
-    opacity: 95%;
+	margin-top: 4rem;
+	right: 6rem;
+	z-index: 1;
+	position: absolute;
+	opacity: 95%;
 }
 
 .descriptionr {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    color: white;
-    opacity: 95%;
-    margin-top: 146px;
-    margin-left: 50px;
-    margin-right: 11%;
+	font-family: "Manrope", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	opacity: 95%;
+	margin-top: 146px;
+	margin-left: 50px;
+	margin-right: 11%;
 }
 
-.descriptionr p{
-    width: 100%;
-    height: 100%
+.descriptionr p {
+	width: 100%;
+	height: 100%;
 }
 
 .descriptionl {
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    color: white;
-    opacity: 95%;
-    margin-top: 146px;
-    margin-right: 50px;
-    margin-left: 11%;
+	font-family: "Manrope", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	opacity: 95%;
+	margin-top: 146px;
+	margin-right: 50px;
+	margin-left: 11%;
 }
 
-.descriptionl p{
-    width: 100%;
-    height: 100%
+.descriptionl p {
+	width: 100%;
+	height: 100%;
 }
 
-.lien {
-    color: #ffee32;
+.top1 a,
+.top2 a,
+.top3 a {
+	color: #ffee32;
 }
 
-.lien:visited { color: #fff8a9; }
+.lien:visited {
+	color: #fff8a9;
+}
 
 .tags {
-    display: flex;
-    flex-direction: row;
-    margin-top: 48px;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	margin-top: 48px;
+	justify-content: center;
 }
 
 .etiquette {
-    margin: 8px;
-    font-family: "Manrope", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #1e293b;
-    background-color: #f1f5f9;
-    border-radius: 4px;
-    padding: 5px;
-    width: 100px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+	margin: 8px;
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #1e293b;
+	background-color: #f1f5f9;
+	border-radius: 4px;
+	padding: 5px;
+	width: 100px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
