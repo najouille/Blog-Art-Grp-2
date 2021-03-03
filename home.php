@@ -27,15 +27,15 @@ function getPath($thematique, $id)
 {
   switch ($thematique) {
     case 'THE0101':
-      return './evenement?id=' . $id;
+      return './blog/evenement?id=' . $id;
       break;
     case 'THE0102':
       # code...
-      return './portrait?id=' . $id;
+      return './blog/portrait?id=' . $id;
       break;
     case 'THE0104':
       # code...
-      return './insolites?id=' . $id;
+      return './blog/insolites?id=' . $id;
       break;
 
     default:
@@ -213,7 +213,7 @@ function getPath($thematique, $id)
         echo '-->';
       ?>
 
-        <a href="./blog/matteo.php" class="streetart">
+        <a href="<?= getPath($value['numThem'],$value['numArt']) ?>"class="streetart">
           <img src="<?= './' . $value['urlPhotArt'] ?>" alt="trumpetist" width="160" />
           <div class="tagtxt">
             <?php
