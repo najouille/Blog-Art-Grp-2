@@ -66,7 +66,7 @@ $numAngl = "";
     <link rel="stylesheet" href="../front/assets/insolites.css" />
     <link rel="stylesheet" href="../front/assets/navbar.css" />
     <link rel="stylesheet" href="../front/assets/footer.css" />
-    <link rel="font" href="../front/assets/fonts/subset-MonumentExtended-Regular.svg" />
+    <link rel="stylesheet" href="../front/assets/master.css" />
 </head>
 
 <body>
