@@ -23,8 +23,7 @@ p {
     margin-bottom: 150px;
 }
 
-input[type="email"],
-textarea {
+.emailbox {
   color: white;
   background-color: #0e0e0e;
   border-radius: 6px;
@@ -34,7 +33,7 @@ textarea {
   margin-top: 5rem;
 }
 
-button {
+.mdpoublie {
   color: #0e0e0e;
   background-color: #ffee32;
   border-color: #ffee32;
@@ -47,7 +46,7 @@ button {
   margin-top: 2rem;
 }
 
-button:hover {
+.mdpoublie:hover {
   background: #0e0e0e;
   color: #ffee32;
   border: 1px solid #ffee32;

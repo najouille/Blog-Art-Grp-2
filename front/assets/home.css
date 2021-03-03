@@ -107,7 +107,9 @@ html {
 .hero-nav {
   margin-top: 36px;
   display: flex;
-  column-gap: 42px;
+}
+.hero-nav a {
+  margin-right: 42px;
 }
 
 .tilescroll-container h1 {

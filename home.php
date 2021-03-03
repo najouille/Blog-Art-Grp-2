@@ -182,7 +182,7 @@
           </p>
         </div>
       </a>
-      <a href="./insolites.php" class="streetart">
+      <a href="./blog/insolites.php" class="streetart">
         <img src="./front/assets/image/meca.png" alt="meca" width="160" />
         <div class="tagtxt">
           <span class="tag">
