@@ -1,14 +1,14 @@
 <?php
 require_once __DIR__ . '/./util/utilErrOn.php';
-require_once __DIR__ . './CLASS_CRUD/article.class.php';
-require_once __DIR__ . './CLASS_CRUD/motclearticle.class.php';
+require_once __DIR__ . '/./CLASS_CRUD/article.class.php';
+require_once __DIR__ . '/./CLASS_CRUD/motclearticle.class.php';
 global $db;
 $article = new ARTICLE;
 $motcle = new MOTCLEARTICLE;
 $alllll = $article->get_AllArticles();
 $allArticles = array_splice($alllll, 0, 3);
 
-$jsonDataFile = file_get_contents("./front/assets/articles.json");
+$jsonDataFile = file_get_contents("/./front/assets/articles.json");
 if ($jsonDataFile === false) {
   // deal with error...
   echo 'error with json';
