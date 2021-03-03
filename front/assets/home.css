@@ -162,6 +162,7 @@ img {
   width: 160px;
   object-fit: cover;
   height: 100%;
+  min-height: 160px;
 }
 .tagtxt {
   flex: 2;
