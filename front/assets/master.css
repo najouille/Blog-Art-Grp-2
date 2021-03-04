@@ -58,3 +58,7 @@ body {
 .text-center {
     text-align: center;
 }
+
+p , .paragraph-start{
+    word-break: break-word;
+}
