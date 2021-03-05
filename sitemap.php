@@ -1,13 +1,19 @@
 <?php
-require_once('../front/assets/vendors/parsedown.php');
-require_once('../CLASS_CRUD/article.class.php');
-require_once('../CLASS_CRUD/motclearticle.class.php');
+require_once __DIR__ .  '/front/assets/vendors/parsedown.php';
+require_once __DIR__ .  '/CLASS_CRUD/article.class.php';
+require_once __DIR__ .  '/CLASS_CRUD/motclearticle.class.php';
 
-// $sitemapMd = "
-// # Plan du site
+$sitemapMd = "
+# Plan du site
 
+- [Home](home.php)
+- [Administration](admin.php)
+- [Blog](./blog)
+- [Galerie](./galerie)
+- [Mentions Légales](mentionslegales.php)
+- [CGU](C.G.U.php)
 
-// "
+";
 $Parsedown = new ParsedownExtraPlugin();
 $Parsedown->linkAttributes = function ($Text, $Attributes, &$Element, $Internal) {
     if (!$Internal) {

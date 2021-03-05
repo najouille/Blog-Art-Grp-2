@@ -13,6 +13,9 @@ if (strpos($here, 'blog/') !== false) {
 } else if (strpos($here, 'insolites.php') !== false) {
   $page = "insolites";
   $pathElm = "./";
+} else if (strpos($here, 'sitemap.php') !== false) {
+  $page = "sitemap";
+  $pathElm = "./";
 } else if (strpos($here, 'contact.php') !== false) {
   $page = "contact";
   $pathElm = "./";
@@ -36,7 +39,7 @@ if (strpos($here, 'blog/') !== false) {
   $pathElm = "./";
 }
 
-$checkMainPage = $page == "home" || $page == "insolites" || $page == "mdp" || $page == "contact" || $page == "connexion" || $page == "profil";
+$checkMainPage = $page == "home" || $page == "insolites" || $page == "mdp" || $page == "contact" || $page == "connexion" || $page == "profil"|| $page == "sitemap";
 $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg"; 
 ?>
 
