@@ -39,8 +39,8 @@ if (strpos($here, 'blog/') !== false) {
   $pathElm = "./";
 }
 
-$checkMainPage = $page == "home" || $page == "insolites" || $page == "mdp" || $page == "contact" || $page == "connexion" || $page == "profil"|| $page == "sitemap";
-$imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg"; 
+$checkMainPage = $page == "home" || $page == "insolites" || $page == "mdp" || $page == "contact" || $page == "connexion" || $page == "profil" || $page == "sitemap";
+$imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" :  "../front/assets/image/Townyart-blanc (2).svg";
 ?>
 
 
@@ -80,17 +80,12 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
       </div>
       <!-- NEWSLETTER -->
       <div class="newsletter">
-            <form target="_blank" action="https://formsubmit.co/clement.calles@mmibordeaux.com" method="post">
-              <h3 class="name">Newsletter</h3>
-              <input class="footer-input"
-                type="email"
-                name="email"
-                placeholder="Votre adresse mail ..."
-                required
-              /><button type="submit" class="submit-button">Je m'inscris</button>
-            </form>
-          </div>
-     
+        <form target="_blank" action="https://formsubmit.co/clement.calles@mmibordeaux.com" method="post">
+          <h3 class="name">Newsletter</h3>
+          <input class="footer-input" type="email" name="email" placeholder="Votre adresse mail ..." required /><button type="submit" class="submit-button">Je m'inscris</button>
+        </form>
+      </div>
+
     </div>
     <!-- NAVBAR -->
     <div class="navbar">
@@ -102,9 +97,9 @@ $imageResolver = $checkMainPage ? "./front/assets/image/Townyart-blanc (2).svg" 
   </div>
   <div class="footer-bottom-section">
     <div class="footer-flex">
-      <a href="mentionslegales.php">Mentions légales</a>
+      <a href="<?= $pathElm . "mentionslegales.php" ?>">Mentions légales</a>
       <span class="vertical-line"></span>
-      <a href="C.G.U.php">Conditions Générales d'Utilisation</a>
+      <a href="<?= $pathElm . "C.G.U.php" ?> ">Conditions Générales d'Utilisation</a>
     </div>
   </div>
 </footer>

@@ -6,4 +6,3 @@
 - [Galerie](/galerie)
 - [Mentions Légales](mentionslegales.php)
 - [CGU](C.G.U.php)
-- 
